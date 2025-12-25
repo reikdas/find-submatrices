@@ -4,11 +4,14 @@ Script to download matrices from SuiteSparse and analyze their density patterns.
 
 import os
 import shutil
-from multiprocessing import Pool, Manager
-from scipy.io import mmread
-from scipy.sparse import csr_matrix, csc_matrix
-from ssgetpy import search, fetch
+import subprocess
+from multiprocessing import Pool
+
 import ssgetpy
+from scipy.io import mmread
+from scipy.sparse import csc_matrix, csr_matrix
+from ssgetpy import fetch, search
+
 
 def check_condition1_test(csr_indptr, csr_indices, cols, window_size=2500) -> bool:
     rows = len(csr_indptr) - 1
@@ -99,47 +102,6 @@ def process_single_matrix(matrix_info) -> (bool, str):
     # Analyze the matrix
     return analyze_matrix(csr, csc)  # Pass pbar to show analysis progress
 
-def process_matrix_worker(args):
-    """Worker function to process a single matrix in parallel."""
-    matrix_name, eval_list, lock, file_path = args
-    print(matrix_name)
-    found = search(name_or_id=matrix_name)
-    filtered_found = [m for m in found if m.name == matrix_name]
-    if len(filtered_found) != 1:
-        return
-    
-    matrix_info = filtered_found[0]
-    # Download the matrix before processing (fetch expects name/ID, not object)
-    fetch(matrix_name)
-    result, condition = process_single_matrix(matrix_info)
-    
-    # Determine what to write
-    if result:
-        output_line = f"{matrix_name},{condition}\n"
-    elif matrix_name in eval_list:
-        output_line = f"{matrix_name},EVAL\n"
-    else:
-        output_line = f"{matrix_name},NOT_FOUND\n"
-    
-    # Write to file immediately with lock
-    with lock:
-        with open(file_path, "a") as f:
-            f.write(output_line)
-    
-    # Clean up: delete tar file and extracted directory
-    localpath_info = matrix_info.localpath()
-    tar_path = localpath_info[0] if isinstance(localpath_info, tuple) else localpath_info
-    tar_dir = os.path.dirname(tar_path)
-    matrix_subdir = os.path.join(tar_dir, matrix_info.name)
-    
-    # Delete tar file
-    if os.path.exists(tar_path):
-        os.remove(tar_path)
-    
-    # Delete extracted directory
-    if os.path.exists(matrix_subdir):
-        shutil.rmtree(matrix_subdir)
-    
 if __name__ == "__main__":
     eval = [
     "eris1176",
@@ -185,21 +147,46 @@ if __name__ == "__main__":
     matrices_dict.update({m.id: m for m in binary_matrices})
     matrices = list(matrices_dict.values())
     
-    # Create output file (truncate if exists)
-    file_path = "matrices.txt"
-    with open(file_path, "w") as f:
-        pass  # Create/truncate file
-    
-    # Create a manager and lock for file writing
-    manager = Manager()
-    lock = manager.Lock()
-    
-    # Prepare arguments for parallel processing - only process matrices in eval list
-    num_procs = 24
+    # Process matrices in parallel
     # matrix_names = eval  # Trial run: only process matrices in eval list
     matrix_names = [m.name for m in matrices]  # Full run: process all matrices
-    worker_args = [(matrix_name, eval, lock, file_path) for matrix_name in matrix_names]
     
-    # Process matrices in parallel
-    with Pool(processes=num_procs) as pool:
-        pool.map(process_matrix_worker, worker_args)
+    def process_matrix_worker(matrix_name):
+        """Worker function to process a single matrix."""
+        try:
+            print(f"Processing {matrix_name}")
+            found = search(name_or_id=matrix_name)
+            filtered_found = [m for m in found if m.name == matrix_name]
+            if len(filtered_found) != 1:
+                print(f"Skipping {matrix_name}: found {len(filtered_found)} matches")
+                return
+            
+            matrix_info = filtered_found[0]
+            # Download the matrix before processing (fetch expects name/ID, not object)
+            fetch(matrix_name)
+            result, condition = process_single_matrix(matrix_info)
+
+            localpath_info = matrix_info.localpath()
+            tar_path = localpath_info[0] if isinstance(localpath_info, tuple) else localpath_info
+            tar_dir = os.path.dirname(tar_path)
+            matrix_subdir = os.path.join(tar_dir, matrix_info.name)
+
+            if result:
+                matrix_path = os.path.join(matrix_subdir, f"{matrix_info.name}.mtx")
+                subprocess.run(["./build/partition_matrix", matrix_path], check=True)
+            
+            # Delete tar file
+            if os.path.exists(tar_path):
+                os.remove(tar_path)
+            
+            # Delete extracted directory
+            if os.path.exists(matrix_subdir):
+                shutil.rmtree(matrix_subdir)
+            
+            print(f"Completed {matrix_name}")
+        except Exception as e:
+            print(f"Error processing {matrix_name}: {e}")
+    
+    # Use all 24 cores for parallel processing
+    with Pool(processes=24) as pool:
+        pool.map(process_matrix_worker, matrix_names)

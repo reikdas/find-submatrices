@@ -1,6 +1,3 @@
-#ifndef FIND_SUBMATRIX_H
-#define FIND_SUBMATRIX_H
-
 #include "mtx_to_csr.h"
 #include <vector>
 #include <algorithm>
@@ -87,4 +84,70 @@ void dense_pass_generic(
     }
 }
 
-#endif // FIND_SUBMATRIX_H
+template<typename T>
+void general_rectangle_pass(
+    const SpMatrixCompressed<T>& mat,
+    BestSubmatrix& global_best
+) {
+    constexpr int MIN_AREA = 2500;
+    constexpr double MIN_DENSITY = 0.5;
+
+    const bool row_major = (mat.direction == CompressionDirection::ROW);
+    const int OUTER = row_major ? mat.num_rows : mat.num_cols;
+    const int INNER = row_major ? mat.num_cols : mat.num_rows;
+
+    #pragma omp parallel
+    {
+        std::vector<int> col_hist(INNER, 0);
+        BestSubmatrix local_best;
+
+        #pragma omp for schedule(dynamic,1)
+        for (int o0 = 0; o0 < OUTER; ++o0) {
+            std::fill(col_hist.begin(), col_hist.end(), 0);
+
+            for (int o1 = o0; o1 < OUTER; ++o1) {
+                // Add slice
+                for (int k = mat.indptr[o1]; k < mat.indptr[o1 + 1]; ++k) {
+                    col_hist[mat.indices[k]]++;
+                }
+
+                int height = o1 - o0 + 1;
+                if (height * INNER < MIN_AREA) continue;
+
+                // Sliding window over columns
+                int nnz = 0;
+                int c0 = 0;
+
+                for (int c1 = 0; c1 < INNER; ++c1) {
+                    nnz += col_hist[c1];
+
+                    while (c0 <= c1) {
+                        int width = c1 - c0 + 1;
+                        int area = height * width;
+
+                        if (area < MIN_AREA) break;
+                        if (area <= local_best.area) break;
+
+                        if (double(nnz) >= MIN_DENSITY * area) {
+                            if (row_major) {
+                                local_best = {o0, o1 + 1, c0, c1 + 1, area};
+                            } else {
+                                local_best = {c0, c1 + 1, o0, o1 + 1, area};
+                            }
+                            break;
+                        }
+
+                        nnz -= col_hist[c0++];
+                    }
+                }
+            }
+        }
+
+        #pragma omp critical
+        {
+            if (local_best.area > global_best.area) {
+                global_best = local_best;
+            }
+        }
+    }
+}
