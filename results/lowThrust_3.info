@@ -1,5 +1,8 @@
-Best submatrix found:
-  Rows: [3918, 6668)
+Found 1 dense submatrix(es):
+
+Block 1:
+  Rows: [3917, 6668)
   Cols: [3917, 3921)
-  Dimensions: 2750 x 4
-  Area: 11000
+  Dimensions: 2751 x 4
+  Area: 11004
+  Density: 0.5

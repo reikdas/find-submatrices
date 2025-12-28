@@ -1,0 +1,288 @@
+Found 41 dense submatrix(es):
+
+Block 1:
+  Rows: [61, 236)
+  Cols: [62, 238)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 2:
+  Rows: [289, 464)
+  Cols: [290, 466)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 3:
+  Rows: [479, 654)
+  Cols: [480, 656)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 4:
+  Rows: [708, 883)
+  Cols: [708, 884)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500617
+
+Block 5:
+  Rows: [1106, 1281)
+  Cols: [1107, 1283)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 6:
+  Rows: [897, 1072)
+  Cols: [898, 1074)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 7:
+  Rows: [1524, 1699)
+  Cols: [1525, 1701)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 8:
+  Rows: [1296, 1471)
+  Cols: [1297, 1473)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 9:
+  Rows: [1885, 2060)
+  Cols: [1886, 2062)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 10:
+  Rows: [2286, 2461)
+  Cols: [2285, 2461)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500487
+
+Block 11:
+  Rows: [2096, 2271)
+  Cols: [2095, 2271)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500487
+
+Block 12:
+  Rows: [2494, 2669)
+  Cols: [2494, 2670)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500617
+
+Block 13:
+  Rows: [2740, 2915)
+  Cols: [2741, 2917)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 14:
+  Rows: [3044, 3219)
+  Cols: [3045, 3221)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500162
+
+Block 15:
+  Rows: [3275, 3450)
+  Cols: [3273, 3449)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500097
+
+Block 16:
+  Rows: [3482, 3657)
+  Cols: [3482, 3658)
+  Dimensions: 175 x 176
+  Area: 30800
+  Density: 0.500032
+
+Block 17:
+  Rows: [3844, 4016)
+  Cols: [3843, 4016)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500605
+
+Block 18:
+  Rows: [4224, 4396)
+  Cols: [4223, 4396)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500605
+
+Block 19:
+  Rows: [4019, 4191)
+  Cols: [4018, 4191)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.5
+
+Block 20:
+  Rows: [4660, 4832)
+  Cols: [4660, 4833)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500773
+
+Block 21:
+  Rows: [4399, 4571)
+  Cols: [4398, 4571)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.5
+
+Block 22:
+  Rows: [5041, 5213)
+  Cols: [5040, 5213)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500672
+
+Block 23:
+  Rows: [4855, 5027)
+  Cols: [4854, 5027)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500067
+
+Block 24:
+  Rows: [5254, 5426)
+  Cols: [5254, 5427)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500168
+
+Block 25:
+  Rows: [5705, 5877)
+  Cols: [5705, 5878)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500706
+
+Block 26:
+  Rows: [5476, 5648)
+  Cols: [5477, 5650)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.5
+
+Block 27:
+  Rows: [5918, 6090)
+  Cols: [5914, 6087)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.5
+
+Block 28:
+  Rows: [6124, 6296)
+  Cols: [6123, 6296)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500605
+
+Block 29:
+  Rows: [6371, 6543)
+  Cols: [6370, 6543)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500672
+
+Block 30:
+  Rows: [6694, 6866)
+  Cols: [6693, 6866)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500605
+
+Block 31:
+  Rows: [6980, 7152)
+  Cols: [6978, 7151)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500336
+
+Block 32:
+  Rows: [7283, 7455)
+  Cols: [7282, 7455)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500672
+
+Block 33:
+  Rows: [7528, 7700)
+  Cols: [7529, 7702)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.5
+
+Block 34:
+  Rows: [7705, 7877)
+  Cols: [7704, 7877)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500067
+
+Block 35:
+  Rows: [7928, 8100)
+  Cols: [7928, 8101)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500773
+
+Block 36:
+  Rows: [8156, 8328)
+  Cols: [8156, 8329)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500773
+
+Block 37:
+  Rows: [8366, 8538)
+  Cols: [8365, 8538)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500605
+
+Block 38:
+  Rows: [8541, 8713)
+  Cols: [8540, 8713)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500067
+
+Block 39:
+  Rows: [8784, 8956)
+  Cols: [8783, 8956)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500605
+
+Block 40:
+  Rows: [8996, 9168)
+  Cols: [8992, 9165)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500067
+
+Block 41:
+  Rows: [9224, 9396)
+  Cols: [9220, 9393)
+  Dimensions: 172 x 173
+  Area: 29756
+  Density: 0.500269

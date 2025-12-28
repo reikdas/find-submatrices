@@ -1,0 +1,15 @@
+Found 2 dense submatrix(es):
+
+Block 1:
+  Rows: [613, 1072)
+  Cols: [614, 1072)
+  Dimensions: 459 x 458
+  Area: 210222
+  Density: 0.500333
+
+Block 2:
+  Rows: [1403, 1809)
+  Cols: [1403, 1809)
+  Dimensions: 406 x 406
+  Area: 164836
+  Density: 0.500315

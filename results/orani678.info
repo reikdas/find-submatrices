@@ -1,0 +1,8 @@
+Found 1 dense submatrix(es):
+
+Block 1:
+  Rows: [0, 2529)
+  Cols: [343, 344)
+  Dimensions: 2529 x 1
+  Area: 2529
+  Density: 0.580467

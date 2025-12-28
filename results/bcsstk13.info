@@ -1,0 +1,8 @@
+Found 1 dense submatrix(es):
+
+Block 1:
+  Rows: [1831, 1882)
+  Cols: [1831, 1883)
+  Dimensions: 51 x 52
+  Area: 2652
+  Density: 0.5

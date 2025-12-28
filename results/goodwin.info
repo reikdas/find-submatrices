@@ -1,0 +1,8 @@
+Found 1 dense submatrix(es):
+
+Block 1:
+  Rows: [92, 147)
+  Cols: [87, 147)
+  Dimensions: 55 x 60
+  Area: 3300
+  Density: 0.500909

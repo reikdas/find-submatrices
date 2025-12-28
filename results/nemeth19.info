@@ -1,0 +1,141 @@
+Found 20 dense submatrix(es):
+
+Block 1:
+  Rows: [0, 149)
+  Cols: [0, 149)
+  Dimensions: 149 x 149
+  Area: 22201
+  Density: 0.500563
+
+Block 2:
+  Rows: [162, 310)
+  Cols: [162, 311)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 3:
+  Rows: [1017, 1165)
+  Cols: [1017, 1166)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500136
+
+Block 4:
+  Rows: [523, 671)
+  Cols: [523, 672)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500136
+
+Block 5:
+  Rows: [371, 519)
+  Cols: [371, 520)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500136
+
+Block 6:
+  Rows: [694, 842)
+  Cols: [694, 843)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 7:
+  Rows: [846, 994)
+  Cols: [846, 995)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 8:
+  Rows: [1378, 1526)
+  Cols: [1378, 1527)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 9:
+  Rows: [1226, 1374)
+  Cols: [1226, 1375)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 10:
+  Rows: [1683, 1831)
+  Cols: [1682, 1831)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.5
+
+Block 11:
+  Rows: [1530, 1678)
+  Cols: [1530, 1679)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 12:
+  Rows: [1853, 2001)
+  Cols: [1853, 2002)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500136
+
+Block 13:
+  Rows: [2290, 2438)
+  Cols: [2290, 2439)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 14:
+  Rows: [2024, 2172)
+  Cols: [2024, 2173)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 15:
+  Rows: [2784, 2932)
+  Cols: [2784, 2933)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 16:
+  Rows: [2594, 2742)
+  Cols: [2594, 2743)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227
+
+Block 17:
+  Rows: [2443, 2591)
+  Cols: [2442, 2591)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.5
+
+Block 18:
+  Rows: [3259, 3407)
+  Cols: [3259, 3408)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500136
+
+Block 19:
+  Rows: [3069, 3217)
+  Cols: [3069, 3218)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500136
+
+Block 20:
+  Rows: [3430, 3578)
+  Cols: [3430, 3579)
+  Dimensions: 148 x 149
+  Area: 22052
+  Density: 0.500227

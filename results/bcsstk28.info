@@ -1,0 +1,57 @@
+Found 8 dense submatrix(es):
+
+Block 1:
+  Rows: [3619, 3726)
+  Cols: [3619, 3726)
+  Dimensions: 107 x 107
+  Area: 11449
+  Density: 0.500044
+
+Block 2:
+  Rows: [72, 133)
+  Cols: [72, 134)
+  Dimensions: 61 x 62
+  Area: 3782
+  Density: 0.500264
+
+Block 3:
+  Rows: [0, 52)
+  Cols: [0, 52)
+  Dimensions: 52 x 52
+  Area: 2704
+  Density: 0.502959
+
+Block 4:
+  Rows: [3441, 3499)
+  Cols: [3441, 3499)
+  Dimensions: 58 x 58
+  Area: 3364
+  Density: 0.500595
+
+Block 5:
+  Rows: [4270, 4333)
+  Cols: [4269, 4332)
+  Dimensions: 63 x 63
+  Area: 3969
+  Density: 0.500378
+
+Block 6:
+  Rows: [4206, 4268)
+  Cols: [4206, 4268)
+  Dimensions: 62 x 62
+  Area: 3844
+  Density: 0.50052
+
+Block 7:
+  Rows: [4151, 4205)
+  Cols: [4152, 4206)
+  Dimensions: 54 x 54
+  Area: 2916
+  Density: 0.5
+
+Block 8:
+  Rows: [4349, 4410)
+  Cols: [4348, 4410)
+  Dimensions: 61 x 62
+  Area: 3782
+  Density: 0.505024

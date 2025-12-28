@@ -7,9 +7,9 @@
 #include <iostream>
 #include <fstream>
 
-int main(int argc, char* argv[]) {
+int main(int /* argc */, char* argv[]) {
     // Set OpenMP thread count: use 24 or max available cores, whichever is smaller
-    const int requested_threads = 24;
+    const int requested_threads = 20;
     const int max_available = std::max(1, static_cast<int>(std::thread::hardware_concurrency()));
     const int num_threads = std::min(requested_threads, max_available);
     omp_set_num_threads(num_threads);
@@ -43,16 +43,20 @@ int main(int argc, char* argv[]) {
         
         SpMatrixCSR<float> A_CSR = A.to_csr();
         SpMatrixCSC<float> A_CSC = A.to_csc();
-        // print(A_CSR);
-        // print(A_CSC);
-        BestSubmatrix best;
 
-        dense_pass_generic(A_CSR, best);  // CSR pass (height ≥ 2500)
-        dense_pass_generic(A_CSC, best);  // CSC pass (width ≥ 2500)
+        std::vector<BestSubmatrix> blocks;
+        std::vector<bool> row_used(A.num_rows, false);
+        std::vector<bool> col_used(A.num_cols, false);
+        Region full_region{0, A.num_rows, 0, A.num_cols};
 
-        if (best.area == 0) {
-            general_rectangle_pass(A_CSR, best);
-        }
+        decompose_region(
+            A_CSR,
+            A_CSC,
+            full_region,
+            blocks,
+            row_used,
+            col_used
+        );
 
         // Create results directory if it doesn't exist
         std::filesystem::create_directories("results");
@@ -61,16 +65,24 @@ int main(int argc, char* argv[]) {
         std::string results_file = "results/" + matrix_name + ".info";
         std::ofstream out_file(results_file);
         
-        if (best.area > 0) {
-            out_file << "Best submatrix found:\n";
-            out_file << "  Rows: [" << best.r0 << ", " << best.r1 << ")\n";
-            out_file << "  Cols: [" << best.c0 << ", " << best.c1 << ")\n";
-            out_file << "  Dimensions: "
-                      << (best.r1 - best.r0) << " x "
-                      << (best.c1 - best.c0) << "\n";
-            out_file << "  Area: " << best.area << "\n";
-        } else {
+        if (blocks.empty()) {
             out_file << "No dense submatrix found (area > 0.5 density, span >= 2500)\n";
+        } else {
+            out_file << "Found " << blocks.size() << " dense submatrix(es):\n\n";
+            for (size_t i = 0; i < blocks.size(); ++i) {
+                const auto& block = blocks[i];
+                out_file << "Block " << (i + 1) << ":\n";
+                out_file << "  Rows: [" << block.r0 << ", " << block.r1 << ")\n";
+                out_file << "  Cols: [" << block.c0 << ", " << block.c1 << ")\n";
+                out_file << "  Dimensions: "
+                          << (block.r1 - block.r0) << " x "
+                          << (block.c1 - block.c0) << "\n";
+                out_file << "  Area: " << block.area << "\n";
+                out_file << "  Density: " << block.density << "\n";
+                if (i < blocks.size() - 1) {
+                    out_file << "\n";
+                }
+            }
         }
         
         out_file.close();

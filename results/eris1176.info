@@ -1,5 +1,22 @@
-Best submatrix found:
-  Rows: [1008, 1123)
-  Cols: [1020, 1117)
+Found 3 dense submatrix(es):
+
+Block 1:
+  Rows: [1013, 1128)
+  Cols: [1019, 1116)
   Dimensions: 115 x 97
   Area: 11155
+  Density: 0.500134
+
+Block 2:
+  Rows: [1, 74)
+  Cols: [0, 73)
+  Dimensions: 73 x 73
+  Area: 5329
+  Density: 0.500469
+
+Block 3:
+  Rows: [772, 856)
+  Cols: [772, 828)
+  Dimensions: 84 x 56
+  Area: 4704
+  Density: 0.500213

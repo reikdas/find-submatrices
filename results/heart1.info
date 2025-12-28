@@ -1,5 +1,36 @@
-Best submatrix found:
-  Rows: [1407, 1942)
-  Cols: [1407, 1943)
+Found 5 dense submatrix(es):
+
+Block 1:
+  Rows: [1409, 1944)
+  Cols: [1408, 1944)
   Dimensions: 535 x 536
   Area: 286760
+  Density: 0.500129
+
+Block 2:
+  Rows: [97, 557)
+  Cols: [97, 557)
+  Dimensions: 460 x 460
+  Area: 211600
+  Density: 0.500095
+
+Block 3:
+  Rows: [1968, 2397)
+  Cols: [1968, 2397)
+  Dimensions: 429 x 429
+  Area: 184041
+  Density: 0.500079
+
+Block 4:
+  Rows: [2516, 2931)
+  Cols: [2517, 2931)
+  Dimensions: 415 x 414
+  Area: 171810
+  Density: 0.500285
+
+Block 5:
+  Rows: [3118, 3549)
+  Cols: [3438, 3516)
+  Dimensions: 431 x 78
+  Area: 33618
+  Density: 0.5

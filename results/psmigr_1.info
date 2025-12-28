@@ -1,0 +1,22 @@
+Found 3 dense submatrix(es):
+
+Block 1:
+  Rows: [16, 2648)
+  Cols: [220, 223)
+  Dimensions: 2632 x 3
+  Area: 7896
+  Density: 0.5
+
+Block 2:
+  Rows: [3045, 3123)
+  Cols: [3045, 3122)
+  Dimensions: 78 x 77
+  Area: 6006
+  Density: 0.5
+
+Block 3:
+  Rows: [2815, 2951)
+  Cols: [2929, 2948)
+  Dimensions: 136 x 19
+  Area: 2584
+  Density: 0.501161

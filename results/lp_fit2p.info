@@ -1,5 +1,8 @@
-Best submatrix found:
-  Rows: [176, 3000)
+Found 1 dense submatrix(es):
+
+Block 1:
+  Rows: [173, 3000)
   Cols: [0, 20)
-  Dimensions: 2824 x 20
-  Area: 56480
+  Dimensions: 2827 x 20
+  Area: 56540
+  Density: 0.503573

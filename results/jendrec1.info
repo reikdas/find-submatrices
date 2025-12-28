@@ -1,5 +1,8 @@
-Best submatrix found:
+Found 1 dense submatrix(es):
+
+Block 1:
   Rows: [19, 2109)
   Cols: [0, 77)
   Dimensions: 2090 x 77
   Area: 160930
+  Density: 0.500081
