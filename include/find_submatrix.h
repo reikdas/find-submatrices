@@ -2,17 +2,55 @@
 #include <vector>
 #include <algorithm>
 #include <cassert>
+#include <cmath>
+
+constexpr double MIN_DENSITY = 0.5;
+constexpr double GAMMA = 1.5; // Modify to bias block score
+constexpr int MIN_AREA = 2500;
 
 struct BestSubmatrix {
     int r0 = -1, r1 = -1;
     int c0 = -1, c1 = -1;
     int area = 0;
     double density = 0.0;
+    double score = 0.0;
     
     BestSubmatrix() = default;
     BestSubmatrix(int r0_, int r1_, int c0_, int c1_, int area_, double density_)
         : r0(r0_), r1(r1_), c0(c0_), c1(c1_), area(area_), density(density_) {}
 };
+
+template<typename T>
+int row_nnz(
+    const SpMatrixCompressed<T>& csr,
+    int r,
+    int c0,
+    int c1
+) {
+    int cnt = 0;
+    for (int k = csr.indptr[r]; k < csr.indptr[r + 1]; ++k) {
+        int c = csr.indices[k];
+        if (c >= c0 && c < c1)
+            cnt++;
+    }
+    return cnt;
+}
+
+template<typename T>
+int col_nnz(
+    const SpMatrixCompressed<T>& csc,
+    int c,
+    int r0,
+    int r1
+) {
+    int cnt = 0;
+    for (int k = csc.indptr[c]; k < csc.indptr[c + 1]; ++k) {
+        int r = csc.indices[k];
+        if (r >= r0 && r < r1)
+            cnt++;
+    }
+    return cnt;
+}
 
 struct Region {
     int r0, r1;
@@ -23,20 +61,80 @@ struct Region {
     int area()   const { return height() * width(); }
 };
 
+// Remove trailing rows and columns that do not improve density
+template<typename T>
+void trim_block(
+    BestSubmatrix& b,
+    const SpMatrixCompressed<T>& csr,
+    const SpMatrixCompressed<T>& csc
+) {
+    bool improved = true;
+
+    while (improved) {
+        improved = false;
+
+        int height = b.r1 - b.r0;
+        int width  = b.c1 - b.c0;
+        int area   = height * width;
+        double cur_density = b.density;
+
+        struct Candidate {
+            char type; // 'T','B','L','R'
+            double density;
+        };
+
+        Candidate best = {'X', cur_density};
+
+        auto try_remove = [&](char t, int nnz_removed) {
+            int new_area = area - (t == 'T' || t == 'B' ? width : height);
+            double new_density =
+                double(b.density * area - nnz_removed) / new_area;
+
+            if (new_density > best.density) {
+                best = {t, new_density};
+            }
+        };
+
+        try_remove('T', row_nnz(csr, b.r0,     b.c0, b.c1));
+        try_remove('B', row_nnz(csr, b.r1 - 1, b.c0, b.c1));
+        try_remove('L', col_nnz(csc, b.c0,     b.r0, b.r1));
+        try_remove('R', col_nnz(csc, b.c1 - 1, b.r0, b.r1));
+
+        if (best.type != 'X') {
+            improved = true;
+            switch (best.type) {
+                case 'T': b.r0++; break;
+                case 'B': b.r1--; break;
+                case 'L': b.c0++; break;
+                case 'R': b.c1--; break;
+            }
+            b.density = best.density;
+            b.area = (b.r1 - b.r0) * (b.c1 - b.c0);
+        }
+    }
+}
+
+inline double block_score(const BestSubmatrix& b) {
+    if (b.area <= 0 || b.density <= MIN_DENSITY)
+        return -1.0;  // invalid / reject
+
+    return b.area * std::pow(b.density - MIN_DENSITY, GAMMA);
+}
+
 inline void merge_best(BestSubmatrix& dst, const BestSubmatrix& src) {
-    if (src.area > dst.area) {
+    if (src.score > dst.score) {
         dst = src;
     }
 }
 
+// Find blocks where row or col is >= MIN_SPAN
 template<typename T>
 void dense_pass_generic(
     const SpMatrixCompressed<T>& mat,
     const Region& region,
     BestSubmatrix& global_best
 ) {
-    constexpr int MIN_SPAN = 2500;
-    constexpr double MIN_DENSITY = 0.5;
+    constexpr int MIN_SPAN = MIN_AREA; // If MIN_SPAN == MIN_AREA, then we don't need to special case vectors
 
     const bool row_major = (mat.direction == CompressionDirection::ROW);
 
@@ -56,6 +154,7 @@ void dense_pass_generic(
     {
         std::vector<int> hist(INNER_LEN, 0);
         BestSubmatrix local_best;
+        local_best.score = -1.0;
 
         #pragma omp for schedule(dynamic,1)
         for (int o0 = OUTER_BEGIN; o0 <= OUTER_END - MIN_SPAN; ++o0) {
@@ -82,11 +181,12 @@ void dense_pass_generic(
                     while (i0 <= i1) {
                         int width = i1 - i0 + 1;
                         int area  = span * width;
+                        double density = double(nnz) / area;
 
-                        if (area <= local_best.area)
+                        double candidate_score = area * std::pow(density - MIN_DENSITY, GAMMA);
+                        if (candidate_score <= local_best.score)
                             break;
 
-                        double density = double(nnz) / area;
                         if (density >= MIN_DENSITY) {
                             if (row_major) {
                                 local_best = {
@@ -96,6 +196,7 @@ void dense_pass_generic(
                                     area,
                                     density
                                 };
+                                local_best.score = block_score(local_best);
                             } else {
                                 local_best = {
                                     INNER_BEGIN + i0,
@@ -104,6 +205,7 @@ void dense_pass_generic(
                                     area,
                                     density
                                 };
+                                local_best.score = block_score(local_best);
                             }
                             break;
                         }
@@ -119,15 +221,13 @@ void dense_pass_generic(
     }
 }
 
-
+// When both row and col <= MIN_SPAN, we can still find blocks whose area is >= MIN_AREA
 template<typename T>
 void general_rectangle_pass(
     const SpMatrixCompressed<T>& mat,
     const Region& region,
     BestSubmatrix& global_best
 ) {
-    constexpr int MIN_AREA = 2500;
-    constexpr double MIN_DENSITY = 0.5;
 
     const bool row_major = (mat.direction == CompressionDirection::ROW);
 
@@ -143,6 +243,7 @@ void general_rectangle_pass(
     {
         std::vector<int> hist(INNER_LEN, 0);
         BestSubmatrix local_best;
+        local_best.score = -1.0;
 
         #pragma omp for schedule(dynamic,1)
         for (int o0 = OUTER_BEGIN; o0 < OUTER_END; ++o0) {
@@ -185,6 +286,7 @@ void general_rectangle_pass(
                                     area,
                                     density
                                 };
+                                local_best.score = block_score(local_best);
                             } else {
                                 local_best = {
                                     INNER_BEGIN + i0,
@@ -194,6 +296,7 @@ void general_rectangle_pass(
                                     density
                                 };
                             }
+                            local_best.score = block_score(local_best);
                             break;
                         }
 
@@ -216,6 +319,8 @@ void find_best_in_region(
     const Region& region,
     BestSubmatrix& best
 ) {
+    if (region.area() < MIN_AREA)
+        return;
     best = BestSubmatrix{};
 
     dense_pass_generic(csr, region, best);
@@ -241,7 +346,6 @@ void decompose_region(
     std::vector<bool>& row_used,
     std::vector<bool>& col_used
 ) {
-    constexpr int MIN_AREA = 2500;
     if (region.area() < MIN_AREA)
         return;
 
@@ -257,6 +361,12 @@ void decompose_region(
 
     for (int c = best.c0; c < best.c1; ++c)
         if (col_used[c]) return;
+
+    trim_block(best, csr, csc);
+    best.score = block_score(best);
+
+    if (best.area < MIN_AREA || best.density < MIN_DENSITY)
+        return;
 
     // ---- Accept block ----
     result.push_back(best);
