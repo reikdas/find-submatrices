@@ -1,8 +1,15 @@
-Found 1 dense submatrix(es):
+Found 2 dense submatrix(es):
 
 Block 1:
-  Rows: [3917, 6668)
-  Cols: [3917, 3921)
-  Dimensions: 2751 x 4
-  Area: 11004
-  Density: 0.5
+  Rows: [3923, 6667)
+  Cols: [3919, 3921)
+  Dimensions: 2744 x 2
+  Area: 5488
+  Density: 1
+
+Block 2:
+  Rows: [3919, 3921)
+  Cols: [3923, 6667)
+  Dimensions: 2 x 2744
+  Area: 5488
+  Density: 1

@@ -1,8 +1,1 @@
-Found 1 dense submatrix(es):
-
-Block 1:
-  Rows: [2286, 2290)
-  Cols: [0, 2290)
-  Dimensions: 4 x 2290
-  Area: 9160
-  Density: 0.500655
+No dense submatrix found (area > 0.5 density, span >= 2500)

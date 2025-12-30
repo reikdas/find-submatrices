@@ -1,15 +1,1 @@
-Found 2 dense submatrix(es):
-
-Block 1:
-  Rows: [3322, 5975)
-  Cols: [0, 11)
-  Dimensions: 2653 x 11
-  Area: 29183
-  Density: 0.500017
-
-Block 2:
-  Rows: [0, 11)
-  Cols: [3322, 5975)
-  Dimensions: 11 x 2653
-  Area: 29183
-  Density: 0.500017
+No dense submatrix found (area > 0.5 density, span >= 2500)

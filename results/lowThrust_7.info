@@ -1,5 +1,15 @@
-Best submatrix found:
-  Rows: [9647, 16408)
-  Cols: [9647, 9651)
-  Dimensions: 6761 x 4
-  Area: 27044
+Found 2 dense submatrix(es):
+
+Block 1:
+  Rows: [9653, 16408)
+  Cols: [9649, 9651)
+  Dimensions: 6755 x 2
+  Area: 13510
+  Density: 1
+
+Block 2:
+  Rows: [9649, 9651)
+  Cols: [9653, 16408)
+  Dimensions: 2 x 6755
+  Area: 13510
+  Density: 1

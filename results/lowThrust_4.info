@@ -1,5 +1,15 @@
-Best submatrix found:
-  Rows: [7527, 12804)
-  Cols: [7527, 7531)
-  Dimensions: 5277 x 4
-  Area: 21108
+Found 2 dense submatrix(es):
+
+Block 1:
+  Rows: [7533, 12804)
+  Cols: [7529, 7531)
+  Dimensions: 5271 x 2
+  Area: 10542
+  Density: 1
+
+Block 2:
+  Rows: [7529, 7531)
+  Cols: [7533, 12804)
+  Dimensions: 2 x 5271
+  Area: 10542
+  Density: 1

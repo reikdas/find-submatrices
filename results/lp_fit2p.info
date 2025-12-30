@@ -1,8 +1,8 @@
 Found 1 dense submatrix(es):
 
 Block 1:
-  Rows: [173, 3000)
-  Cols: [0, 20)
-  Dimensions: 2827 x 20
-  Area: 56540
-  Density: 0.503573
+  Rows: [0, 3000)
+  Cols: [0, 1)
+  Dimensions: 3000 x 1
+  Area: 3000
+  Density: 1

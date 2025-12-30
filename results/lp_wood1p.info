@@ -1,8 +1,8 @@
 Found 1 dense submatrix(es):
 
 Block 1:
-  Rows: [236, 243)
-  Cols: [0, 2595)
-  Dimensions: 7 x 2595
-  Area: 18165
-  Density: 0.535205
+  Rows: [242, 243)
+  Cols: [2, 2585)
+  Dimensions: 1 x 2583
+  Area: 2583
+  Density: 0.990708

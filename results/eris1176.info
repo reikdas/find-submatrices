@@ -1,22 +1,22 @@
 Found 3 dense submatrix(es):
 
 Block 1:
-  Rows: [1013, 1128)
-  Cols: [1019, 1116)
-  Dimensions: 115 x 97
-  Area: 11155
-  Density: 0.500134
+  Rows: [1025, 1116)
+  Cols: [1025, 1116)
+  Dimensions: 91 x 91
+  Area: 8281
+  Density: 0.67033
 
 Block 2:
-  Rows: [1, 74)
-  Cols: [0, 73)
-  Dimensions: 73 x 73
-  Area: 5329
-  Density: 0.500469
+  Rows: [772, 855)
+  Cols: [774, 828)
+  Dimensions: 83 x 54
+  Area: 4482
+  Density: 0.510933
 
 Block 3:
-  Rows: [772, 856)
-  Cols: [772, 828)
-  Dimensions: 84 x 56
-  Area: 4704
-  Density: 0.500213
+  Rows: [2, 53)
+  Cols: [2, 53)
+  Dimensions: 51 x 51
+  Area: 2601
+  Density: 1

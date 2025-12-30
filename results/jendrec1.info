@@ -1,8 +1,8 @@
 Found 1 dense submatrix(es):
 
 Block 1:
-  Rows: [19, 2109)
-  Cols: [0, 77)
-  Dimensions: 2090 x 77
-  Area: 160930
-  Density: 0.500081
+  Rows: [30, 2107)
+  Cols: [0, 68)
+  Dimensions: 2077 x 68
+  Area: 141236
+  Density: 0.558887
