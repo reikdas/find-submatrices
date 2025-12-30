@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cassert>
 #include <cmath>
+#include <functional>
 
 constexpr double MIN_DENSITY = 0.5;
 constexpr double GAMMA = 1.5; // Modify to bias block score
@@ -132,9 +133,11 @@ template<typename T>
 void dense_pass_generic(
     const SpMatrixCompressed<T>& mat,
     const Region& region,
-    BestSubmatrix& global_best
+    BestSubmatrix& global_best,
+    const std::function<bool()>& timeout_check
 ) {
-    constexpr int MIN_SPAN = MIN_AREA; // If MIN_SPAN == MIN_AREA, then we don't need to special case vectors
+    // Use sqrt(MIN_AREA) as minimum span - allows finding narrower but valid blocks
+    const int MIN_SPAN = std::max(1, (int)std::ceil(std::sqrt((double)MIN_AREA)));
 
     const bool row_major = (mat.direction == CompressionDirection::ROW);
 
@@ -158,6 +161,9 @@ void dense_pass_generic(
 
         #pragma omp for schedule(dynamic,1)
         for (int o0 = OUTER_BEGIN; o0 <= OUTER_END - MIN_SPAN; ++o0) {
+            if (timeout_check()) {
+                continue;
+            }
             std::fill(hist.begin(), hist.end(), 0);
 
             for (int o1 = o0; o1 < OUTER_END; ++o1) {
@@ -172,6 +178,10 @@ void dense_pass_generic(
                 int span = o1 - o0 + 1;
                 if (span < MIN_SPAN) continue;
 
+                // Minimum inner span needed to achieve MIN_AREA
+                int min_inner = (MIN_AREA + span - 1) / span;
+                if (min_inner > INNER_LEN) continue;
+
                 int nnz = 0;
                 int i0 = 0;
 
@@ -181,32 +191,36 @@ void dense_pass_generic(
                     while (i0 <= i1) {
                         int width = i1 - i0 + 1;
                         int area  = span * width;
+                        
+                        // Skip if area too small
+                        if (area < MIN_AREA) break;
+                        
                         double density = double(nnz) / area;
 
-                        double candidate_score = area * std::pow(density - MIN_DENSITY, GAMMA);
-                        if (candidate_score <= local_best.score)
-                            break;
-
+                        // Calculate actual score (only valid if density >= MIN_DENSITY)
                         if (density >= MIN_DENSITY) {
-                            if (row_major) {
-                                local_best = {
-                                    o0, o1 + 1,
-                                    INNER_BEGIN + i0,
-                                    INNER_BEGIN + i1 + 1,
-                                    area,
-                                    density
-                                };
-                                local_best.score = block_score(local_best);
-                            } else {
-                                local_best = {
-                                    INNER_BEGIN + i0,
-                                    INNER_BEGIN + i1 + 1,
-                                    o0, o1 + 1,
-                                    area,
-                                    density
-                                };
-                                local_best.score = block_score(local_best);
+                            double candidate_score = area * std::pow(density - MIN_DENSITY, GAMMA);
+                            if (candidate_score > local_best.score) {
+                                if (row_major) {
+                                    local_best = {
+                                        o0, o1 + 1,
+                                        INNER_BEGIN + i0,
+                                        INNER_BEGIN + i1 + 1,
+                                        area,
+                                        density
+                                    };
+                                } else {
+                                    local_best = {
+                                        INNER_BEGIN + i0,
+                                        INNER_BEGIN + i1 + 1,
+                                        o0, o1 + 1,
+                                        area,
+                                        density
+                                    };
+                                }
+                                local_best.score = candidate_score;
                             }
+                            // Found valid block at this i0, try next i1
                             break;
                         }
 
@@ -226,7 +240,8 @@ template<typename T>
 void general_rectangle_pass(
     const SpMatrixCompressed<T>& mat,
     const Region& region,
-    BestSubmatrix& global_best
+    BestSubmatrix& global_best,
+    const std::function<bool()>& timeout_check
 ) {
 
     const bool row_major = (mat.direction == CompressionDirection::ROW);
@@ -247,6 +262,9 @@ void general_rectangle_pass(
 
         #pragma omp for schedule(dynamic,1)
         for (int o0 = OUTER_BEGIN; o0 < OUTER_END; ++o0) {
+            if (timeout_check()) {
+                continue;
+            }
             std::fill(hist.begin(), hist.end(), 0);
 
             for (int o1 = o0; o1 < OUTER_END; ++o1) {
@@ -273,30 +291,34 @@ void general_rectangle_pass(
 
                         if (area < MIN_AREA)
                             break;
-                        if (area <= local_best.area)
-                            break;
 
                         double density = double(nnz) / area;
+                        
+                        // Use score comparison instead of area comparison
+                        // This allows finding smaller but denser (higher-scored) blocks
                         if (density >= MIN_DENSITY) {
-                            if (row_major) {
-                                local_best = {
-                                    o0, o1 + 1,
-                                    INNER_BEGIN + i0,
-                                    INNER_BEGIN + i1 + 1,
-                                    area,
-                                    density
-                                };
-                                local_best.score = block_score(local_best);
-                            } else {
-                                local_best = {
-                                    INNER_BEGIN + i0,
-                                    INNER_BEGIN + i1 + 1,
-                                    o0, o1 + 1,
-                                    area,
-                                    density
-                                };
+                            double candidate_score = area * std::pow(density - MIN_DENSITY, GAMMA);
+                            if (candidate_score > local_best.score) {
+                                if (row_major) {
+                                    local_best = {
+                                        o0, o1 + 1,
+                                        INNER_BEGIN + i0,
+                                        INNER_BEGIN + i1 + 1,
+                                        area,
+                                        density
+                                    };
+                                } else {
+                                    local_best = {
+                                        INNER_BEGIN + i0,
+                                        INNER_BEGIN + i1 + 1,
+                                        o0, o1 + 1,
+                                        area,
+                                        density
+                                    };
+                                }
+                                local_best.score = candidate_score;
                             }
-                            local_best.score = block_score(local_best);
+                            // Found valid block at this i0, try next i1
                             break;
                         }
 
@@ -317,17 +339,22 @@ void find_best_in_region(
     const SpMatrixCompressed<T>& csr,
     const SpMatrixCompressed<T>& csc,
     const Region& region,
-    BestSubmatrix& best
+    BestSubmatrix& best,
+    const std::function<bool()>& timeout_check
 ) {
     if (region.area() < MIN_AREA)
         return;
+    if (timeout_check())
+        return;
     best = BestSubmatrix{};
 
-    dense_pass_generic(csr, region, best);
-    dense_pass_generic(csc, region, best);
+    dense_pass_generic(csr, region, best, timeout_check);
+    if (timeout_check())
+        return;
+    dense_pass_generic(csc, region, best, timeout_check);
 
-    if (best.area == 0) {
-        general_rectangle_pass(csr, region, best);
+    if (best.area == 0 && !timeout_check()) {
+        general_rectangle_pass(csr, region, best, timeout_check);
     }
 
     // Sanity
@@ -344,13 +371,18 @@ void decompose_region(
     const Region& region,
     std::vector<BestSubmatrix>& result,
     std::vector<bool>& row_used,
-    std::vector<bool>& col_used
+    std::vector<bool>& col_used,
+    const std::function<bool()>& timeout_check
 ) {
     if (region.area() < MIN_AREA)
         return;
+    if (timeout_check())
+        return;
 
     BestSubmatrix best;
-    find_best_in_region(csr, csc, region, best);
+    find_best_in_region(csr, csc, region, best, timeout_check);
+    if (timeout_check())
+        return;
 
     if (best.area < MIN_AREA)
         return;
@@ -378,23 +410,23 @@ void decompose_region(
         col_used[c] = true;
 
     // ---- Recurse (safe even if regions overlap) ----
-    if (region.r0 < best.r0)
+    if (region.r0 < best.r0 && !timeout_check())
         decompose_region(csr, csc,
             {region.r0, best.r0, region.c0, region.c1},
-            result, row_used, col_used);
+            result, row_used, col_used, timeout_check);
 
-    if (best.r1 < region.r1)
+    if (best.r1 < region.r1 && !timeout_check())
         decompose_region(csr, csc,
             {best.r1, region.r1, region.c0, region.c1},
-            result, row_used, col_used);
+            result, row_used, col_used, timeout_check);
 
-    if (region.c0 < best.c0)
+    if (region.c0 < best.c0 && !timeout_check())
         decompose_region(csr, csc,
             {best.r0, best.r1, region.c0, best.c0},
-            result, row_used, col_used);
+            result, row_used, col_used, timeout_check);
 
-    if (best.c1 < region.c1)
+    if (best.c1 < region.c1 && !timeout_check())
         decompose_region(csr, csc,
             {best.r0, best.r1, best.c1, region.c1},
-            result, row_used, col_used);
+            result, row_used, col_used, timeout_check);
 }

@@ -6,6 +6,8 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
+#include <chrono>
+#include <functional>
 
 int main(int /* argc */, char* argv[]) {
     // Set OpenMP thread count: use 24 or max available cores, whichever is smaller
@@ -49,13 +51,32 @@ int main(int /* argc */, char* argv[]) {
         std::vector<bool> col_used(A.num_cols, false);
         Region full_region{0, A.num_rows, 0, A.num_cols};
 
+        // Set up 4-hour timeout
+        const auto timeout_duration = std::chrono::hours(4);
+        const auto start_time = std::chrono::steady_clock::now();
+        bool timeout_reached = false;
+        
+        auto timeout_check = [&]() -> bool {
+            auto elapsed = std::chrono::steady_clock::now() - start_time;
+            if (elapsed >= timeout_duration) {
+                if (!timeout_reached) {
+                    timeout_reached = true;
+                    std::cerr << "\nWarning: 4-hour timeout reached for matrix " 
+                              << matrix_name << ". Saving partial results...\n";
+                }
+                return true;
+            }
+            return false;
+        };
+
         decompose_region(
             A_CSR,
             A_CSC,
             full_region,
             blocks,
             row_used,
-            col_used
+            col_used,
+            timeout_check
         );
 
         // Create results directory if it doesn't exist
@@ -64,6 +85,11 @@ int main(int /* argc */, char* argv[]) {
         // Write results to file
         std::string results_file = "results/" + matrix_name + ".info";
         std::ofstream out_file(results_file);
+        
+        if (timeout_reached) {
+            out_file << "Processing stopped due to 4-hour timeout.\n";
+            out_file << "Partial results (found " << blocks.size() << " block(s) before timeout):\n\n";
+        }
         
         if (blocks.empty()) {
             out_file << "No dense submatrix found (area > 0.5 density, span >= 2500)\n";
