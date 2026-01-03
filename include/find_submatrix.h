@@ -165,18 +165,26 @@ void dense_pass_generic(
                 continue;
             }
             std::fill(hist.begin(), hist.end(), 0);
+            int total_nnz_in_slab = 0;  // Track total nnz for early termination
 
             for (int o1 = o0; o1 < OUTER_END; ++o1) {
-                // Add outer slice
+                // Add outer slice and count nnz
+                int row_nnz_count = 0;
                 for (int k = mat.indptr[o1]; k < mat.indptr[o1 + 1]; ++k) {
                     int idx = mat.indices[k];
                     if (idx >= INNER_BEGIN && idx < INNER_END) {
                         hist[idx - INNER_BEGIN]++;
+                        row_nnz_count++;
                     }
                 }
+                total_nnz_in_slab += row_nnz_count;
 
                 int span = o1 - o0 + 1;
                 if (span < MIN_SPAN) continue;
+
+                // Early termination if not enough nnz for valid block
+                // Need: nnz >= MIN_DENSITY * MIN_AREA for any valid block
+                if (total_nnz_in_slab < MIN_DENSITY * MIN_AREA) continue;
 
                 // Minimum inner span needed to achieve MIN_AREA
                 int min_inner = (MIN_AREA + span - 1) / span;
@@ -191,10 +199,10 @@ void dense_pass_generic(
                     while (i0 <= i1) {
                         int width = i1 - i0 + 1;
                         int area  = span * width;
-                        
+
                         // Skip if area too small
                         if (area < MIN_AREA) break;
-                        
+
                         double density = double(nnz) / area;
 
                         // Calculate actual score (only valid if density >= MIN_DENSITY)
@@ -235,105 +243,6 @@ void dense_pass_generic(
     }
 }
 
-// When both row and col <= MIN_SPAN, we can still find blocks whose area is >= MIN_AREA
-template<typename T>
-void general_rectangle_pass(
-    const SpMatrixCompressed<T>& mat,
-    const Region& region,
-    BestSubmatrix& global_best,
-    const std::function<bool()>& timeout_check
-) {
-
-    const bool row_major = (mat.direction == CompressionDirection::ROW);
-
-    const int OUTER_BEGIN = row_major ? region.r0 : region.c0;
-    const int OUTER_END   = row_major ? region.r1 : region.c1;
-
-    const int INNER_BEGIN = row_major ? region.c0 : region.r0;
-    const int INNER_END   = row_major ? region.c1 : region.r1;
-
-    const int INNER_LEN = INNER_END - INNER_BEGIN;
-
-    #pragma omp parallel
-    {
-        std::vector<int> hist(INNER_LEN, 0);
-        BestSubmatrix local_best;
-        local_best.score = -1.0;
-
-        #pragma omp for schedule(dynamic,1)
-        for (int o0 = OUTER_BEGIN; o0 < OUTER_END; ++o0) {
-            if (timeout_check()) {
-                continue;
-            }
-            std::fill(hist.begin(), hist.end(), 0);
-
-            for (int o1 = o0; o1 < OUTER_END; ++o1) {
-                for (int k = mat.indptr[o1]; k < mat.indptr[o1 + 1]; ++k) {
-                    int idx = mat.indices[k];
-                    if (idx >= INNER_BEGIN && idx < INNER_END) {
-                        hist[idx - INNER_BEGIN]++;
-                    }
-                }
-
-                int height = o1 - o0 + 1;
-                if (height * INNER_LEN < MIN_AREA)
-                    continue;
-
-                int nnz = 0;
-                int i0 = 0;
-
-                for (int i1 = 0; i1 < INNER_LEN; ++i1) {
-                    nnz += hist[i1];
-
-                    while (i0 <= i1) {
-                        int width = i1 - i0 + 1;
-                        int area  = height * width;
-
-                        if (area < MIN_AREA)
-                            break;
-
-                        double density = double(nnz) / area;
-                        
-                        // Use score comparison instead of area comparison
-                        // This allows finding smaller but denser (higher-scored) blocks
-                        if (density >= MIN_DENSITY) {
-                            double candidate_score = area * std::pow(density - MIN_DENSITY, GAMMA);
-                            if (candidate_score > local_best.score) {
-                                if (row_major) {
-                                    local_best = {
-                                        o0, o1 + 1,
-                                        INNER_BEGIN + i0,
-                                        INNER_BEGIN + i1 + 1,
-                                        area,
-                                        density
-                                    };
-                                } else {
-                                    local_best = {
-                                        INNER_BEGIN + i0,
-                                        INNER_BEGIN + i1 + 1,
-                                        o0, o1 + 1,
-                                        area,
-                                        density
-                                    };
-                                }
-                                local_best.score = candidate_score;
-                            }
-                            // Found valid block at this i0, try next i1
-                            break;
-                        }
-
-                        nnz -= hist[i0++];
-                    }
-                }
-            }
-        }
-
-        #pragma omp critical
-        merge_best(global_best, local_best);
-    }
-}
-
-
 template<typename T>
 void find_best_in_region(
     const SpMatrixCompressed<T>& csr,
@@ -352,10 +261,6 @@ void find_best_in_region(
     if (timeout_check())
         return;
     dense_pass_generic(csc, region, best, timeout_check);
-
-    if (best.area == 0 && !timeout_check()) {
-        general_rectangle_pass(csr, region, best, timeout_check);
-    }
 
     // Sanity
     if (best.area > 0) {
