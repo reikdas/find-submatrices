@@ -8,60 +8,60 @@ Block 1:
   Density: 0.589952
 
 Block 2:
-  Rows: [7740, 7790)
-  Cols: [8707, 8965)
-  Dimensions: 50 x 258
-  Area: 12900
-  Density: 0.531163
+  Rows: [3389, 3439)
+  Cols: [4094, 4344)
+  Dimensions: 50 x 250
+  Area: 12500
+  Density: 0.54168
 
 Block 3:
-  Rows: [3389, 3439)
-  Cols: [4094, 4350)
-  Dimensions: 50 x 256
-  Area: 12800
-  Density: 0.531719
+  Rows: [2480, 2530)
+  Cols: [3179, 3429)
+  Dimensions: 50 x 250
+  Area: 12500
+  Density: 0.54168
 
 Block 4:
-  Rows: [1873, 1923)
-  Cols: [2569, 2827)
-  Dimensions: 50 x 258
-  Area: 12900
-  Density: 0.531163
-
-Block 5:
   Rows: [1571, 1617)
   Cols: [2264, 2504)
   Dimensions: 46 x 240
   Area: 11040
   Density: 0.586322
 
+Block 5:
+  Rows: [1873, 1923)
+  Cols: [2569, 2827)
+  Dimensions: 50 x 258
+  Area: 12900
+  Density: 0.531163
+
 Block 6:
-  Rows: [2480, 2526)
-  Cols: [3179, 3419)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.586685
+  Rows: [2782, 2812)
+  Cols: [3484, 3742)
+  Dimensions: 30 x 258
+  Area: 7740
+  Density: 0.789922
 
 Block 7:
-  Rows: [2782, 2812)
-  Cols: [3484, 3778)
-  Dimensions: 30 x 294
-  Area: 8820
-  Density: 0.703401
+  Rows: [10467, 10517)
+  Cols: [11452, 11710)
+  Dimensions: 50 x 258
+  Area: 12900
+  Density: 0.531163
 
 Block 8:
-  Rows: [5509, 5539)
-  Cols: [6229, 6523)
-  Dimensions: 30 x 294
-  Area: 8820
-  Density: 0.703401
-
-Block 9:
-  Rows: [4298, 4348)
-  Cols: [5009, 5259)
+  Rows: [5207, 5257)
+  Cols: [5924, 6174)
   Dimensions: 50 x 250
   Area: 12500
   Density: 0.54168
+
+Block 9:
+  Rows: [4298, 4328)
+  Cols: [5009, 5303)
+  Dimensions: 30 x 294
+  Area: 8820
+  Density: 0.703401
 
 Block 10:
   Rows: [3691, 3721)
@@ -71,18 +71,18 @@ Block 10:
   Density: 0.703401
 
 Block 11:
-  Rows: [5207, 5257)
-  Cols: [5924, 6174)
-  Dimensions: 50 x 250
-  Area: 12500
-  Density: 0.54168
-
-Block 12:
   Rows: [4600, 4630)
   Cols: [5314, 5608)
   Dimensions: 30 x 294
   Area: 8820
   Density: 0.703401
+
+Block 12:
+  Rows: [8347, 8397)
+  Cols: [9317, 9567)
+  Dimensions: 50 x 250
+  Area: 12500
+  Density: 0.54168
 
 Block 13:
   Rows: [7438, 7488)
@@ -92,67 +92,67 @@ Block 13:
   Density: 0.54168
 
 Block 14:
+  Rows: [5509, 5539)
+  Cols: [6229, 6523)
+  Dimensions: 30 x 294
+  Area: 8820
+  Density: 0.703401
+
+Block 15:
+  Rows: [7740, 7770)
+  Cols: [8707, 9001)
+  Dimensions: 30 x 294
+  Area: 8820
+  Density: 0.703401
+
+Block 16:
+  Rows: [9256, 9306)
+  Cols: [10232, 10488)
+  Dimensions: 50 x 256
+  Area: 12800
+  Density: 0.531719
+
+Block 17:
+  Rows: [8649, 8679)
+  Cols: [9622, 9880)
+  Dimensions: 30 x 258
+  Area: 7740
+  Density: 0.789922
+
+Block 18:
   Rows: [10165, 10215)
   Cols: [11147, 11397)
   Dimensions: 50 x 250
   Area: 12500
   Density: 0.54168
 
-Block 15:
-  Rows: [8347, 8393)
-  Cols: [9317, 9557)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.586685
-
-Block 16:
-  Rows: [8649, 8699)
-  Cols: [9622, 9880)
-  Dimensions: 50 x 258
-  Area: 12900
-  Density: 0.531163
-
-Block 17:
-  Rows: [9256, 9302)
-  Cols: [10232, 10472)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.586685
-
-Block 18:
-  Rows: [9558, 9588)
-  Cols: [10537, 10777)
-  Dimensions: 30 x 240
-  Area: 7200
-  Density: 0.836667
-
 Block 19:
-  Rows: [11983, 12033)
-  Cols: [12977, 13227)
-  Dimensions: 50 x 250
-  Area: 12500
-  Density: 0.54168
+  Rows: [9558, 9588)
+  Cols: [10537, 10831)
+  Dimensions: 30 x 294
+  Area: 8820
+  Density: 0.703401
 
 Block 20:
-  Rows: [11074, 11124)
-  Cols: [12062, 12318)
-  Dimensions: 50 x 256
-  Area: 12800
-  Density: 0.531719
-
-Block 21:
-  Rows: [10467, 10497)
-  Cols: [11452, 11710)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.789922
-
-Block 22:
   Rows: [11376, 11406)
   Cols: [12367, 12661)
   Dimensions: 30 x 294
   Area: 8820
   Density: 0.703401
+
+Block 21:
+  Rows: [11074, 11120)
+  Cols: [12062, 12302)
+  Dimensions: 46 x 240
+  Area: 11040
+  Density: 0.586685
+
+Block 22:
+  Rows: [11983, 12029)
+  Cols: [12977, 13217)
+  Dimensions: 46 x 240
+  Area: 11040
+  Density: 0.586685
 
 Block 23:
   Rows: [12285, 12315)
@@ -162,25 +162,25 @@ Block 23:
   Density: 0.703401
 
 Block 24:
+  Rows: [14411, 14457)
+  Cols: [16941, 17196)
+  Dimensions: 46 x 255
+  Area: 11730
+  Density: 0.590281
+
+Block 25:
   Rows: [13643, 13689)
   Cols: [16173, 16428)
   Dimensions: 46 x 255
   Area: 11730
   Density: 0.590281
 
-Block 25:
+Block 26:
   Rows: [13131, 13177)
   Cols: [15663, 15901)
   Dimensions: 46 x 238
   Area: 10948
   Density: 0.608056
-
-Block 26:
-  Rows: [14411, 14457)
-  Cols: [16941, 17196)
-  Dimensions: 46 x 255
-  Area: 11730
-  Density: 0.590281
 
 Block 27:
   Rows: [13899, 13945)

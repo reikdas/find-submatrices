@@ -1,11 +1,11 @@
-Found 7 dense submatrix(es):
+Found 12 dense submatrix(es):
 
 Block 1:
-  Rows: [1458, 1919)
-  Cols: [1458, 1919)
-  Dimensions: 461 x 461
-  Area: 212521
-  Density: 0.537909
+  Rows: [1433, 1657)
+  Cols: [1433, 1657)
+  Dimensions: 224 x 224
+  Area: 50176
+  Density: 0.881378
 
 Block 2:
   Rows: [149, 436)
@@ -15,36 +15,71 @@ Block 2:
   Density: 0.673154
 
 Block 3:
-  Rows: [1969, 2369)
-  Cols: [1969, 2369)
-  Dimensions: 400 x 400
-  Area: 160000
-  Density: 0.570312
+  Rows: [538, 709)
+  Cols: [538, 709)
+  Dimensions: 171 x 171
+  Area: 29241
+  Density: 0.819432
 
 Block 4:
+  Rows: [436, 488)
+  Cols: [1101, 1153)
+  Dimensions: 52 x 52
+  Area: 2704
+  Density: 1
+
+Block 5:
+  Rows: [2044, 2194)
+  Cols: [2044, 2194)
+  Dimensions: 150 x 150
+  Area: 22500
+  Density: 1
+
+Block 6:
   Rows: [2575, 2860)
   Cols: [2575, 2860)
   Dimensions: 285 x 285
   Area: 81225
   Density: 0.681748
 
-Block 5:
-  Rows: [3143, 3514)
-  Cols: [3489, 3514)
-  Dimensions: 371 x 25
-  Area: 9275
-  Density: 0.606469
-
-Block 6:
+Block 7:
   Rows: [3009, 3109)
   Cols: [3009, 3109)
   Dimensions: 100 x 100
   Area: 10000
   Density: 1
 
-Block 7:
-  Rows: [2933, 3007)
-  Cols: [2394, 2519)
-  Dimensions: 74 x 125
-  Area: 9250
-  Density: 0.540541
+Block 8:
+  Rows: [2860, 2931)
+  Cols: [2860, 2931)
+  Dimensions: 71 x 71
+  Area: 5041
+  Density: 0.785757
+
+Block 9:
+  Rows: [2933, 3008)
+  Cols: [2933, 3008)
+  Dimensions: 75 x 75
+  Area: 5625
+  Density: 0.735467
+
+Block 10:
+  Rows: [3143, 3318)
+  Cols: [3489, 3514)
+  Dimensions: 175 x 25
+  Area: 4375
+  Density: 0.857143
+
+Block 11:
+  Rows: [3318, 3368)
+  Cols: [3318, 3368)
+  Dimensions: 50 x 50
+  Area: 2500
+  Density: 1
+
+Block 12:
+  Rows: [3371, 3396)
+  Cols: [3168, 3293)
+  Dimensions: 25 x 125
+  Area: 3125
+  Density: 1

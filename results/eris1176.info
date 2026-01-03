@@ -8,11 +8,11 @@ Block 1:
   Density: 0.67033
 
 Block 2:
-  Rows: [772, 855)
-  Cols: [774, 828)
-  Dimensions: 83 x 54
-  Area: 4482
-  Density: 0.510933
+  Rows: [782, 844)
+  Cols: [782, 855)
+  Dimensions: 62 x 73
+  Area: 4526
+  Density: 0.502872
 
 Block 3:
   Rows: [2, 53)

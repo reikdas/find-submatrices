@@ -1,197 +1,193 @@
-Found 28 dense submatrix(es):
+Processing stopped due to 4-hour timeout.
+Partial results (found 27 block(s) before timeout):
+
+Found 27 dense submatrix(es):
 
 Block 1:
-  Rows: [14667, 14713)
-  Cols: [17197, 17452)
-  Dimensions: 46 x 255
-  Area: 11730
-  Density: 0.624893
-
-Block 2:
-  Rows: [13899, 13945)
-  Cols: [16438, 16684)
-  Dimensions: 46 x 246
-  Area: 11316
-  Density: 0.62637
-
-Block 3:
-  Rows: [13131, 13177)
-  Cols: [15670, 15916)
-  Dimensions: 46 x 246
-  Area: 11316
-  Density: 0.62637
-
-Block 4:
-  Rows: [8347, 8377)
-  Cols: [9317, 9557)
-  Dimensions: 30 x 240
-  Area: 7200
-  Density: 0.891389
-
-Block 5:
   Rows: [7438, 7468)
-  Cols: [8402, 8642)
-  Dimensions: 30 x 240
-  Area: 7200
-  Density: 0.891389
-
-Block 6:
-  Rows: [3389, 3419)
-  Cols: [4095, 4334)
+  Cols: [8402, 8641)
   Dimensions: 30 x 239
   Area: 7170
-  Density: 0.890934
+  Density: 0.891213
 
-Block 7:
-  Rows: [2480, 2537)
-  Cols: [3179, 3429)
-  Dimensions: 57 x 250
-  Area: 14250
-  Density: 0.518456
+Block 2:
+  Rows: [2480, 2510)
+  Cols: [3179, 3418)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
 
-Block 8:
+Block 3:
   Rows: [1873, 1903)
   Cols: [2569, 2809)
   Dimensions: 30 x 240
   Area: 7200
   Density: 0.836667
 
-Block 9:
+Block 4:
   Rows: [1571, 1601)
-  Cols: [2264, 2558)
-  Dimensions: 30 x 294
-  Area: 8820
-  Density: 0.702608
+  Cols: [2264, 2503)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.835286
+
+Block 5:
+  Rows: [3389, 3419)
+  Cols: [4094, 4333)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
+
+Block 6:
+  Rows: [2782, 2812)
+  Cols: [3484, 3724)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.864028
+
+Block 7:
+  Rows: [3691, 3721)
+  Cols: [4399, 4639)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.891389
+
+Block 8:
+  Rows: [4600, 4630)
+  Cols: [5314, 5554)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.891389
+
+Block 9:
+  Rows: [4298, 4328)
+  Cols: [5009, 5248)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.860391
 
 Block 10:
-  Rows: [2782, 2812)
-  Cols: [3484, 3742)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.815375
+  Rows: [5207, 5237)
+  Cols: [5924, 6164)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.891389
 
 Block 11:
-  Rows: [3691, 3741)
-  Cols: [4399, 4639)
-  Dimensions: 50 x 240
-  Area: 12000
-  Density: 0.592583
+  Rows: [5509, 5539)
+  Cols: [6229, 6469)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.864167
 
 Block 12:
-  Rows: [4600, 4646)
-  Cols: [5314, 5554)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.622373
+  Rows: [8347, 8377)
+  Cols: [9317, 9556)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
 
 Block 13:
-  Rows: [4298, 4328)
-  Cols: [5009, 5267)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.811757
+  Rows: [7740, 7770)
+  Cols: [8707, 8947)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.864167
 
 Block 14:
-  Rows: [5207, 5253)
-  Cols: [5924, 6164)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.622373
+  Rows: [14411, 14441)
+  Cols: [16941, 17180)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
 
 Block 15:
-  Rows: [5509, 5539)
-  Cols: [6229, 6487)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.815504
+  Rows: [9256, 9286)
+  Cols: [10232, 10471)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
 
 Block 16:
-  Rows: [7740, 7770)
-  Cols: [8707, 8965)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.815504
+  Rows: [8649, 8679)
+  Cols: [9622, 9862)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.891389
 
 Block 17:
-  Rows: [12875, 12921)
-  Cols: [15411, 15660)
-  Dimensions: 46 x 249
-  Area: 11454
-  Density: 0.623974
+  Rows: [10165, 10195)
+  Cols: [11147, 11386)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
 
 Block 18:
-  Rows: [11074, 11104)
-  Cols: [12062, 12302)
+  Rows: [9558, 9588)
+  Cols: [10537, 10777)
   Dimensions: 30 x 240
   Area: 7200
-  Density: 0.891389
+  Density: 0.864167
 
 Block 19:
-  Rows: [10165, 10195)
-  Cols: [11147, 11387)
+  Rows: [11074, 11104)
+  Cols: [12062, 12301)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
+
+Block 20:
+  Rows: [10467, 10497)
+  Cols: [11452, 11692)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.864167
+
+Block 21:
+  Rows: [12875, 12905)
+  Cols: [15405, 15644)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
+
+Block 22:
+  Rows: [12285, 12315)
+  Cols: [13282, 13522)
   Dimensions: 30 x 240
   Area: 7200
   Density: 0.891389
 
-Block 20:
-  Rows: [9256, 9286)
-  Cols: [10241, 10472)
-  Dimensions: 30 x 231
-  Area: 6930
-  Density: 0.895094
-
-Block 21:
-  Rows: [8649, 8695)
-  Cols: [9622, 9862)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.622373
-
-Block 22:
-  Rows: [9558, 9588)
-  Cols: [10537, 10795)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.815504
-
 Block 23:
-  Rows: [10467, 10497)
-  Cols: [11452, 11710)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.815504
+  Rows: [11983, 12013)
+  Cols: [12977, 13216)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.863877
 
 Block 24:
-  Rows: [12285, 12331)
-  Cols: [13282, 13522)
-  Dimensions: 46 x 240
-  Area: 11040
-  Density: 0.622373
+  Rows: [11376, 11406)
+  Cols: [12367, 12607)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.864167
 
 Block 25:
-  Rows: [11376, 11406)
-  Cols: [12367, 12625)
-  Dimensions: 30 x 258
-  Area: 7740
-  Density: 0.815504
+  Rows: [13643, 13673)
+  Cols: [16173, 16412)
+  Dimensions: 30 x 239
+  Area: 7170
+  Density: 0.891213
 
 Block 26:
-  Rows: [11983, 12033)
-  Cols: [12983, 13217)
-  Dimensions: 50 x 234
-  Area: 11700
-  Density: 0.576752
+  Rows: [13131, 13161)
+  Cols: [15661, 15901)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.891389
 
 Block 27:
-  Rows: [13643, 13689)
-  Cols: [16179, 16428)
-  Dimensions: 46 x 249
-  Area: 11454
-  Density: 0.623974
-
-Block 28:
-  Rows: [14411, 14457)
-  Cols: [16947, 17196)
-  Dimensions: 46 x 249
-  Area: 11454
-  Density: 0.623974
+  Rows: [13899, 13929)
+  Cols: [16429, 16669)
+  Dimensions: 30 x 240
+  Area: 7200
+  Density: 0.891389
