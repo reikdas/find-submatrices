@@ -82,32 +82,24 @@ int main(int /* argc */, char* argv[]) {
         // Create results directory if it doesn't exist
         std::filesystem::create_directories("results");
         
-        // Write results to file
-        std::string results_file = "results/" + matrix_name + ".info";
+        // Write results to YAML file
+        std::string results_file = "results/" + matrix_name + ".yaml";
         std::ofstream out_file(results_file);
         
-        if (timeout_reached) {
-            out_file << "Processing stopped due to 4-hour timeout.\n";
-            out_file << "Partial results (found " << blocks.size() << " block(s) before timeout):\n\n";
-        }
+        out_file << "timeout: " << (timeout_reached ? "true" : "false") << "\n";
         
         if (blocks.empty()) {
-            out_file << "No dense submatrix found (area > 0.5 density, span >= 2500)\n";
+            out_file << "blocks: []\n";
+            out_file << "message: \"No dense submatrix found (area > 0.5 density, span >= 2500)\"\n";
         } else {
-            out_file << "Found " << blocks.size() << " dense submatrix(es):\n\n";
+            out_file << "blocks:\n";
             for (size_t i = 0; i < blocks.size(); ++i) {
                 const auto& block = blocks[i];
-                out_file << "Block " << (i + 1) << ":\n";
-                out_file << "  Rows: [" << block.r0 << ", " << block.r1 << ")\n";
-                out_file << "  Cols: [" << block.c0 << ", " << block.c1 << ")\n";
-                out_file << "  Dimensions: "
-                          << (block.r1 - block.r0) << " x "
-                          << (block.c1 - block.c0) << "\n";
-                out_file << "  Area: " << block.area << "\n";
-                out_file << "  Density: " << block.density << "\n";
-                if (i < blocks.size() - 1) {
-                    out_file << "\n";
-                }
+                out_file << "  - rows: [" << block.r0 << ", " << block.r1 << ")\n";
+                out_file << "    cols: [" << block.c0 << ", " << block.c1 << ")\n";
+                out_file << "    dimensions: [" << (block.r1 - block.r0) << ", " << (block.c1 - block.c0) << "]\n";
+                out_file << "    area: " << block.area << "\n";
+                out_file << "    density: " << block.density << "\n";
             }
         }
         

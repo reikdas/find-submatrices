@@ -1,8 +1,0 @@
-Found 1 dense submatrix(es):
-
-Block 1:
-  Rows: [3557, 16011)
-  Cols: [8892, 8893)
-  Dimensions: 12454 x 1
-  Area: 12454
-  Density: 0.99992

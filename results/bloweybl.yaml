@@ -1,0 +1,12 @@
+timeout: false
+blocks:
+  - rows: [10001, 20002)
+    cols: [20002, 20003)
+    dimensions: [10001, 1]
+    area: 10001
+    density: 1.0
+  - rows: [20002, 20003)
+    cols: [10001, 20002)
+    dimensions: [1, 10001]
+    area: 10001
+    density: 1.0
