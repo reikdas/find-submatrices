@@ -1,3 +1,2 @@
 ssgetpy
 scipy
-numba

@@ -206,5 +206,5 @@ def find_blocks():
         print(f"Completed {matrix_name}")
 
 if __name__ == "__main__":
-    pre_filter()
+    # pre_filter()
     find_blocks()
