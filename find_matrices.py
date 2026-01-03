@@ -76,16 +76,37 @@ def analyze_matrix(csr: csr_matrix, csc: csc_matrix) -> (bool, str):
 
     return check_condition2_test(csr), "Condition 2"
 
-def process_single_matrix(matrix_info) -> (bool, str):
-    # Get the local path (returns tuple, extract the directory)
+def get_matrix_info(matrix_name):
+    """Search for a matrix by name and return its info object, or None if not found uniquely."""
+    found = search(name_or_id=matrix_name)
+    filtered_found = [m for m in found if m.name == matrix_name]
+    if len(filtered_found) != 1:
+        print(f"Skipping {matrix_name}: found {len(filtered_found)} matches")
+        return None
+    return filtered_found[0]
+
+
+def get_matrix_paths(matrix_info):
+    """Extract paths for a matrix: tar_path, tar_dir, matrix_subdir, and matrix_path."""
     localpath_info = matrix_info.localpath()
     tar_path = localpath_info[0] if isinstance(localpath_info, tuple) else localpath_info
     tar_dir = os.path.dirname(tar_path)
-
-    # The matrix is extracted to a subdirectory named after the matrix
     matrix_subdir = os.path.join(tar_dir, matrix_info.name)
-    # Only look for the .mtx file that matches the parent directory name
     matrix_path = os.path.join(matrix_subdir, f"{matrix_info.name}.mtx")
+    return tar_path, tar_dir, matrix_subdir, matrix_path
+
+
+def cleanup_matrix_files(tar_path, matrix_subdir):
+    """Delete the tar file and extracted directory for a matrix."""
+    if os.path.exists(tar_path):
+        os.remove(tar_path)
+    if os.path.exists(matrix_subdir):
+        shutil.rmtree(matrix_subdir)
+
+
+def process_single_matrix(matrix_info) -> (bool, str):
+    """Process a single matrix and return analysis results."""
+    _, _, _, matrix_path = get_matrix_paths(matrix_info)
     print(matrix_path)
 
     # Check if the matrix file exists
@@ -100,93 +121,90 @@ def process_single_matrix(matrix_info) -> (bool, str):
     csc = csc_matrix(matrix)
 
     # Analyze the matrix
-    return analyze_matrix(csr, csc)  # Pass pbar to show analysis progress
+    return analyze_matrix(csr, csc)
 
-if __name__ == "__main__":
-    eval = [
-    "eris1176",
-    "std1_Jac3",
-    "lp_wood1p",
-    "jendrec1",
-    "lowThrust_5",
-    "hangGlider_4",
-    "brainpc2",
-    "hangGlider_3",
-    "lowThrust_7",
-    "lowThrust_11",
-    "lowThrust_3",
-    "lowThrust_6",
-    "lowThrust_12",
-    "hangGlider_5",
-    "bloweybl",
-    "heart1",
-    "TSOPF_FS_b9_c6",
-    "Sieber",
-    "case9",
-    "c-30",
-    "c-32",
-    "freeFlyingRobot_10",
-    "freeFlyingRobot_11",
-    "freeFlyingRobot_12",
-    "lowThrust_10",
-    "lowThrust_13",
-    "lowThrust_4",
-    "lowThrust_8",
-    "lowThrust_9",
-    "lp_fit2p",
-    "nd12k",
-    "std1_Jac2",
-    "vsp_c-30_data_data"
-    ]
+def pre_filter():
+    """Pre-filter matrices by searching SuiteSparse and analyzing them."""
     # Search for real and binary matrices separately, then combine
     real_matrices = ssgetpy.search(nzbounds=(80_000, 20_000_000), dtype='real', limit=100000)
     binary_matrices = ssgetpy.search(nzbounds=(80_000, 20_000_000), dtype='binary', limit=100000)
-    # 
-    # # Combine results, using id as key to avoid duplicates
+    # Combine results, using id as key to avoid duplicates
     matrices_dict = {m.id: m for m in real_matrices}
     matrices_dict.update({m.id: m for m in binary_matrices})
     matrices = list(matrices_dict.values())
-    
-    # Process matrices in parallel
-    # matrix_names = eval  # Trial run: only process matrices in eval list
-    matrix_names = [m.name for m in matrices]  # Full run: process all matrices
-    
+
+    matrix_names = [m.name for m in matrices]
+
     def process_matrix_worker(matrix_name):
-        """Worker function to process a single matrix."""
-        try:
-            print(f"Processing {matrix_name}")
-            found = search(name_or_id=matrix_name)
-            filtered_found = [m for m in found if m.name == matrix_name]
-            if len(filtered_found) != 1:
-                print(f"Skipping {matrix_name}: found {len(filtered_found)} matches")
-                return
-            
-            matrix_info = filtered_found[0]
-            # Download the matrix before processing (fetch expects name/ID, not object)
-            fetch(matrix_name)
-            result, condition = process_single_matrix(matrix_info)
+        matrix_info = get_matrix_info(matrix_name)
+        if matrix_info is None:
+            return None
+        
+        # Download the matrix before processing (fetch expects name/ID, not object)
+        fetch(matrix_name)
+        result, condition = process_single_matrix(matrix_info)
 
-            localpath_info = matrix_info.localpath()
-            tar_path = localpath_info[0] if isinstance(localpath_info, tuple) else localpath_info
-            tar_dir = os.path.dirname(tar_path)
-            matrix_subdir = os.path.join(tar_dir, matrix_info.name)
+        tar_path, _, matrix_subdir, _ = get_matrix_paths(matrix_info)
+        cleanup_matrix_files(tar_path, matrix_subdir)
 
-            if result:
-                matrix_path = os.path.join(matrix_subdir, f"{matrix_info.name}.mtx")
-                subprocess.run(["./build/partition_matrix", matrix_path], check=True)
-            
-            # Delete tar file
-            if os.path.exists(tar_path):
-                os.remove(tar_path)
-            
-            # Delete extracted directory
-            if os.path.exists(matrix_subdir):
-                shutil.rmtree(matrix_subdir)
-            
-            print(f"Completed {matrix_name}")
-        except Exception as e:
-            print(f"Error processing {matrix_name}: {e}")
-    
-    # Use all 24 cores for parallel processing
+        return result
+
     with Pool(processes=24) as pool:
         pool.map(process_matrix_worker, matrix_names)
+
+def find_blocks():
+    """Find blocks in a predefined set of evaluation matrices."""
+    eval_matrices = [
+        "eris1176",
+        "std1_Jac3",
+        "lp_wood1p",
+        "jendrec1",
+        "lowThrust_5",
+        "hangGlider_4",
+        "brainpc2",
+        "hangGlider_3",
+        "lowThrust_7",
+        "lowThrust_11",
+        "lowThrust_3",
+        "lowThrust_6",
+        "lowThrust_12",
+        "hangGlider_5",
+        "bloweybl",
+        "heart1",
+        "TSOPF_FS_b9_c6",
+        "Sieber",
+        "case9",
+        "c-30",
+        "c-32",
+        "freeFlyingRobot_10",
+        "freeFlyingRobot_11",
+        "freeFlyingRobot_12",
+        "lowThrust_10",
+        "lowThrust_13",
+        "lowThrust_4",
+        "lowThrust_8",
+        "lowThrust_9",
+        "lp_fit2p",
+        "nd12k",
+        "std1_Jac2",
+        "vsp_c-30_data_data"
+    ]
+    
+    for matrix_name in eval_matrices:
+        print(f"Processing {matrix_name}")
+        matrix_info = get_matrix_info(matrix_name)
+        if matrix_info is None:
+            continue
+        
+        # Download the matrix before processing (fetch expects name/ID, not object)
+        fetch(matrix_name)
+
+        tar_path, _, matrix_subdir, matrix_path = get_matrix_paths(matrix_info)
+        subprocess.run(["./build/partition_matrix", matrix_path], check=True)
+        
+        cleanup_matrix_files(tar_path, matrix_subdir)
+        print(f"Completed {matrix_name}")
+
+if __name__ == "__main__":
+    pre_filter()
+    find_blocks()
