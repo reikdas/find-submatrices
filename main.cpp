@@ -95,8 +95,8 @@ int main(int /* argc */, char* argv[]) {
             out_file << "blocks:\n";
             for (size_t i = 0; i < blocks.size(); ++i) {
                 const auto& block = blocks[i];
-                out_file << "  - rows: [" << block.r0 << ", " << block.r1 << ")\n";
-                out_file << "    cols: [" << block.c0 << ", " << block.c1 << ")\n";
+            out_file << "  - rows: [" << block.r0 << ", " << block.r1 << "]\n";
+            out_file << "    cols: [" << block.c0 << ", " << block.c1 << "]\n";
                 out_file << "    dimensions: [" << (block.r1 - block.r0) << ", " << (block.c1 - block.c0) << "]\n";
                 out_file << "    area: " << block.area << "\n";
                 out_file << "    density: " << block.density << "\n";

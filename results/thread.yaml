@@ -1,97 +1,97 @@
 timeout: false
 blocks:
-  - rows: [17343, 17403)
-    cols: [17343, 17403)
+  - rows: [17343, 17403]
+    cols: [17343, 17403]
     dimensions: [60, 60]
     area: 3600
     density: 0.685
-  - rows: [27885, 27945)
-    cols: [27885, 27945)
+  - rows: [27885, 27945]
+    cols: [27885, 27945]
     dimensions: [60, 60]
     area: 3600
     density: 0.685
-  - rows: [18426, 18486)
-    cols: [18426, 18486)
+  - rows: [18426, 18486]
+    cols: [18426, 18486]
     dimensions: [60, 60]
     area: 3600
     density: 0.685
-  - rows: [26502, 26559)
-    cols: [26490, 26565)
+  - rows: [26502, 26559]
+    cols: [26490, 26565]
     dimensions: [57, 75]
     area: 4275
     density: 0.618947
-  - rows: [21174, 21231)
-    cols: [21162, 21237)
+  - rows: [21174, 21231]
+    cols: [21162, 21237]
     dimensions: [57, 75]
     area: 4275
     density: 0.618947
-  - rows: [23838, 23895)
-    cols: [23826, 23901)
+  - rows: [23838, 23895]
+    cols: [23826, 23901]
     dimensions: [57, 75]
     area: 4275
     density: 0.618947
-  - rows: [21321, 21381)
-    cols: [21312, 21384)
+  - rows: [21321, 21381]
+    cols: [21312, 21384]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [21417, 21477)
-    cols: [21408, 21480)
+  - rows: [21417, 21477]
+    cols: [21408, 21480]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [21609, 21669)
-    cols: [21600, 21672)
+  - rows: [21609, 21669]
+    cols: [21600, 21672]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [21513, 21573)
-    cols: [21504, 21576)
+  - rows: [21513, 21573]
+    cols: [21504, 21576]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [24225, 24285)
-    cols: [24216, 24288)
+  - rows: [24225, 24285]
+    cols: [24216, 24288]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [24081, 24141)
-    cols: [24072, 24144)
+  - rows: [24081, 24141]
+    cols: [24072, 24144]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [23937, 23997)
-    cols: [23928, 24000)
+  - rows: [23937, 23997]
+    cols: [23928, 24000]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [24321, 24381)
-    cols: [24312, 24384)
+  - rows: [24321, 24381]
+    cols: [24312, 24384]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [26889, 26949)
-    cols: [26880, 26952)
+  - rows: [26889, 26949]
+    cols: [26880, 26952]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [26745, 26805)
-    cols: [26736, 26808)
+  - rows: [26745, 26805]
+    cols: [26736, 26808]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [26649, 26709)
-    cols: [26640, 26712)
+  - rows: [26649, 26709]
+    cols: [26640, 26712]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [26985, 27045)
-    cols: [26976, 27048)
+  - rows: [26985, 27045]
+    cols: [26976, 27048]
     dimensions: [60, 72]
     area: 4320
     density: 0.591667
-  - rows: [28968, 29028)
-    cols: [28968, 29028)
+  - rows: [28968, 29028]
+    cols: [28968, 29028]
     dimensions: [60, 60]
     area: 3600
     density: 0.685

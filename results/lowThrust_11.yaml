@@ -1,12 +1,12 @@
 timeout: false
 blocks:
-  - rows: [10203, 17343)
-    cols: [10199, 10201)
+  - rows: [10203, 17343]
+    cols: [10199, 10201]
     dimensions: [7140, 2]
     area: 14280
     density: 1.0
-  - rows: [10199, 10201)
-    cols: [10203, 17343)
+  - rows: [10199, 10201]
+    cols: [10203, 17343]
     dimensions: [2, 7140]
     area: 14280
     density: 1.0

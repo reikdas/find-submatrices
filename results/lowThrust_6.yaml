@@ -1,12 +1,12 @@
 timeout: false
 blocks:
-  - rows: [9403, 15983)
-    cols: [9399, 9401)
+  - rows: [9403, 15983]
+    cols: [9399, 9401]
     dimensions: [6580, 2]
     area: 13160
     density: 1.0
-  - rows: [9399, 9401)
-    cols: [9403, 15983)
+  - rows: [9399, 9401]
+    cols: [9403, 15983]
     dimensions: [2, 6580]
     area: 13160
     density: 1.0

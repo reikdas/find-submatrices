@@ -1,12 +1,12 @@
 timeout: false
 blocks:
-  - rows: [7518, 8030)
-    cols: [746, 754)
+  - rows: [7518, 8030]
+    cols: [746, 754]
     dimensions: [512, 8]
     area: 4096
     density: 1
-  - rows: [746, 754)
-    cols: [7518, 8030)
+  - rows: [746, 754]
+    cols: [7518, 8030]
     dimensions: [8, 512]
     area: 4096
     density: 1
