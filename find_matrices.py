@@ -104,6 +104,33 @@ def cleanup_matrix_files(tar_path, matrix_subdir):
         shutil.rmtree(matrix_subdir)
 
 
+def download_matrix(matrix_name: str) -> tuple[str, object]:
+    """
+    Download a matrix from SuiteSparse and return the path to the .mtx file and matrix_info.
+    
+    Args:
+        matrix_name: Name of the matrix to download
+    
+    Returns:
+        Tuple of (matrix_path, matrix_info) where matrix_path is the path to the .mtx file
+        and matrix_info is the matrix info object. Returns (None, None) if download fails.
+    """
+    matrix_info = get_matrix_info(matrix_name)
+    if matrix_info is None:
+        return None, None
+    
+    # Download the matrix
+    fetch(matrix_name)
+    
+    _, _, _, matrix_path = get_matrix_paths(matrix_info)
+    
+    if not os.path.exists(matrix_path):
+        print(f"Error: Matrix file not found at {matrix_path}")
+        return None, None
+    
+    return matrix_path, matrix_info
+
+
 def process_single_matrix(matrix_info) -> (bool, str):
     """Process a single matrix and return analysis results."""
     _, _, _, matrix_path = get_matrix_paths(matrix_info)
@@ -136,12 +163,11 @@ def pre_filter():
     matrix_names = [m.name for m in matrices]
 
     def process_matrix_worker(matrix_name):
-        matrix_info = get_matrix_info(matrix_name)
+        # Download the matrix
+        matrix_path, matrix_info = download_matrix(matrix_name)
         if matrix_info is None:
             return None
         
-        # Download the matrix before processing (fetch expects name/ID, not object)
-        fetch(matrix_name)
         result, condition = process_single_matrix(matrix_info)
 
         tar_path, _, matrix_subdir, _ = get_matrix_paths(matrix_info)
@@ -192,14 +218,13 @@ def find_blocks():
     
     for matrix_name in eval_matrices:
         print(f"Processing {matrix_name}")
-        matrix_info = get_matrix_info(matrix_name)
+        
+        # Download the matrix
+        matrix_path, matrix_info = download_matrix(matrix_name)
         if matrix_info is None:
             continue
-        
-        # Download the matrix before processing (fetch expects name/ID, not object)
-        fetch(matrix_name)
 
-        tar_path, _, matrix_subdir, matrix_path = get_matrix_paths(matrix_info)
+        tar_path, _, matrix_subdir, _ = get_matrix_paths(matrix_info)
         subprocess.run(["./build/partition_matrix", matrix_path], check=True)
         
         cleanup_matrix_files(tar_path, matrix_subdir)
