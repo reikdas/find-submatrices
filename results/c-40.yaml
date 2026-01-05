@@ -1,0 +1,12 @@
+timeout: false
+blocks:
+  - rows: [8519, 9941)
+    cols: [16, 18)
+    dimensions: [1422, 2]
+    area: 2844
+    density: 0.948664
+  - rows: [16, 18)
+    cols: [8519, 9941)
+    dimensions: [2, 1422]
+    area: 2844
+    density: 0.948664
