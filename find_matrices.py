@@ -5,7 +5,16 @@ Script to download matrices from SuiteSparse and analyze their density patterns.
 import os
 import shutil
 import subprocess
+import zlib
+import multiprocessing
 from multiprocessing import Pool
+
+# Use 'spawn' instead of 'fork' to avoid SQLite threading issues
+# (ssgetpy uses SQLite, which cannot share connections across forked processes)
+try:
+    multiprocessing.set_start_method('spawn')
+except RuntimeError:
+    pass  # Already set
 
 import ssgetpy
 from scipy.io import mmread
@@ -13,68 +22,96 @@ from scipy.sparse import csc_matrix, csr_matrix
 from ssgetpy import fetch, search
 
 
-def check_condition1_test(csr_indptr, csr_indices, cols, window_size=2500) -> bool:
-    rows = len(csr_indptr) - 1
 
-    for i in range(rows):
-        start = csr_indptr[i]
-        end = csr_indptr[i + 1]
-        row_indices = csr_indices[start:end] 
 
-        # Two-pointer sliding window over nonzeros
-        left = 0
-        for right in range(len(row_indices)):
-            # Shrink window if width exceeds window_size
-            while row_indices[right] - row_indices[left] + 1 > window_size:
-                left += 1
-
-            nnz_in_window = right - left + 1
-            density = nnz_in_window / window_size
-
-            if density >= 0.5:
-                return True
-
-        # Handle case where window extends beyond last column
-        if len(row_indices) > 0:
-            nnz = len(row_indices)
-            effective_window = min(window_size, cols - row_indices[0])
-            if nnz / effective_window >= 0.5:
-                return True
-
-    return False
-
-def check_condition2_test(csr) -> bool:
+def check_2d_block_potential(csr, csc, min_dim=50, min_density=0.5, row_span_multiplier=2) -> bool:
+    """
+    Stricter pre-filter that checks for 2D block potential.
+    
+    For a valid block of min_dim x min_dim with density min_density:
+    - Need min_dim rows, each with some minimum nnz
+    - Need min_dim cols, each with some minimum nnz
+    - These rows/cols must be clustered (not scattered across the matrix)
+    - The cluster must have enough total nnz to form a valid block
+    
+    Uses relaxed thresholds to avoid false negatives while catching false positives.
+    """
     rows, cols = csr.shape
-    indptr = csr.indptr
-
-    row_nnz = indptr[1:] - indptr[:-1]
-
-    # Necessary condition: some row band must have enough nnz
-    # Conservative: check any window of up to 100 rows
-    MAX_ROWS = 100
-    MIN_NNZ = 3500
-
-    prefix = row_nnz.cumsum()
-
+    csr_indptr = csr.indptr
+    csc_indptr = csc.indptr
+    
+    # Minimum nnz required for a valid block
+    min_cluster_nnz = int(min_dim * min_dim * min_density)  # 1250 for 50x50 @ 0.5
+    
+    # Per-row/col threshold: 0.6x the average needed
+    # For 50x50 block with 50% density, each row needs ~25 nnz on avg
+    # We use 15 as threshold (still safe since 25 > 15)
+    min_nnz_threshold = int(min_dim * min_density * 0.6)
+    
+    # Find rows with enough nonzeros, storing (row_idx, nnz)
+    qualifying_rows = []
     for i in range(rows):
-        j = min(rows, i + MAX_ROWS)
-        nnz_band = prefix[j - 1] - (prefix[i - 1] if i > 0 else 0)
-        if nnz_band >= MIN_NNZ:
-            return True
+        row_nnz = csr_indptr[i + 1] - csr_indptr[i]
+        if row_nnz >= min_nnz_threshold:
+            qualifying_rows.append((i, row_nnz))
+    
+    if len(qualifying_rows) < min_dim:
+        return False
+    
+    # Find columns with enough nonzeros, storing (col_idx, nnz)
+    qualifying_cols = []
+    for j in range(cols):
+        col_nnz = csc_indptr[j + 1] - csc_indptr[j]
+        if col_nnz >= min_nnz_threshold:
+            qualifying_cols.append((j, col_nnz))
+    
+    if len(qualifying_cols) < min_dim:
+        return False
+    
+    # Check if there's a cluster of min_dim qualifying rows within a reasonable span
+    # AND the cluster has enough total nnz
+    max_span = min_dim * row_span_multiplier
+    
+    # Use sliding window sum for efficiency
+    found_row_cluster = False
+    if len(qualifying_rows) >= min_dim:
+        window_nnz = sum(r[1] for r in qualifying_rows[:min_dim])
+        for i in range(len(qualifying_rows) - min_dim + 1):
+            if i > 0:
+                window_nnz = window_nnz - qualifying_rows[i - 1][1] + qualifying_rows[i + min_dim - 1][1]
+            # Check both span AND total nnz
+            if qualifying_rows[i + min_dim - 1][0] - qualifying_rows[i][0] < max_span:
+                if window_nnz >= min_cluster_nnz:
+                    found_row_cluster = True
+                    break
+    
+    if not found_row_cluster:
+        return False
+    
+    # Check if there's a cluster of min_dim qualifying columns with enough total nnz
+    found_col_cluster = False
+    if len(qualifying_cols) >= min_dim:
+        window_nnz = sum(c[1] for c in qualifying_cols[:min_dim])
+        for j in range(len(qualifying_cols) - min_dim + 1):
+            if j > 0:
+                window_nnz = window_nnz - qualifying_cols[j - 1][1] + qualifying_cols[j + min_dim - 1][1]
+            # Check both span AND total nnz
+            if qualifying_cols[j + min_dim - 1][0] - qualifying_cols[j][0] < max_span:
+                if window_nnz >= min_cluster_nnz:
+                    found_col_cluster = True
+                    break
+    
+    return found_col_cluster
 
-    return False
+
 
 
 def analyze_matrix(csr: csr_matrix, csc: csc_matrix) -> (bool, str):
-    res1 =  check_condition1_test(csr.indptr, csr.indices, csc.indptr[-1])
-    if res1:
-        return True, "Condition 1: Row"
-
-    res2 = check_condition1_test(csc.indptr, csc.indices, csr.indptr[-1])
-    if res2:
-        return True, "Condition 1: Column"
-
-    return check_condition2_test(csr), "Condition 2"
+    # Check for 2D block potential - requires dense structure in BOTH dimensions
+    # This is sufficient to avoid false negatives while filtering out matrices
+    # that cannot possibly contain a valid block
+    result = check_2d_block_potential(csr, csc, min_dim=50, min_density=0.5)
+    return result, "2D block potential check"
 
 def get_matrix_info(matrix_name):
     """Search for a matrix by name and return its info object, or None if not found uniquely."""
@@ -150,6 +187,33 @@ def process_single_matrix(matrix_info) -> (bool, str):
     # Analyze the matrix
     return analyze_matrix(csr, csc)
 
+def process_matrix_worker(matrix_name):
+    """Worker function for processing a single matrix in parallel."""
+    try:
+        matrix_info = get_matrix_info(matrix_name)
+        if matrix_info is None:
+            return (matrix_name, None)
+        
+        # Download the matrix before processing (fetch expects name/ID, not object)
+        fetch(matrix_name)
+        result, condition = process_single_matrix(matrix_info)
+
+        tar_path, _, matrix_subdir, _ = get_matrix_paths(matrix_info)
+        cleanup_matrix_files(tar_path, matrix_subdir)
+
+        return (matrix_name, result)
+    except (zlib.error, Exception) as e:
+        # Handle decompression errors and other exceptions
+        print(f"Error processing {matrix_name}: {e}")
+        # Clean up any partial files if matrix_info was created
+        try:
+            if 'matrix_info' in locals() and matrix_info is not None:
+                tar_path, _, matrix_subdir, _ = get_matrix_paths(matrix_info)
+                cleanup_matrix_files(tar_path, matrix_subdir)
+        except:
+            pass
+        return (matrix_name, False)
+
 def pre_filter():
     """Pre-filter matrices by searching SuiteSparse and analyzing them."""
     # Search for real and binary matrices separately, then combine
@@ -160,23 +224,25 @@ def pre_filter():
     matrices_dict.update({m.id: m for m in binary_matrices})
     matrices = list(matrices_dict.values())
 
-    matrix_names = [m.name for m in matrices]
+    ignore_matrices = [
+    ]
 
-    def process_matrix_worker(matrix_name):
-        # Download the matrix
-        matrix_path, matrix_info = download_matrix(matrix_name)
-        if matrix_info is None:
-            return None
-        
-        result, condition = process_single_matrix(matrix_info)
+    # Also ignore all later_eval matrices
+    ignore_matrices = ignore_matrices
 
-        tar_path, _, matrix_subdir, _ = get_matrix_paths(matrix_info)
-        cleanup_matrix_files(tar_path, matrix_subdir)
-
-        return result
-
+    matrix_names = [m.name for m in matrices if m.name not in ignore_matrices]
+    
     with Pool(processes=24) as pool:
-        pool.map(process_matrix_worker, matrix_names)
+        with open('matrices.txt', 'w') as f:
+            # Use imap_unordered to process results as they complete
+            for matrix_name, result in pool.imap_unordered(process_matrix_worker, matrix_names):
+                if result is not None:
+                    f.write(f"{matrix_name}: {result}\n")
+                    f.flush()
+                else:
+                    # Handle case where matrix_info was None
+                    f.write(f"{matrix_name}: False\n")
+                    f.flush()
 
 def find_blocks():
     """Find blocks in a predefined set of evaluation matrices."""
