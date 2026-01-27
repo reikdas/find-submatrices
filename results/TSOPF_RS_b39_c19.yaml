@@ -1,0 +1,7 @@
+timeout: false
+blocks:
+  - rows: [19098, 38098)
+    cols: [78, 88)
+    dimensions: [19000, 10]
+    area: 190000
+    density: 1

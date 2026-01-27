@@ -1,0 +1,87 @@
+timeout: false
+blocks:
+  - rows: [4212, 5481)
+    cols: [140, 147)
+    dimensions: [1269, 7]
+    area: 8883
+    density: 0.921986
+  - rows: [140, 147)
+    cols: [4212, 5481)
+    dimensions: [7, 1269]
+    area: 8883
+    density: 0.921986
+  - rows: [7, 14)
+    cols: [378, 1335)
+    dimensions: [7, 957]
+    area: 6699
+    density: 0.959248
+  - rows: [98, 105)
+    cols: [3093, 3969)
+    dimensions: [7, 876]
+    area: 6132
+    density: 0.893836
+  - rows: [70, 77)
+    cols: [2316, 3037)
+    dimensions: [7, 721]
+    area: 5047
+    density: 0.891817
+  - rows: [378, 1335)
+    cols: [7, 14)
+    dimensions: [957, 7]
+    area: 6699
+    density: 0.959248
+  - rows: [259, 266)
+    cols: [8196, 9054)
+    dimensions: [7, 858]
+    area: 6006
+    density: 0.909091
+  - rows: [301, 308)
+    cols: [9726, 10581)
+    dimensions: [7, 855]
+    area: 5985
+    density: 0.961404
+  - rows: [3093, 3969)
+    cols: [98, 105)
+    dimensions: [876, 7]
+    area: 6132
+    density: 0.893836
+  - rows: [2316, 3037)
+    cols: [70, 77)
+    dimensions: [721, 7]
+    area: 5047
+    density: 0.891817
+  - rows: [1365, 2127)
+    cols: [35, 42)
+    dimensions: [762, 7]
+    area: 5334
+    density: 0.862205
+  - rows: [8196, 9054)
+    cols: [259, 266)
+    dimensions: [858, 7]
+    area: 6006
+    density: 0.909091
+  - rows: [6915, 7911)
+    cols: [224, 231)
+    dimensions: [996, 7]
+    area: 6972
+    density: 0.89759
+  - rows: [5889, 6666)
+    cols: [182, 189)
+    dimensions: [777, 7]
+    area: 5439
+    density: 0.891892
+  - rows: [5484, 5877)
+    cols: [154, 161)
+    dimensions: [393, 7]
+    area: 2751
+    density: 0.992366
+  - rows: [9726, 10581)
+    cols: [301, 308)
+    dimensions: [855, 7]
+    area: 5985
+    density: 0.961404
+  - rows: [9057, 9576)
+    cols: [273, 280)
+    dimensions: [519, 7]
+    area: 3633
+    density: 0.99422
