@@ -1,7 +1,7 @@
 timeout: false
 blocks:
-  - rows: [7819, 7893)
-    cols: [0, 37)
+  - rows: [7819, 7893]
+    cols: [0, 37]
     dimensions: [74, 37]
     area: 2738
     density: 1

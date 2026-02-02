@@ -1,17 +1,17 @@
 timeout: false
 blocks:
-  - rows: [6620, 8140)
-    cols: [2550, 2702)
+  - rows: [6620, 8140]
+    cols: [2550, 2702]
     dimensions: [1520, 152]
     area: 231040
     density: 1
-  - rows: [2550, 2702)
-    cols: [6620, 8140)
+  - rows: [2550, 2702]
+    cols: [6620, 8140]
     dimensions: [152, 1520]
     area: 231040
     density: 1
-  - rows: [2398, 2550)
-    cols: [2398, 2550)
+  - rows: [2398, 2550]
+    cols: [2398, 2550]
     dimensions: [152, 152]
     area: 23104
     density: 1

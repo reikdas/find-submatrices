@@ -1,67 +1,67 @@
 timeout: false
 blocks:
-  - rows: [0, 1)
-    cols: [0, 19448)
+  - rows: [0, 1]
+    cols: [0, 19448]
     dimensions: [1, 19448]
     area: 19448
     density: 1
-  - rows: [18, 19)
-    cols: [43758, 55198)
+  - rows: [18, 19]
+    cols: [43758, 55198]
     dimensions: [1, 11440]
     area: 11440
     density: 1
-  - rows: [1, 2)
-    cols: [19448, 30888)
+  - rows: [1, 2]
+    cols: [19448, 30888]
     dimensions: [1, 11440]
     area: 11440
     density: 1
-  - rows: [2, 3)
-    cols: [30888, 37323)
+  - rows: [2, 3]
+    cols: [30888, 37323]
     dimensions: [1, 6435]
     area: 6435
     density: 1
-  - rows: [3, 5)
-    cols: [37323, 39039)
+  - rows: [3, 5]
+    cols: [37323, 39039]
     dimensions: [2, 1716]
     area: 3432
     density: 1
-  - rows: [6, 18)
-    cols: [39963, 43758)
+  - rows: [6, 18]
+    cols: [39963, 43758]
     dimensions: [12, 3795]
     area: 45540
     density: 0.573913
-  - rows: [35, 36)
-    cols: [68068, 74503)
+  - rows: [35, 36]
+    cols: [68068, 74503]
     dimensions: [1, 6435]
     area: 6435
     density: 1
-  - rows: [19, 20)
-    cols: [55198, 61633)
+  - rows: [19, 20]
+    cols: [55198, 61633]
     dimensions: [1, 6435]
     area: 6435
     density: 1
-  - rows: [20, 22)
-    cols: [61633, 63349)
+  - rows: [20, 22]
+    cols: [61633, 63349]
     dimensions: [2, 1716]
     area: 3432
     density: 1
-  - rows: [23, 35)
-    cols: [64273, 68068)
+  - rows: [23, 35]
+    cols: [64273, 68068]
     dimensions: [12, 3795]
     area: 45540
     density: 0.573913
-  - rows: [36, 38)
-    cols: [74503, 76219)
+  - rows: [36, 38]
+    cols: [74503, 76219]
     dimensions: [2, 1716]
     area: 3432
     density: 1
-  - rows: [51, 52)
-    cols: [80938, 84370)
+  - rows: [51, 52]
+    cols: [80938, 84370]
     dimensions: [1, 3432]
     area: 3432
     density: 1
-  - rows: [39, 51)
-    cols: [77143, 80938)
+  - rows: [39, 51]
+    cols: [77143, 80938]
     dimensions: [12, 3795]
     area: 45540
     density: 0.573913
