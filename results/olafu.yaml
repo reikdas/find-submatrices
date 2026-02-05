@@ -1,7 +1,0 @@
-timeout: false
-blocks:
-  - rows: [846, 912]
-    cols: [846, 912]
-    dimensions: [66, 66]
-    area: 4356
-    density: 0.581267
