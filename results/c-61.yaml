@@ -1,12 +1,13 @@
 timeout: true
 blocks:
-  - rows: [0, 2828]
-    cols: [43617, 43618]
-    dimensions: [2828, 1]
-    area: 2828
-    density: 1
-  - rows: [43617, 43618]
-    cols: [0, 2828]
-    dimensions: [1, 2828]
-    area: 2828
-    density: 1
+- rows:
+  - 43617
+  - 43618
+  cols:
+  - 0
+  - 2828
+  dimensions:
+  - 1
+  - 2828
+  area: 2828
+  density: 1

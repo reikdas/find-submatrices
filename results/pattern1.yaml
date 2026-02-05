@@ -1,17 +1,13 @@
 timeout: false
 blocks:
-  - rows: [10482, 16557]
-    cols: [3988, 3989]
-    dimensions: [6075, 1]
-    area: 6075
-    density: 0.90321
-  - rows: [3988, 3989]
-    cols: [10482, 16557]
-    dimensions: [1, 6075]
-    area: 6075
-    density: 0.90321
-  - rows: [3, 3987]
-    cols: [3989, 3990]
-    dimensions: [3984, 1]
-    area: 3984
-    density: 0.901104
+- rows:
+  - 3988
+  - 3989
+  cols:
+  - 10482
+  - 16557
+  dimensions:
+  - 1
+  - 6075
+  area: 6075
+  density: 0.90321
