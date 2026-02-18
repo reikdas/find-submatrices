@@ -1,0 +1,12 @@
+timeout: true
+blocks:
+  - rows: [34290, 34291]
+    cols: [0, 5056]
+    dimensions: [1, 5056]
+    area: 5056
+    density: 1
+  - rows: [10184, 10185]
+    cols: [34291, 37595]
+    dimensions: [1, 3304]
+    area: 3304
+    density: 1
