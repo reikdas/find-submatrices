@@ -8,18 +8,78 @@
 #include <fstream>
 #include <chrono>
 #include <functional>
+#include <stdexcept>
 
-int main(int /* argc */, char* argv[]) {
+namespace {
+
+void print_usage(const char* program) {
+    std::cerr
+        << "Usage: " << program << " <matrix.mtx> [options]\n"
+        << "Options:\n"
+        << "  --min-density <float>       Minimum accepted block density (default 0.5)\n"
+        << "  --min-area <int>            Minimum accepted block area (default 2500)\n"
+        << "  --gamma <float>             Density-score exponent (default 1.5)\n"
+        << "  --threads <int>             Requested OpenMP threads (default 20)\n"
+        << "  --timeout-seconds <float>   Timeout in seconds (default 14400)\n"
+        << "  --output <path>             YAML output path (default results/<matrix>.yaml)\n";
+}
+
+std::string require_value(int& i, int argc, char* argv[], const std::string& flag) {
+    if (i + 1 >= argc) {
+        throw std::runtime_error("Missing value for " + flag);
+    }
+    return argv[++i];
+}
+
+}  // namespace
+
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        print_usage(argv[0]);
+        return 1;
+    }
+
+    PartitionConfig config;
+    int requested_threads = 20;
+    double timeout_seconds = 4.0 * 60.0 * 60.0;
+    std::string output_path;
+    const std::string mtx_file_str = argv[1];
+
+    try {
+        for (int i = 2; i < argc; ++i) {
+            const std::string arg = argv[i];
+            if (arg == "--min-density") {
+                config.min_density = std::stod(require_value(i, argc, argv, arg));
+            } else if (arg == "--min-area") {
+                config.min_area = std::stoi(require_value(i, argc, argv, arg));
+            } else if (arg == "--gamma") {
+                config.gamma = std::stod(require_value(i, argc, argv, arg));
+            } else if (arg == "--threads") {
+                requested_threads = std::stoi(require_value(i, argc, argv, arg));
+            } else if (arg == "--timeout-seconds") {
+                timeout_seconds = std::stod(require_value(i, argc, argv, arg));
+            } else if (arg == "--output") {
+                output_path = require_value(i, argc, argv, arg);
+            } else if (arg == "--help" || arg == "-h") {
+                print_usage(argv[0]);
+                return 0;
+            } else {
+                throw std::runtime_error("Unknown option: " + arg);
+            }
+        }
+    } catch (const std::exception& e) {
+        std::cerr << "Error parsing arguments: " << e.what() << "\n";
+        print_usage(argv[0]);
+        return 1;
+    }
+
     // Set OpenMP thread count: use 24 or max available cores, whichever is smaller
-    const int requested_threads = 20;
     const int max_available = std::max(1, static_cast<int>(std::thread::hardware_concurrency()));
-    const int num_threads = std::min(requested_threads, max_available);
+    const int num_threads = std::min(std::max(1, requested_threads), max_available);
     omp_set_num_threads(num_threads);
     
     std::cout << "Using " << num_threads << " OpenMP threads (requested: " 
               << requested_threads << ", available: " << max_available << ")\n";
-    
-    const std::string mtx_file_str = argv[1];
     
     // Check if the .mtx file exists
     if (!std::filesystem::exists(mtx_file_str)) {
@@ -51,8 +111,8 @@ int main(int /* argc */, char* argv[]) {
         std::vector<bool> col_used(A.num_cols, false);
         Region full_region{0, A.num_rows, 0, A.num_cols};
 
-        // Set up 4-hour timeout
-        const auto timeout_duration = std::chrono::hours(4);
+        // Set up timeout
+        const auto timeout_duration = std::chrono::duration<double>(timeout_seconds);
         const auto start_time = std::chrono::steady_clock::now();
         bool timeout_reached = false;
         
@@ -76,21 +136,26 @@ int main(int /* argc */, char* argv[]) {
             blocks,
             row_used,
             col_used,
+            config,
             timeout_check
         );
 
-        // Create results directory if it doesn't exist
-        std::filesystem::create_directories("results");
-        
-        // Write results to YAML file
-        std::string results_file = "results/" + matrix_name + ".yaml";
+        std::filesystem::path results_file =
+            output_path.empty()
+                ? std::filesystem::path("results") / (matrix_name + ".yaml")
+                : std::filesystem::path(output_path);
+        std::filesystem::path parent = results_file.parent_path();
+        if (!parent.empty()) {
+            std::filesystem::create_directories(parent);
+        }
         std::ofstream out_file(results_file);
         
         out_file << "timeout: " << (timeout_reached ? "true" : "false") << "\n";
         
         if (blocks.empty()) {
             out_file << "blocks: []\n";
-            out_file << "message: \"No dense submatrix found (area > 0.5 density, span >= 2500)\"\n";
+            out_file << "message: \"No dense submatrix found (density >= "
+                     << config.min_density << ", area >= " << config.min_area << ")\"\n";
         } else {
             out_file << "blocks:\n";
             for (size_t i = 0; i < blocks.size(); ++i) {

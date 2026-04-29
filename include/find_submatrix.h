@@ -5,9 +5,15 @@
 #include <cmath>
 #include <functional>
 
-constexpr double MIN_DENSITY = 0.5;
-constexpr double GAMMA = 1.5; // Modify to bias block score
-constexpr int MIN_AREA = 2500;
+constexpr double DEFAULT_MIN_DENSITY = 0.5;
+constexpr double DEFAULT_GAMMA = 1.5; // Modify to bias block score
+constexpr int DEFAULT_MIN_AREA = 2500;
+
+struct PartitionConfig {
+    double min_density = DEFAULT_MIN_DENSITY;
+    double gamma = DEFAULT_GAMMA;
+    int min_area = DEFAULT_MIN_AREA;
+};
 
 struct BestSubmatrix {
     int r0 = -1, r1 = -1;
@@ -115,11 +121,11 @@ void trim_block(
     }
 }
 
-inline double block_score(const BestSubmatrix& b) {
-    if (b.area <= 0 || b.density <= MIN_DENSITY)
+inline double block_score(const BestSubmatrix& b, const PartitionConfig& config) {
+    if (b.area <= 0 || b.density <= config.min_density)
         return -1.0;  // invalid / reject
 
-    return b.area * std::pow(b.density - MIN_DENSITY, GAMMA);
+    return b.area * std::pow(b.density - config.min_density, config.gamma);
 }
 
 inline void merge_best(BestSubmatrix& dst, const BestSubmatrix& src) {
@@ -134,10 +140,11 @@ void dense_pass_generic(
     const SpMatrixCompressed<T>& mat,
     const Region& region,
     BestSubmatrix& global_best,
+    const PartitionConfig& config,
     const std::function<bool()>& timeout_check
 ) {
-    // Use sqrt(MIN_AREA) as minimum span - allows finding narrower but valid blocks
-    const int MIN_SPAN = std::max(1, (int)std::ceil(std::sqrt((double)MIN_AREA)));
+    // Use sqrt(min_area) as minimum span - allows finding narrower but valid blocks
+    const int MIN_SPAN = std::max(1, (int)std::ceil(std::sqrt((double)config.min_area)));
 
     const bool row_major = (mat.direction == CompressionDirection::ROW);
 
@@ -183,11 +190,11 @@ void dense_pass_generic(
                 if (span < MIN_SPAN) continue;
 
                 // Early termination if not enough nnz for valid block
-                // Need: nnz >= MIN_DENSITY * MIN_AREA for any valid block
-                if (total_nnz_in_slab < MIN_DENSITY * MIN_AREA) continue;
+                // Need: nnz >= min_density * min_area for any valid block
+                if (total_nnz_in_slab < config.min_density * config.min_area) continue;
 
-                // Minimum inner span needed to achieve MIN_AREA
-                int min_inner = (MIN_AREA + span - 1) / span;
+                // Minimum inner span needed to achieve min_area
+                int min_inner = (config.min_area + span - 1) / span;
                 if (min_inner > INNER_LEN) continue;
 
                 int nnz = 0;
@@ -201,13 +208,13 @@ void dense_pass_generic(
                         int area  = span * width;
 
                         // Skip if area too small
-                        if (area < MIN_AREA) break;
+                        if (area < config.min_area) break;
 
                         double density = double(nnz) / area;
 
-                        // Calculate actual score (only valid if density >= MIN_DENSITY)
-                        if (density >= MIN_DENSITY) {
-                            double candidate_score = area * std::pow(density - MIN_DENSITY, GAMMA);
+                        // Calculate actual score (only valid if density >= min_density)
+                        if (density >= config.min_density) {
+                            double candidate_score = area * std::pow(density - config.min_density, config.gamma);
                             if (candidate_score > local_best.score) {
                                 if (row_major) {
                                     local_best = {
@@ -249,18 +256,19 @@ void find_best_in_region(
     const SpMatrixCompressed<T>& csc,
     const Region& region,
     BestSubmatrix& best,
+    const PartitionConfig& config,
     const std::function<bool()>& timeout_check
 ) {
-    if (region.area() < MIN_AREA)
+    if (region.area() < config.min_area)
         return;
     if (timeout_check())
         return;
     best = BestSubmatrix{};
 
-    dense_pass_generic(csr, region, best, timeout_check);
+    dense_pass_generic(csr, region, best, config, timeout_check);
     if (timeout_check())
         return;
-    dense_pass_generic(csc, region, best, timeout_check);
+    dense_pass_generic(csc, region, best, config, timeout_check);
 
     // Sanity
     if (best.area > 0) {
@@ -277,19 +285,20 @@ void decompose_region(
     std::vector<BestSubmatrix>& result,
     std::vector<bool>& row_used,
     std::vector<bool>& col_used,
+    const PartitionConfig& config,
     const std::function<bool()>& timeout_check
 ) {
-    if (region.area() < MIN_AREA)
+    if (region.area() < config.min_area)
         return;
     if (timeout_check())
         return;
 
     BestSubmatrix best;
-    find_best_in_region(csr, csc, region, best, timeout_check);
+    find_best_in_region(csr, csc, region, best, config, timeout_check);
     if (timeout_check())
         return;
 
-    if (best.area < MIN_AREA)
+    if (best.area < config.min_area)
         return;
 
     // ---- Strong exclusion guard ----
@@ -300,9 +309,9 @@ void decompose_region(
         if (col_used[c]) return;
 
     trim_block(best, csr, csc);
-    best.score = block_score(best);
+    best.score = block_score(best, config);
 
-    if (best.area < MIN_AREA || best.density < MIN_DENSITY)
+    if (best.area < config.min_area || best.density < config.min_density)
         return;
 
     // ---- Accept block ----
@@ -318,20 +327,20 @@ void decompose_region(
     if (region.r0 < best.r0 && !timeout_check())
         decompose_region(csr, csc,
             {region.r0, best.r0, region.c0, region.c1},
-            result, row_used, col_used, timeout_check);
+            result, row_used, col_used, config, timeout_check);
 
     if (best.r1 < region.r1 && !timeout_check())
         decompose_region(csr, csc,
             {best.r1, region.r1, region.c0, region.c1},
-            result, row_used, col_used, timeout_check);
+            result, row_used, col_used, config, timeout_check);
 
     if (region.c0 < best.c0 && !timeout_check())
         decompose_region(csr, csc,
             {best.r0, best.r1, region.c0, best.c0},
-            result, row_used, col_used, timeout_check);
+            result, row_used, col_used, config, timeout_check);
 
     if (best.c1 < region.c1 && !timeout_check())
         decompose_region(csr, csc,
             {best.r0, best.r1, best.c1, region.c1},
-            result, row_used, col_used, timeout_check);
+            result, row_used, col_used, config, timeout_check);
 }

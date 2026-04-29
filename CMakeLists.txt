@@ -48,32 +48,26 @@ target_include_directories(partition_matrix PRIVATE ${CMAKE_SOURCE_DIR}/include)
 # Link OpenMP to executables
 target_link_libraries(partition_matrix PUBLIC OpenMP::OpenMP_CXX)
 
-# Test executable
-add_executable(test_csr_csc
-    tests/test_csr_csc.cpp
-)
+# Test executable, if the optional test source is present.
+if(EXISTS "${CMAKE_SOURCE_DIR}/tests/test_csr_csc.cpp")
+    add_executable(test_csr_csc
+        tests/test_csr_csc.cpp
+    )
 
-# Add include directory for test_csr_csc target
-target_include_directories(test_csr_csc PRIVATE ${CMAKE_SOURCE_DIR}/include)
+    target_include_directories(test_csr_csc PRIVATE ${CMAKE_SOURCE_DIR}/include)
+    target_link_libraries(test_csr_csc PUBLIC OpenMP::OpenMP_CXX)
 
-# Link OpenMP to test executable
-target_link_libraries(test_csr_csc PUBLIC OpenMP::OpenMP_CXX)
+    enable_testing()
+    add_test(NAME CSR_CSC_Test COMMAND test_csr_csc)
 
-# Enable testing
-enable_testing()
-
-# Add test
-add_test(NAME CSR_CSC_Test COMMAND test_csr_csc)
-
-# Optional: Add custom target to run tests with verbose output
-add_custom_target(run_tests
-    COMMAND ${CMAKE_CTEST_COMMAND} --verbose
-    DEPENDS test_csr_csc
-    COMMENT "Running all tests"
-)
+    add_custom_target(run_tests
+        COMMAND ${CMAKE_CTEST_COMMAND} --verbose
+        DEPENDS test_csr_csc
+        COMMENT "Running all tests"
+    )
+endif()
 
 # Print configuration summary
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 message(STATUS "C++ standard: ${CMAKE_CXX_STANDARD}")
 message(STATUS "Compiler: ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
-
