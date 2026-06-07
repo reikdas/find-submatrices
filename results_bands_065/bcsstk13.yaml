@@ -1,0 +1,5 @@
+timeout: false
+matrix_shape: [2003, 2003]
+matrix_nnz: 83883
+elapsed_seconds: 16.02
+bands: []

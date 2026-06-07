@@ -1,0 +1,5 @@
+timeout: false
+matrix_shape: [2529, 2529]
+matrix_nnz: 90158
+elapsed_seconds: 33.49
+bands: []

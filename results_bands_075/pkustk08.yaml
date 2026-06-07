@@ -1,0 +1,105 @@
+timeout: false
+matrix_shape: [22209, 22209]
+matrix_nnz: 3226671
+elapsed_seconds: 278.93
+bands:
+  - rows: [5332, 18966]
+    diag_offset: -34
+    total_nnz: 2672
+    vdia_area: 3354
+    dia_ribbon_area: 1008916
+    dia_covered_area: 4514
+    density: 0.796661
+    fill_ribbon: 0.003324
+    fill_covered: 0.743022
+    savings_vs_dia_ribbon: 0.9967
+    savings_vs_dia_covered: 0.257
+    segments:
+      - rows: [5332, 5352]
+        bandwidth: [16, 28]
+        nnz: 685
+        area: 900
+      - rows: [7342, 7362]
+        bandwidth: [16, 28]
+        nnz: 685
+        area: 900
+      - rows: [18945, 18966]
+        bandwidth: [25, 48]
+        nnz: 1302
+        area: 1554
+  - rows: [1203, 15384]
+    diag_offset: 0
+    total_nnz: 4863
+    vdia_area: 6420
+    dia_ribbon_area: 978489
+    dia_covered_area: 7176
+    density: 0.757477
+    fill_ribbon: 0.006561
+    fill_covered: 0.894649
+    savings_vs_dia_ribbon: 0.9934
+    savings_vs_dia_covered: 0.1054
+    segments:
+      - rows: [1203, 1223]
+        bandwidth: [51, 17]
+        nnz: 1044
+        area: 1380
+      - rows: [11088, 11109]
+        bandwidth: [42, 17]
+        nnz: 957
+        area: 1260
+      - rows: [11523, 11544]
+        bandwidth: [42, 17]
+        nnz: 957
+        area: 1260
+      - rows: [13743, 13764]
+        bandwidth: [42, 17]
+        nnz: 957
+        area: 1260
+      - rows: [15363, 15384]
+        bandwidth: [42, 17]
+        nnz: 948
+        area: 1260
+  - rows: [17566, 18939]
+    diag_offset: -1
+    total_nnz: 3904
+    vdia_area: 5134
+    dia_ribbon_area: 134554
+    dia_covered_area: 6174
+    density: 0.760421
+    fill_ribbon: 0.038156
+    fill_covered: 0.831552
+    savings_vs_dia_ribbon: 0.9618
+    savings_vs_dia_covered: 0.1684
+    segments:
+      - rows: [17566, 17586]
+        bandwidth: [25, 46]
+        nnz: 1104
+        area: 1440
+      - rows: [18088, 18108]
+        bandwidth: [25, 46]
+        nnz: 1104
+        area: 1440
+      - rows: [18916, 18939]
+        bandwidth: [49, 48]
+        nnz: 1696
+        area: 2254
+  - rows: [17709, 18255]
+    diag_offset: -39
+    total_nnz: 3118
+    vdia_area: 3936
+    dia_ribbon_area: 44772
+    dia_covered_area: 3936
+    density: 0.792175
+    fill_ribbon: 0.087912
+    fill_covered: 1.0
+    savings_vs_dia_ribbon: 0.9121
+    savings_vs_dia_covered: 0.0
+    segments:
+      - rows: [17709, 17733]
+        bandwidth: [23, 58]
+        nnz: 1559
+        area: 1968
+      - rows: [18231, 18255]
+        bandwidth: [23, 58]
+        nnz: 1559
+        area: 1968

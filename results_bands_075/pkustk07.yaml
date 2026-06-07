@@ -1,0 +1,85 @@
+timeout: false
+matrix_shape: [16860, 16860]
+matrix_nnz: 2418804
+elapsed_seconds: 214.9
+bands:
+  - rows: [564, 11717]
+    diag_offset: 0
+    total_nnz: 6333
+    vdia_area: 8289
+    dia_ribbon_area: 1171065
+    dia_covered_area: 13125
+    density: 0.764025
+    fill_ribbon: 0.007078
+    fill_covered: 0.631543
+    savings_vs_dia_ribbon: 0.9929
+    savings_vs_dia_covered: 0.3685
+    segments:
+      - rows: [564, 585]
+        bandwidth: [20, 53]
+        nnz: 1182
+        area: 1554
+      - rows: [2664, 2685]
+        bandwidth: [20, 44]
+        nnz: 1056
+        area: 1365
+      - rows: [3744, 3765]
+        bandwidth: [20, 44]
+        nnz: 1056
+        area: 1365
+      - rows: [5244, 5265]
+        bandwidth: [20, 44]
+        nnz: 1038
+        area: 1365
+      - rows: [7407, 7428]
+        bandwidth: [42, 17]
+        nnz: 957
+        area: 1260
+      - rows: [11697, 11717]
+        bandwidth: [51, 17]
+        nnz: 1044
+        area: 1380
+  - rows: [2610, 5211]
+    diag_offset: 1
+    total_nnz: 2792
+    vdia_area: 3721
+    dia_ribbon_area: 158661
+    dia_covered_area: 3721
+    density: 0.750336
+    fill_ribbon: 0.023453
+    fill_covered: 1.0
+    savings_vs_dia_ribbon: 0.9765
+    savings_vs_dia_covered: 0.0
+    segments:
+      - rows: [2610, 2630]
+        bandwidth: [38, 22]
+        nnz: 915
+        area: 1220
+      - rows: [3690, 3710]
+        bandwidth: [38, 22]
+        nnz: 915
+        area: 1220
+      - rows: [5190, 5211]
+        bandwidth: [38, 22]
+        nnz: 962
+        area: 1281
+  - rows: [9538, 10458]
+    diag_offset: -34
+    total_nnz: 2726
+    vdia_area: 3400
+    dia_ribbon_area: 78200
+    dia_covered_area: 3400
+    density: 0.801765
+    fill_ribbon: 0.043478
+    fill_covered: 1.0
+    savings_vs_dia_ribbon: 0.9565
+    savings_vs_dia_covered: 0.0
+    segments:
+      - rows: [9538, 9558]
+        bandwidth: [31, 53]
+        nnz: 1363
+        area: 1700
+      - rows: [10438, 10458]
+        bandwidth: [31, 53]
+        nnz: 1363
+        area: 1700

@@ -444,19 +444,19 @@ def load_matrix(name: str) -> Optional[csr_matrix]:
         return None
     A = mmread(mtx)
     csr = csr_matrix(A)
-    cleanup(tar, subdir)
     return csr
 
 
 def process_matrix(name: str, verbose: bool = True,
-                   timeout_seconds: int = 600) -> Tuple[str, Optional[Dict]]:
+                   timeout_seconds: int = 600,
+                   min_density: float = MIN_DENSITY) -> Tuple[str, Optional[Dict]]:
     start = time.time()
     csr = load_matrix(name)
     if csr is None:
         return name, None
     if verbose:
         print(f"[{name}] loaded {csr.shape[0]}x{csr.shape[1]} nnz={csr.nnz}")
-    regions = find_vdia_regions(csr, verbose=verbose)
+    regions = find_vdia_regions(csr, min_density=min_density, verbose=verbose)
     elapsed = time.time() - start
     timeout = elapsed > timeout_seconds
     return name, {
@@ -522,18 +522,24 @@ def run_batch(names: List[str], num_workers: int = 4,
 
 
 if __name__ == "__main__":
-    if len(sys.argv) <= 1:
-        defaults = ["bcsstk13", "bcsstk28", "nd3k", "heart1", "lowThrust_3"]
-        for m in defaults:
-            name, result = process_matrix(m, verbose=True)
-            if result is not None:
-                save_results(name, result)
-                print(f"[{name}] wrote {len(result['bands'])} region(s)")
-    else:
-        for name in sys.argv[1:]:
-            rn, result = process_matrix(name, verbose=True)
-            if result is not None:
-                save_results(rn, result)
-                print(f"[{rn}] wrote {len(result['bands'])} region(s)")
-            else:
-                print(f"[{name}] failed")
+    import argparse
+    parser = argparse.ArgumentParser(description="Find VDIA regions in sparse matrices")
+    parser.add_argument("matrices", nargs="*", default=[],
+                        help="Matrix names to process")
+    parser.add_argument("--min-density", type=float, default=MIN_DENSITY,
+                        help=f"Minimum density threshold (default: {MIN_DENSITY})")
+    parser.add_argument("--output-dir", default="results_bands",
+                        help="Output directory for YAML results (default: results_bands)")
+    args = parser.parse_args()
+
+    matrices = args.matrices
+    if not matrices:
+        matrices = ["bcsstk13", "bcsstk28", "nd3k", "heart1", "lowThrust_3"]
+
+    for m in matrices:
+        rn, result = process_matrix(m, verbose=True, min_density=args.min_density)
+        if result is not None:
+            save_results(rn, result, output_dir=args.output_dir)
+            print(f"[{rn}] wrote {len(result['bands'])} region(s)")
+        else:
+            print(f"[{m}] failed")

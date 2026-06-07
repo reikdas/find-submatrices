@@ -1,0 +1,217 @@
+timeout: false
+matrix_shape: [3557, 3557]
+matrix_nnz: 1387773
+elapsed_seconds: 486.15
+bands:
+  - rows: [47, 3541]
+    diag_offset: 0
+    total_nnz: 536533
+    vdia_area: 1034987
+    dia_ribbon_area: 3357734
+    dia_covered_area: 2476497
+    density: 0.518396
+    fill_ribbon: 0.30824
+    fill_covered: 0.417924
+    savings_vs_dia_ribbon: 0.6918
+    savings_vs_dia_covered: 0.5821
+    segments:
+      - rows: [47, 95]
+        bandwidth: [94, 245]
+        nnz: 8207
+        area: 16320
+      - rows: [97, 138]
+        bandwidth: [137, 440]
+        nnz: 11898
+        area: 23698
+      - rows: [149, 212]
+        bandwidth: [211, 438]
+        nnz: 20532
+        area: 40950
+      - rows: [220, 244]
+        bandwidth: [243, 214]
+        nnz: 6225
+        area: 10992
+      - rows: [244, 347]
+        bandwidth: [293, 414]
+        nnz: 36563
+        area: 72924
+      - rows: [385, 454]
+        bandwidth: [261, 323]
+        nnz: 20272
+        area: 40365
+      - rows: [454, 488]
+        bandwidth: [51, 83]
+        nnz: 3368
+        area: 4590
+      - rows: [538, 579]
+        bandwidth: [429, 170]
+        nnz: 12300
+        area: 24600
+      - rows: [588, 613]
+        bandwidth: [74, 195]
+        nnz: 4541
+        area: 6750
+      - rows: [659, 709]
+        bandwidth: [170, 269]
+        nnz: 11260
+        area: 22000
+      - rows: [1101, 1303]
+        bandwidth: [101, 101]
+        nnz: 25204
+        area: 41006
+      - rows: [1303, 1407]
+        bandwidth: [99, 241]
+        nnz: 17886
+        area: 35464
+      - rows: [1407, 1499]
+        bandwidth: [193, 500]
+        nnz: 31983
+        area: 63848
+      - rows: [1519, 1676]
+        bandwidth: [241, 500]
+        nnz: 58287
+        area: 116494
+      - rows: [1676, 1732]
+        bandwidth: [186, 286]
+        nnz: 13260
+        area: 26488
+      - rows: [1744, 1785]
+        bandwidth: [212, 224]
+        nnz: 9034
+        area: 17917
+      - rows: [1785, 1819]
+        bandwidth: [49, 83]
+        nnz: 3400
+        area: 4522
+      - rows: [1819, 1859]
+        bandwidth: [450, 99]
+        nnz: 11000
+        area: 22000
+      - rows: [1869, 1931]
+        bandwidth: [460, 99]
+        nnz: 17400
+        area: 34720
+      - rows: [1931, 1957]
+        bandwidth: [212, 37]
+        nnz: 3250
+        area: 6500
+      - rows: [1969, 2005]
+        bandwidth: [35, 399]
+        nnz: 7900
+        area: 15660
+      - rows: [2019, 2232]
+        bandwidth: [149, 349]
+        nnz: 53200
+        area: 106287
+      - rows: [2232, 2307]
+        bandwidth: [149, 99]
+        nnz: 9350
+        area: 18675
+      - rows: [2319, 2369]
+        bandwidth: [253, 49]
+        nnz: 8525
+        area: 15150
+      - rows: [2369, 2391]
+        bandwidth: [21, 500]
+        nnz: 5746
+        area: 11484
+      - rows: [2395, 2419]
+        bandwidth: [49, 321]
+        nnz: 6000
+        area: 8904
+      - rows: [2419, 2449]
+        bandwidth: [79, 500]
+        nnz: 8724
+        area: 17400
+      - rows: [2449, 2502]
+        bandwidth: [107, 267]
+        nnz: 9950
+        area: 19875
+      - rows: [2502, 2523]
+        bandwidth: [113, 76]
+        nnz: 1995
+        area: 3990
+      - rows: [2523, 2557]
+        bandwidth: [37, 112]
+        nnz: 2553
+        area: 5100
+      - rows: [2575, 2621]
+        bandwidth: [251, 355]
+        nnz: 14395
+        area: 27922
+      - rows: [2664, 2726]
+        bandwidth: [347, 344]
+        nnz: 24683
+        area: 42904
+      - rows: [2807, 2829]
+        bandwidth: [253, 299]
+        nnz: 6091
+        area: 12166
+      - rows: [2829, 2863]
+        bandwidth: [333, 273]
+        nnz: 10480
+        area: 20638
+      - rows: [2984, 3009]
+        bandwidth: [75, 24]
+        nnz: 1634
+        area: 2500
+      - rows: [3009, 3109]
+        bandwidth: [101, 104]
+        nnz: 10300
+        area: 20600
+      - rows: [3118, 3268]
+        bandwidth: [49, 49]
+        nnz: 9375
+        area: 14850
+      - rows: [3268, 3314]
+        bandwidth: [49, 127]
+        nnz: 4078
+        area: 8142
+      - rows: [3314, 3348]
+        bandwidth: [49, 238]
+        nnz: 4910
+        area: 9792
+      - rows: [3348, 3368]
+        bandwidth: [49, 19]
+        nnz: 1000
+        area: 1380
+      - rows: [3371, 3396]
+        bandwidth: [24, 102]
+        nnz: 1595
+        area: 3175
+      - rows: [3396, 3438]
+        bandwidth: [64, 42]
+        nnz: 2274
+        area: 4494
+      - rows: [3440, 3499]
+        bandwidth: [49, 94]
+        nnz: 4264
+        area: 8496
+      - rows: [3499, 3520]
+        bandwidth: [49, 42]
+        nnz: 972
+        area: 1932
+      - rows: [3520, 3541]
+        bandwidth: [26, 36]
+        nnz: 669
+        area: 1323
+  - rows: [488, 823]
+    diag_offset: 81
+    total_nnz: 5745
+    vdia_area: 10530
+    dia_ribbon_area: 170850
+    dia_covered_area: 21420
+    density: 0.545584
+    fill_ribbon: 0.061633
+    fill_covered: 0.491597
+    savings_vs_dia_ribbon: 0.9384
+    savings_vs_dia_covered: 0.5084
+    segments:
+      - rows: [488, 508]
+        bandwidth: [491, 18]
+        nnz: 5500
+        area: 10200
+      - rows: [801, 823]
+        bandwidth: [3, 11]
+        nnz: 245
+        area: 330

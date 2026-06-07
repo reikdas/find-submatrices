@@ -1,0 +1,29 @@
+timeout: false
+matrix_shape: [9506, 9506]
+matrix_nnz: 1506810
+elapsed_seconds: 555.66
+bands:
+  - rows: [42, 9456]
+    diag_offset: 0
+    total_nnz: 12128
+    vdia_area: 16093
+    dia_ribbon_area: 2080494
+    dia_covered_area: 18564
+    density: 0.75362
+    fill_ribbon: 0.007735
+    fill_covered: 0.866893
+    savings_vs_dia_ribbon: 0.9923
+    savings_vs_dia_covered: 0.1331
+    segments:
+      - rows: [42, 77]
+        bandwidth: [75, 110]
+        nnz: 4903
+        area: 6510
+      - rows: [77, 98]
+        bandwidth: [96, 110]
+        nnz: 3293
+        area: 4347
+      - rows: [9428, 9456]
+        bandwidth: [110, 76]
+        nnz: 3932
+        area: 5236
