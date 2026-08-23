@@ -21,7 +21,10 @@ struct BestSubmatrix {
     int area = 0;
     double density = 0.0;
     double score = 0.0;
-    
+    // Seconds since the start of the search at which this block was accepted;
+    // lets us evaluate what a shorter time budget would have found.
+    double found_at_seconds = 0.0;
+
     BestSubmatrix() = default;
     BestSubmatrix(int r0_, int r1_, int c0_, int c1_, int area_, double density_)
         : r0(r0_), r1(r1_), c0(c0_), c1(c1_), area(area_), density(density_) {}
@@ -286,7 +289,8 @@ void decompose_region(
     std::vector<bool>& row_used,
     std::vector<bool>& col_used,
     const PartitionConfig& config,
-    const std::function<bool()>& timeout_check
+    const std::function<bool()>& timeout_check,
+    const std::function<double()>& elapsed_seconds
 ) {
     if (region.area() < config.min_area)
         return;
@@ -315,6 +319,7 @@ void decompose_region(
         return;
 
     // ---- Accept block ----
+    best.found_at_seconds = elapsed_seconds();
     result.push_back(best);
 
     for (int r = best.r0; r < best.r1; ++r)
@@ -327,20 +332,20 @@ void decompose_region(
     if (region.r0 < best.r0 && !timeout_check())
         decompose_region(csr, csc,
             {region.r0, best.r0, region.c0, region.c1},
-            result, row_used, col_used, config, timeout_check);
+            result, row_used, col_used, config, timeout_check, elapsed_seconds);
 
     if (best.r1 < region.r1 && !timeout_check())
         decompose_region(csr, csc,
             {best.r1, region.r1, region.c0, region.c1},
-            result, row_used, col_used, config, timeout_check);
+            result, row_used, col_used, config, timeout_check, elapsed_seconds);
 
     if (region.c0 < best.c0 && !timeout_check())
         decompose_region(csr, csc,
             {best.r0, best.r1, region.c0, best.c0},
-            result, row_used, col_used, config, timeout_check);
+            result, row_used, col_used, config, timeout_check, elapsed_seconds);
 
     if (best.c1 < region.c1 && !timeout_check())
         decompose_region(csr, csc,
             {best.r0, best.r1, best.c1, region.c1},
-            result, row_used, col_used, config, timeout_check);
+            result, row_used, col_used, config, timeout_check, elapsed_seconds);
 }

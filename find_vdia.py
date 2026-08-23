@@ -95,6 +95,9 @@ class VdiaRegion:
     segments: List[Segment]
     dia_ribbon_area: int
     dia_covered_area: int
+    # Seconds since the start of find_vdia_regions() at which this region was
+    # accepted; lets us evaluate what a shorter search budget would have found.
+    found_at_seconds: float = 0.0
 
     @property
     def row_start(self) -> int:
@@ -150,6 +153,7 @@ class VdiaRegion:
             'fill_covered': round(self.fill_covered, 6),
             'savings_vs_dia_ribbon': round(self.savings_vs_dia_ribbon, 4),
             'savings_vs_dia_covered': round(self.savings_vs_dia_covered, 4),
+            'found_at_seconds': round(self.found_at_seconds, 3),
         }
 
 
@@ -361,6 +365,7 @@ def find_vdia_regions(csr: csr_matrix,
                       max_bw: Optional[int] = None,
                       verbose: bool = False) -> List[VdiaRegion]:
     """Main entry point: find all accepted VDIA regions in a matrix."""
+    search_start = time.perf_counter()
     n_rows, n_cols = csr.shape
     small_dim = min(n_rows, n_cols)
     if max_diag is None:
@@ -396,6 +401,7 @@ def find_vdia_regions(csr: csr_matrix,
             continue
         if region.fill_ribbon > 1.0 - min_savings:
             continue
+        region.found_at_seconds = time.perf_counter() - search_start
         accepted.append(region)
         for s in segments:
             row_used[s.row_start:s.row_end] = True
@@ -495,6 +501,7 @@ def save_results(name: str, result: Dict, output_dir: str = "results_bands") -> 
             f.write(f"    fill_covered: {b['fill_covered']}\n")
             f.write(f"    savings_vs_dia_ribbon: {b['savings_vs_dia_ribbon']}\n")
             f.write(f"    savings_vs_dia_covered: {b['savings_vs_dia_covered']}\n")
+            f.write(f"    found_at_seconds: {b.get('found_at_seconds', 0.0)}\n")
             f.write(f"    segments:\n")
             for s in b['segments']:
                 f.write(f"      - rows: [{s['rows'][0]}, {s['rows'][1]}]\n")

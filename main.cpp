@@ -95,16 +95,19 @@ int main(int argc, char* argv[]) {
     std::cout << "========================================\n";
     
     try {
+        const auto read_start = std::chrono::steady_clock::now();
         SpMatrixCOO<float> A = read_matrix<float>(mtx_file_str);
-        
+
         // Check if matrix was read successfully
         if (A.num_rows == 0 && A.num_cols == 0) {
             std::cerr << "Warning: Failed to read matrix " << matrix_name << "\n";
             return 1;
         }
-        
+
         SpMatrixCSR<float> A_CSR = A.to_csr();
         SpMatrixCSC<float> A_CSC = A.to_csc();
+        const double read_seconds = std::chrono::duration<double>(
+            std::chrono::steady_clock::now() - read_start).count();
 
         std::vector<BestSubmatrix> blocks;
         std::vector<bool> row_used(A.num_rows, false);
@@ -116,12 +119,18 @@ int main(int argc, char* argv[]) {
         const auto start_time = std::chrono::steady_clock::now();
         bool timeout_reached = false;
         
+        auto elapsed_seconds = [&]() -> double {
+            return std::chrono::duration<double>(
+                std::chrono::steady_clock::now() - start_time).count();
+        };
+
         auto timeout_check = [&]() -> bool {
             auto elapsed = std::chrono::steady_clock::now() - start_time;
             if (elapsed >= timeout_duration) {
                 if (!timeout_reached) {
                     timeout_reached = true;
-                    std::cerr << "\nWarning: 4-hour timeout reached for matrix " 
+                    std::cerr << "\nWarning: timeout (" << timeout_seconds
+                              << " s) reached for matrix "
                               << matrix_name << ". Saving partial results...\n";
                 }
                 return true;
@@ -137,8 +146,12 @@ int main(int argc, char* argv[]) {
             row_used,
             col_used,
             config,
-            timeout_check
+            timeout_check,
+            elapsed_seconds
         );
+        const double search_seconds = elapsed_seconds();
+        std::cout << "Matrix read: " << read_seconds << " s, block search: "
+                  << search_seconds << " s, blocks found: " << blocks.size() << "\n";
 
         std::filesystem::path results_file =
             output_path.empty()
@@ -151,7 +164,10 @@ int main(int argc, char* argv[]) {
         std::ofstream out_file(results_file);
         
         out_file << "timeout: " << (timeout_reached ? "true" : "false") << "\n";
-        
+        out_file << "timeout_seconds_budget: " << timeout_seconds << "\n";
+        out_file << "read_seconds: " << read_seconds << "\n";
+        out_file << "search_seconds: " << search_seconds << "\n";
+
         if (blocks.empty()) {
             out_file << "blocks: []\n";
             out_file << "message: \"No dense submatrix found (density >= "
@@ -165,6 +181,7 @@ int main(int argc, char* argv[]) {
                 out_file << "    dimensions: [" << (block.r1 - block.r0) << ", " << (block.c1 - block.c0) << "]\n";
                 out_file << "    area: " << block.area << "\n";
                 out_file << "    density: " << block.density << "\n";
+                out_file << "    found_at_seconds: " << block.found_at_seconds << "\n";
             }
         }
         
