@@ -1,0 +1,60 @@
+order:
+- vdia
+band_extractor: spmm
+band_selection:
+  segments: 2
+  coverage: 0.6712
+  density: 0.6633
+  min_coverage: 0.6
+  seconds: 0.0
+  choice: bands
+extraction_seconds:
+  vdia: 2.779
+bands:
+- rows:
+  - 10196
+  - 10556
+  diag_offset: -8670
+  segments:
+  - rows:
+    - 10196
+    - 10556
+    bandwidth:
+    - 509
+    - 339
+    nnz: 183390
+    area: 305640
+  total_nnz: 183390
+  vdia_area: 305640
+  dia_ribbon_area: 305640
+  dia_covered_area: 305640
+  density: 0.60002
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 10556
+  - 18696
+  diag_offset: -8670
+  segments:
+  - rows:
+    - 10556
+    - 18696
+    bandwidth:
+    - 169
+    - 339
+    nnz: 2767600
+    area: 4143260
+  total_nnz: 2767600
+  vdia_area: 4143260
+  dia_ribbon_area: 4143260
+  dia_covered_area: 4143260
+  density: 0.667976
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks: []

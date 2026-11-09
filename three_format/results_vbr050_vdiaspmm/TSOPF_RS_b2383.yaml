@@ -1,0 +1,43 @@
+order:
+- vbr
+- vdia
+block_source: find-submatrices/results/TSOPF_RS_b2383.yaml
+band_extractor: spmm
+band_selection:
+  segments: 1
+  coverage: 0.9878
+  density: 0.6673
+  min_coverage: 0.6
+  seconds: 0.0
+  choice: bands
+bands:
+- rows:
+  - 21770
+  - 38120
+  diag_offset: -16677
+  segments:
+  - rows:
+    - 21770
+    - 38120
+    bandwidth:
+    - 326
+    - 653
+    nnz: 10692900
+    area: 16023000
+  total_nnz: 10692900
+  vdia_area: 16023000
+  dia_ribbon_area: 16023000
+  dia_covered_area: 16023000
+  density: 0.667347
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks:
+- rows:
+  - 21770
+  - 38120
+  cols:
+  - 4766
+  - 5093

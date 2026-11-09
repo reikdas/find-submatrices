@@ -1,0 +1,89 @@
+order:
+- vbr
+- vdia
+block_source: find-submatrices/results/TSOPF_RS_b39_c7.yaml
+band_extractor: spmm
+band_selection:
+  segments: 3
+  coverage: 0.7648
+  density: 0.6869
+  min_coverage: 0.6
+  seconds: 0.0
+  choice: bands
+bands:
+- rows:
+  - 10
+  - 34
+  diag_offset: 1
+  segments:
+  - rows:
+    - 10
+    - 34
+    bandwidth:
+    - 1
+    - 1
+    nnz: 65
+    area: 72
+  total_nnz: 65
+  vdia_area: 72
+  dia_ribbon_area: 72
+  dia_covered_area: 72
+  density: 0.902778
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 49
+  - 73
+  diag_offset: 0
+  segments:
+  - rows:
+    - 49
+    - 73
+    bandwidth:
+    - 1
+    - 1
+    nnz: 65
+    area: 72
+  total_nnz: 65
+  vdia_area: 72
+  dia_ribbon_area: 72
+  dia_covered_area: 72
+  density: 0.902778
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7098
+  - 14098
+  diag_offset: -7000
+  segments:
+  - rows:
+    - 7098
+    - 14098
+    bandwidth:
+    - 19
+    - 9
+    nnz: 139400
+    area: 203000
+  total_nnz: 139400
+  vdia_area: 203000
+  dia_ribbon_area: 203000
+  dia_covered_area: 203000
+  density: 0.6867
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks:
+- rows:
+  - 7098
+  - 14098
+  cols:
+  - 78
+  - 88

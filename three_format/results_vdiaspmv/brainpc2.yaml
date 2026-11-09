@@ -1,0 +1,104 @@
+order:
+- vdia
+band_extractor: spmv
+band_selection:
+  segments: 4
+  coverage: 0.3077
+  density: 1.0
+  min_coverage: 0.35
+  seconds: 0.0
+  choice: below cutoff
+bands:
+- rows:
+  - 1
+  - 6900
+  diag_offset: 13806
+  segments:
+  - rows:
+    - 1
+    - 6900
+    bandwidth:
+    - 0
+    - 1
+    nnz: 13798
+    area: 13798
+  total_nnz: 13798
+  vdia_area: 13798
+  dia_ribbon_area: 13798
+  dia_covered_area: 13798
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6902
+  - 13801
+  diag_offset: 13806
+  segments:
+  - rows:
+    - 6902
+    - 13801
+    bandwidth:
+    - 1
+    - 0
+    nnz: 13798
+    area: 13798
+  total_nnz: 13798
+  vdia_area: 13798
+  dia_ribbon_area: 13798
+  dia_covered_area: 13798
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 13807
+  - 20707
+  diag_offset: -13806
+  segments:
+  - rows:
+    - 13807
+    - 20707
+    bandwidth:
+    - 1
+    - 0
+    nnz: 13800
+    area: 13800
+  total_nnz: 13800
+  vdia_area: 13800
+  dia_ribbon_area: 13800
+  dia_covered_area: 13800
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20707
+  - 27607
+  diag_offset: -13806
+  segments:
+  - rows:
+    - 20707
+    - 27607
+    bandwidth:
+    - 0
+    - 1
+    nnz: 13800
+    area: 13800
+  total_nnz: 13800
+  vdia_area: 13800
+  dia_ribbon_area: 13800
+  dia_covered_area: 13800
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks: []

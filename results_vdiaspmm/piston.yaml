@@ -1,0 +1,37 @@
+order:
+- vdia
+band_extractor: spmm
+band_selection:
+  segments: 1
+  coverage: 0.9997
+  density: 0.5562
+  min_coverage: 0.6
+  seconds: 0.0
+  choice: bands
+extraction_seconds:
+  vdia: 0.322
+bands:
+- rows:
+  - 5
+  - 2025
+  diag_offset: 0
+  segments:
+  - rows:
+    - 5
+    - 2025
+    bandwidth:
+    - 44
+    - 44
+    nnz: 99987
+    area: 179780
+  total_nnz: 99987
+  vdia_area: 179780
+  dia_ribbon_area: 179780
+  dia_covered_area: 179780
+  density: 0.556163
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks: []

@@ -1,0 +1,9352 @@
+order:
+- vdia
+band_extractor: spmv
+band_selection:
+  segments: 406
+  coverage: 0.5406
+  density: 0.9958
+  min_coverage: 0.35
+  seconds: 0.0
+  choice: bands
+extraction_seconds:
+  vdia: 1.146
+bands:
+- rows:
+  - 49
+  - 150
+  diag_offset: 50396
+  segments:
+  - rows:
+    - 49
+    - 150
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 151
+  - 252
+  diag_offset: 50494
+  segments:
+  - rows:
+    - 151
+    - 252
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 253
+  - 354
+  diag_offset: 50592
+  segments:
+  - rows:
+    - 253
+    - 354
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 355
+  - 456
+  diag_offset: 50690
+  segments:
+  - rows:
+    - 355
+    - 456
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 457
+  - 558
+  diag_offset: 50788
+  segments:
+  - rows:
+    - 457
+    - 558
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 559
+  - 660
+  diag_offset: 50886
+  segments:
+  - rows:
+    - 559
+    - 660
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 661
+  - 762
+  diag_offset: 50984
+  segments:
+  - rows:
+    - 661
+    - 762
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 763
+  - 864
+  diag_offset: 51082
+  segments:
+  - rows:
+    - 763
+    - 864
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 865
+  - 966
+  diag_offset: 51180
+  segments:
+  - rows:
+    - 865
+    - 966
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 967
+  - 1068
+  diag_offset: 51278
+  segments:
+  - rows:
+    - 967
+    - 1068
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1069
+  - 1170
+  diag_offset: 51376
+  segments:
+  - rows:
+    - 1069
+    - 1170
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1171
+  - 1272
+  diag_offset: 51474
+  segments:
+  - rows:
+    - 1171
+    - 1272
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1273
+  - 1374
+  diag_offset: 51572
+  segments:
+  - rows:
+    - 1273
+    - 1374
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1375
+  - 1476
+  diag_offset: 51670
+  segments:
+  - rows:
+    - 1375
+    - 1476
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1477
+  - 1578
+  diag_offset: 51768
+  segments:
+  - rows:
+    - 1477
+    - 1578
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1579
+  - 1680
+  diag_offset: 51866
+  segments:
+  - rows:
+    - 1579
+    - 1680
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1681
+  - 1782
+  diag_offset: 51964
+  segments:
+  - rows:
+    - 1681
+    - 1782
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1783
+  - 1884
+  diag_offset: 52062
+  segments:
+  - rows:
+    - 1783
+    - 1884
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1885
+  - 1986
+  diag_offset: 52160
+  segments:
+  - rows:
+    - 1885
+    - 1986
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 1987
+  - 2088
+  diag_offset: 52258
+  segments:
+  - rows:
+    - 1987
+    - 2088
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2089
+  - 2190
+  diag_offset: 52356
+  segments:
+  - rows:
+    - 2089
+    - 2190
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2191
+  - 2292
+  diag_offset: 52454
+  segments:
+  - rows:
+    - 2191
+    - 2292
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2293
+  - 2394
+  diag_offset: 52552
+  segments:
+  - rows:
+    - 2293
+    - 2394
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2395
+  - 2496
+  diag_offset: 52650
+  segments:
+  - rows:
+    - 2395
+    - 2496
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2497
+  - 2598
+  diag_offset: 52748
+  segments:
+  - rows:
+    - 2497
+    - 2598
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2599
+  - 2700
+  diag_offset: 52846
+  segments:
+  - rows:
+    - 2599
+    - 2700
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2701
+  - 2802
+  diag_offset: 52944
+  segments:
+  - rows:
+    - 2701
+    - 2802
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2803
+  - 2904
+  diag_offset: 53042
+  segments:
+  - rows:
+    - 2803
+    - 2904
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 2905
+  - 3006
+  diag_offset: 53140
+  segments:
+  - rows:
+    - 2905
+    - 3006
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3007
+  - 3108
+  diag_offset: 53238
+  segments:
+  - rows:
+    - 3007
+    - 3108
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3109
+  - 3210
+  diag_offset: 53336
+  segments:
+  - rows:
+    - 3109
+    - 3210
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3211
+  - 3312
+  diag_offset: 53434
+  segments:
+  - rows:
+    - 3211
+    - 3312
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3313
+  - 3414
+  diag_offset: 53532
+  segments:
+  - rows:
+    - 3313
+    - 3414
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3415
+  - 3516
+  diag_offset: 53630
+  segments:
+  - rows:
+    - 3415
+    - 3516
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3517
+  - 3618
+  diag_offset: 53728
+  segments:
+  - rows:
+    - 3517
+    - 3618
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3619
+  - 3720
+  diag_offset: 53826
+  segments:
+  - rows:
+    - 3619
+    - 3720
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3721
+  - 3822
+  diag_offset: 53924
+  segments:
+  - rows:
+    - 3721
+    - 3822
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3823
+  - 3924
+  diag_offset: 54022
+  segments:
+  - rows:
+    - 3823
+    - 3924
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 3925
+  - 4026
+  diag_offset: 54120
+  segments:
+  - rows:
+    - 3925
+    - 4026
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4027
+  - 4128
+  diag_offset: 54218
+  segments:
+  - rows:
+    - 4027
+    - 4128
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4129
+  - 4230
+  diag_offset: 54316
+  segments:
+  - rows:
+    - 4129
+    - 4230
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4231
+  - 4332
+  diag_offset: 54414
+  segments:
+  - rows:
+    - 4231
+    - 4332
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4333
+  - 4434
+  diag_offset: 54512
+  segments:
+  - rows:
+    - 4333
+    - 4434
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4435
+  - 4536
+  diag_offset: 54610
+  segments:
+  - rows:
+    - 4435
+    - 4536
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4537
+  - 4638
+  diag_offset: 54708
+  segments:
+  - rows:
+    - 4537
+    - 4638
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4639
+  - 4740
+  diag_offset: 54806
+  segments:
+  - rows:
+    - 4639
+    - 4740
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4741
+  - 4842
+  diag_offset: 54904
+  segments:
+  - rows:
+    - 4741
+    - 4842
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4843
+  - 4944
+  diag_offset: 55002
+  segments:
+  - rows:
+    - 4843
+    - 4944
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4945
+  - 5046
+  diag_offset: 55100
+  segments:
+  - rows:
+    - 4945
+    - 5046
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5047
+  - 5148
+  diag_offset: 55198
+  segments:
+  - rows:
+    - 5047
+    - 5148
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5149
+  - 5250
+  diag_offset: 55296
+  segments:
+  - rows:
+    - 5149
+    - 5250
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5251
+  - 5352
+  diag_offset: 55394
+  segments:
+  - rows:
+    - 5251
+    - 5352
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5353
+  - 5454
+  diag_offset: 55492
+  segments:
+  - rows:
+    - 5353
+    - 5454
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5455
+  - 5556
+  diag_offset: 55590
+  segments:
+  - rows:
+    - 5455
+    - 5556
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5557
+  - 5658
+  diag_offset: 55688
+  segments:
+  - rows:
+    - 5557
+    - 5658
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5659
+  - 5760
+  diag_offset: 55786
+  segments:
+  - rows:
+    - 5659
+    - 5760
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5761
+  - 5862
+  diag_offset: 55884
+  segments:
+  - rows:
+    - 5761
+    - 5862
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5863
+  - 5964
+  diag_offset: 55982
+  segments:
+  - rows:
+    - 5863
+    - 5964
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5965
+  - 6066
+  diag_offset: 56080
+  segments:
+  - rows:
+    - 5965
+    - 6066
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6067
+  - 6168
+  diag_offset: 56178
+  segments:
+  - rows:
+    - 6067
+    - 6168
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6169
+  - 6270
+  diag_offset: 56276
+  segments:
+  - rows:
+    - 6169
+    - 6270
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6271
+  - 6372
+  diag_offset: 56374
+  segments:
+  - rows:
+    - 6271
+    - 6372
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6373
+  - 6474
+  diag_offset: 56472
+  segments:
+  - rows:
+    - 6373
+    - 6474
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6475
+  - 6576
+  diag_offset: 56570
+  segments:
+  - rows:
+    - 6475
+    - 6576
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6577
+  - 6678
+  diag_offset: 56668
+  segments:
+  - rows:
+    - 6577
+    - 6678
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6679
+  - 6780
+  diag_offset: 56766
+  segments:
+  - rows:
+    - 6679
+    - 6780
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6781
+  - 6882
+  diag_offset: 56864
+  segments:
+  - rows:
+    - 6781
+    - 6882
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6883
+  - 6984
+  diag_offset: 56962
+  segments:
+  - rows:
+    - 6883
+    - 6984
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 6985
+  - 7086
+  diag_offset: 57060
+  segments:
+  - rows:
+    - 6985
+    - 7086
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7087
+  - 7188
+  diag_offset: 57158
+  segments:
+  - rows:
+    - 7087
+    - 7188
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7189
+  - 7290
+  diag_offset: 57256
+  segments:
+  - rows:
+    - 7189
+    - 7290
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7291
+  - 7392
+  diag_offset: 57354
+  segments:
+  - rows:
+    - 7291
+    - 7392
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7393
+  - 7494
+  diag_offset: 57452
+  segments:
+  - rows:
+    - 7393
+    - 7494
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7495
+  - 7596
+  diag_offset: 57550
+  segments:
+  - rows:
+    - 7495
+    - 7596
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7597
+  - 7698
+  diag_offset: 57648
+  segments:
+  - rows:
+    - 7597
+    - 7698
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7699
+  - 7800
+  diag_offset: 57746
+  segments:
+  - rows:
+    - 7699
+    - 7800
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7801
+  - 7902
+  diag_offset: 57844
+  segments:
+  - rows:
+    - 7801
+    - 7902
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 7903
+  - 8004
+  diag_offset: 57942
+  segments:
+  - rows:
+    - 7903
+    - 8004
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8005
+  - 8106
+  diag_offset: 58040
+  segments:
+  - rows:
+    - 8005
+    - 8106
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8107
+  - 8208
+  diag_offset: 58138
+  segments:
+  - rows:
+    - 8107
+    - 8208
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8209
+  - 8310
+  diag_offset: 58236
+  segments:
+  - rows:
+    - 8209
+    - 8310
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8311
+  - 8412
+  diag_offset: 58334
+  segments:
+  - rows:
+    - 8311
+    - 8412
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8413
+  - 8514
+  diag_offset: 58432
+  segments:
+  - rows:
+    - 8413
+    - 8514
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8515
+  - 8616
+  diag_offset: 58530
+  segments:
+  - rows:
+    - 8515
+    - 8616
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8617
+  - 8718
+  diag_offset: 58628
+  segments:
+  - rows:
+    - 8617
+    - 8718
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8719
+  - 8820
+  diag_offset: 58726
+  segments:
+  - rows:
+    - 8719
+    - 8820
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8821
+  - 8922
+  diag_offset: 58824
+  segments:
+  - rows:
+    - 8821
+    - 8922
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 8923
+  - 9024
+  diag_offset: 58922
+  segments:
+  - rows:
+    - 8923
+    - 9024
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9025
+  - 9126
+  diag_offset: 59020
+  segments:
+  - rows:
+    - 9025
+    - 9126
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9127
+  - 9228
+  diag_offset: 59118
+  segments:
+  - rows:
+    - 9127
+    - 9228
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9229
+  - 9330
+  diag_offset: 59216
+  segments:
+  - rows:
+    - 9229
+    - 9330
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9331
+  - 9432
+  diag_offset: 59314
+  segments:
+  - rows:
+    - 9331
+    - 9432
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9433
+  - 9534
+  diag_offset: 59412
+  segments:
+  - rows:
+    - 9433
+    - 9534
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9535
+  - 9636
+  diag_offset: 59510
+  segments:
+  - rows:
+    - 9535
+    - 9636
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9637
+  - 9738
+  diag_offset: 59608
+  segments:
+  - rows:
+    - 9637
+    - 9738
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9739
+  - 9840
+  diag_offset: 59706
+  segments:
+  - rows:
+    - 9739
+    - 9840
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9841
+  - 9942
+  diag_offset: 59804
+  segments:
+  - rows:
+    - 9841
+    - 9942
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9943
+  - 10044
+  diag_offset: 59902
+  segments:
+  - rows:
+    - 9943
+    - 10044
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 10045
+  - 10146
+  diag_offset: 60000
+  segments:
+  - rows:
+    - 10045
+    - 10146
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 10147
+  - 10248
+  diag_offset: 60098
+  segments:
+  - rows:
+    - 10147
+    - 10248
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 10249
+  - 10350
+  diag_offset: 60196
+  segments:
+  - rows:
+    - 10249
+    - 10350
+    bandwidth:
+    - 0
+    - 2
+    nnz: 303
+    area: 303
+  total_nnz: 303
+  vdia_area: 303
+  dia_ribbon_area: 303
+  dia_covered_area: 303
+  density: 1.0
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 10600
+  - 20449
+  diag_offset: 29997
+  segments:
+  - rows:
+    - 10600
+    - 20449
+    bandwidth:
+    - 1
+    - 1
+    nnz: 29449
+    area: 29547
+  total_nnz: 29449
+  vdia_area: 29547
+  dia_ribbon_area: 29547
+  dia_covered_area: 29547
+  density: 0.996683
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20449
+  - 20548
+  diag_offset: 30098
+  segments:
+  - rows:
+    - 20449
+    - 20548
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20548
+  - 20647
+  diag_offset: 30199
+  segments:
+  - rows:
+    - 20548
+    - 20647
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20647
+  - 20746
+  diag_offset: 30300
+  segments:
+  - rows:
+    - 20647
+    - 20746
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20746
+  - 20845
+  diag_offset: 30401
+  segments:
+  - rows:
+    - 20746
+    - 20845
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20845
+  - 20944
+  diag_offset: 30502
+  segments:
+  - rows:
+    - 20845
+    - 20944
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 20944
+  - 21043
+  diag_offset: 30603
+  segments:
+  - rows:
+    - 20944
+    - 21043
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21043
+  - 21142
+  diag_offset: 30704
+  segments:
+  - rows:
+    - 21043
+    - 21142
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21142
+  - 21241
+  diag_offset: 30805
+  segments:
+  - rows:
+    - 21142
+    - 21241
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21241
+  - 21340
+  diag_offset: 30906
+  segments:
+  - rows:
+    - 21241
+    - 21340
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21340
+  - 21439
+  diag_offset: 31007
+  segments:
+  - rows:
+    - 21340
+    - 21439
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21439
+  - 21538
+  diag_offset: 31108
+  segments:
+  - rows:
+    - 21439
+    - 21538
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21538
+  - 21637
+  diag_offset: 31209
+  segments:
+  - rows:
+    - 21538
+    - 21637
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21637
+  - 21736
+  diag_offset: 31310
+  segments:
+  - rows:
+    - 21637
+    - 21736
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21736
+  - 21835
+  diag_offset: 31411
+  segments:
+  - rows:
+    - 21736
+    - 21835
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21835
+  - 21934
+  diag_offset: 31512
+  segments:
+  - rows:
+    - 21835
+    - 21934
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 21934
+  - 22033
+  diag_offset: 31613
+  segments:
+  - rows:
+    - 21934
+    - 22033
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22033
+  - 22132
+  diag_offset: 31714
+  segments:
+  - rows:
+    - 22033
+    - 22132
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22132
+  - 22231
+  diag_offset: 31815
+  segments:
+  - rows:
+    - 22132
+    - 22231
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22231
+  - 22330
+  diag_offset: 31916
+  segments:
+  - rows:
+    - 22231
+    - 22330
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22330
+  - 22429
+  diag_offset: 32017
+  segments:
+  - rows:
+    - 22330
+    - 22429
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22429
+  - 22528
+  diag_offset: 32118
+  segments:
+  - rows:
+    - 22429
+    - 22528
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22528
+  - 22627
+  diag_offset: 32219
+  segments:
+  - rows:
+    - 22528
+    - 22627
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22627
+  - 22726
+  diag_offset: 32320
+  segments:
+  - rows:
+    - 22627
+    - 22726
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22726
+  - 22825
+  diag_offset: 32421
+  segments:
+  - rows:
+    - 22726
+    - 22825
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22825
+  - 22924
+  diag_offset: 32522
+  segments:
+  - rows:
+    - 22825
+    - 22924
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 22924
+  - 23023
+  diag_offset: 32623
+  segments:
+  - rows:
+    - 22924
+    - 23023
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23023
+  - 23122
+  diag_offset: 32724
+  segments:
+  - rows:
+    - 23023
+    - 23122
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23122
+  - 23221
+  diag_offset: 32825
+  segments:
+  - rows:
+    - 23122
+    - 23221
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23221
+  - 23320
+  diag_offset: 32926
+  segments:
+  - rows:
+    - 23221
+    - 23320
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23320
+  - 23419
+  diag_offset: 33027
+  segments:
+  - rows:
+    - 23320
+    - 23419
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23419
+  - 23518
+  diag_offset: 33128
+  segments:
+  - rows:
+    - 23419
+    - 23518
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23518
+  - 23617
+  diag_offset: 33229
+  segments:
+  - rows:
+    - 23518
+    - 23617
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23617
+  - 23716
+  diag_offset: 33330
+  segments:
+  - rows:
+    - 23617
+    - 23716
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23716
+  - 23815
+  diag_offset: 33431
+  segments:
+  - rows:
+    - 23716
+    - 23815
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23815
+  - 23914
+  diag_offset: 33532
+  segments:
+  - rows:
+    - 23815
+    - 23914
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 23914
+  - 24013
+  diag_offset: 33633
+  segments:
+  - rows:
+    - 23914
+    - 24013
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24013
+  - 24112
+  diag_offset: 33734
+  segments:
+  - rows:
+    - 24013
+    - 24112
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24112
+  - 24211
+  diag_offset: 33835
+  segments:
+  - rows:
+    - 24112
+    - 24211
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24211
+  - 24310
+  diag_offset: 33936
+  segments:
+  - rows:
+    - 24211
+    - 24310
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24310
+  - 24409
+  diag_offset: 34037
+  segments:
+  - rows:
+    - 24310
+    - 24409
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24409
+  - 24508
+  diag_offset: 34138
+  segments:
+  - rows:
+    - 24409
+    - 24508
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24508
+  - 24607
+  diag_offset: 34239
+  segments:
+  - rows:
+    - 24508
+    - 24607
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24607
+  - 24706
+  diag_offset: 34340
+  segments:
+  - rows:
+    - 24607
+    - 24706
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24706
+  - 24805
+  diag_offset: 34441
+  segments:
+  - rows:
+    - 24706
+    - 24805
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24805
+  - 24904
+  diag_offset: 34542
+  segments:
+  - rows:
+    - 24805
+    - 24904
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 24904
+  - 25003
+  diag_offset: 34643
+  segments:
+  - rows:
+    - 24904
+    - 25003
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25003
+  - 25102
+  diag_offset: 34744
+  segments:
+  - rows:
+    - 25003
+    - 25102
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25102
+  - 25201
+  diag_offset: 34845
+  segments:
+  - rows:
+    - 25102
+    - 25201
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25201
+  - 25300
+  diag_offset: 34946
+  segments:
+  - rows:
+    - 25201
+    - 25300
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25300
+  - 25399
+  diag_offset: 35047
+  segments:
+  - rows:
+    - 25300
+    - 25399
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25399
+  - 25498
+  diag_offset: 35148
+  segments:
+  - rows:
+    - 25399
+    - 25498
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25498
+  - 25597
+  diag_offset: 35249
+  segments:
+  - rows:
+    - 25498
+    - 25597
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25597
+  - 25696
+  diag_offset: 35350
+  segments:
+  - rows:
+    - 25597
+    - 25696
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25696
+  - 25795
+  diag_offset: 35451
+  segments:
+  - rows:
+    - 25696
+    - 25795
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25795
+  - 25894
+  diag_offset: 35552
+  segments:
+  - rows:
+    - 25795
+    - 25894
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25894
+  - 25993
+  diag_offset: 35653
+  segments:
+  - rows:
+    - 25894
+    - 25993
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 25993
+  - 26092
+  diag_offset: 35754
+  segments:
+  - rows:
+    - 25993
+    - 26092
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26092
+  - 26191
+  diag_offset: 35855
+  segments:
+  - rows:
+    - 26092
+    - 26191
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26191
+  - 26290
+  diag_offset: 35956
+  segments:
+  - rows:
+    - 26191
+    - 26290
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26290
+  - 26389
+  diag_offset: 36057
+  segments:
+  - rows:
+    - 26290
+    - 26389
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26389
+  - 26488
+  diag_offset: 36158
+  segments:
+  - rows:
+    - 26389
+    - 26488
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26488
+  - 26587
+  diag_offset: 36259
+  segments:
+  - rows:
+    - 26488
+    - 26587
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26587
+  - 26686
+  diag_offset: 36360
+  segments:
+  - rows:
+    - 26587
+    - 26686
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26686
+  - 26785
+  diag_offset: 36461
+  segments:
+  - rows:
+    - 26686
+    - 26785
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26785
+  - 26884
+  diag_offset: 36562
+  segments:
+  - rows:
+    - 26785
+    - 26884
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26884
+  - 26983
+  diag_offset: 36663
+  segments:
+  - rows:
+    - 26884
+    - 26983
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 26983
+  - 27082
+  diag_offset: 36764
+  segments:
+  - rows:
+    - 26983
+    - 27082
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27082
+  - 27181
+  diag_offset: 36865
+  segments:
+  - rows:
+    - 27082
+    - 27181
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27181
+  - 27280
+  diag_offset: 36966
+  segments:
+  - rows:
+    - 27181
+    - 27280
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27280
+  - 27379
+  diag_offset: 37067
+  segments:
+  - rows:
+    - 27280
+    - 27379
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27379
+  - 27478
+  diag_offset: 37168
+  segments:
+  - rows:
+    - 27379
+    - 27478
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27478
+  - 27577
+  diag_offset: 37269
+  segments:
+  - rows:
+    - 27478
+    - 27577
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27577
+  - 27676
+  diag_offset: 37370
+  segments:
+  - rows:
+    - 27577
+    - 27676
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27676
+  - 27775
+  diag_offset: 37471
+  segments:
+  - rows:
+    - 27676
+    - 27775
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27775
+  - 27874
+  diag_offset: 37572
+  segments:
+  - rows:
+    - 27775
+    - 27874
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27874
+  - 27973
+  diag_offset: 37673
+  segments:
+  - rows:
+    - 27874
+    - 27973
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 27973
+  - 28072
+  diag_offset: 37774
+  segments:
+  - rows:
+    - 27973
+    - 28072
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28072
+  - 28171
+  diag_offset: 37875
+  segments:
+  - rows:
+    - 28072
+    - 28171
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28171
+  - 28270
+  diag_offset: 37976
+  segments:
+  - rows:
+    - 28171
+    - 28270
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28270
+  - 28369
+  diag_offset: 38077
+  segments:
+  - rows:
+    - 28270
+    - 28369
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28369
+  - 28468
+  diag_offset: 38178
+  segments:
+  - rows:
+    - 28369
+    - 28468
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28468
+  - 28567
+  diag_offset: 38279
+  segments:
+  - rows:
+    - 28468
+    - 28567
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28567
+  - 28666
+  diag_offset: 38380
+  segments:
+  - rows:
+    - 28567
+    - 28666
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28666
+  - 28765
+  diag_offset: 38481
+  segments:
+  - rows:
+    - 28666
+    - 28765
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28765
+  - 28864
+  diag_offset: 38582
+  segments:
+  - rows:
+    - 28765
+    - 28864
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28864
+  - 28963
+  diag_offset: 38683
+  segments:
+  - rows:
+    - 28864
+    - 28963
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 28963
+  - 29062
+  diag_offset: 38784
+  segments:
+  - rows:
+    - 28963
+    - 29062
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29062
+  - 29161
+  diag_offset: 38885
+  segments:
+  - rows:
+    - 29062
+    - 29161
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29161
+  - 29260
+  diag_offset: 38986
+  segments:
+  - rows:
+    - 29161
+    - 29260
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29260
+  - 29359
+  diag_offset: 39087
+  segments:
+  - rows:
+    - 29260
+    - 29359
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29359
+  - 29458
+  diag_offset: 39188
+  segments:
+  - rows:
+    - 29359
+    - 29458
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29458
+  - 29557
+  diag_offset: 39289
+  segments:
+  - rows:
+    - 29458
+    - 29557
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29557
+  - 29656
+  diag_offset: 39390
+  segments:
+  - rows:
+    - 29557
+    - 29656
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29656
+  - 29755
+  diag_offset: 39491
+  segments:
+  - rows:
+    - 29656
+    - 29755
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29755
+  - 29854
+  diag_offset: 39592
+  segments:
+  - rows:
+    - 29755
+    - 29854
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29854
+  - 29953
+  diag_offset: 39693
+  segments:
+  - rows:
+    - 29854
+    - 29953
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 29953
+  - 30052
+  diag_offset: 39794
+  segments:
+  - rows:
+    - 29953
+    - 30052
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 30052
+  - 30151
+  diag_offset: 39895
+  segments:
+  - rows:
+    - 30052
+    - 30151
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 30151
+  - 30250
+  diag_offset: 39996
+  segments:
+  - rows:
+    - 30151
+    - 30250
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 30250
+  - 30349
+  diag_offset: 40097
+  segments:
+  - rows:
+    - 30250
+    - 30349
+    bandwidth:
+    - 1
+    - 1
+    nnz: 295
+    area: 297
+  total_nnz: 295
+  vdia_area: 297
+  dia_ribbon_area: 297
+  dia_covered_area: 297
+  density: 0.993266
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 30349
+  - 40198
+  diag_offset: 40198
+  segments:
+  - rows:
+    - 30349
+    - 40198
+    bandwidth:
+    - 1
+    - 1
+    nnz: 29448
+    area: 29547
+  total_nnz: 29448
+  vdia_area: 29547
+  dia_ribbon_area: 29547
+  dia_covered_area: 29547
+  density: 0.996649
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 40597
+  - 50446
+  diag_offset: -29997
+  segments:
+  - rows:
+    - 40597
+    - 50446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 29448
+    area: 29547
+  total_nnz: 29448
+  vdia_area: 29547
+  dia_ribbon_area: 29547
+  dia_covered_area: 29547
+  density: 0.996649
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 50447
+  - 50547
+  diag_offset: -50398
+  segments:
+  - rows:
+    - 50447
+    - 50547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 50548
+  - 50646
+  diag_offset: -30098
+  segments:
+  - rows:
+    - 50548
+    - 50646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 50647
+  - 50747
+  diag_offset: -50496
+  segments:
+  - rows:
+    - 50647
+    - 50747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 50748
+  - 50846
+  diag_offset: -30199
+  segments:
+  - rows:
+    - 50748
+    - 50846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 50847
+  - 50947
+  diag_offset: -50594
+  segments:
+  - rows:
+    - 50847
+    - 50947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 50948
+  - 51046
+  diag_offset: -30300
+  segments:
+  - rows:
+    - 50948
+    - 51046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51047
+  - 51147
+  diag_offset: -50692
+  segments:
+  - rows:
+    - 51047
+    - 51147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51148
+  - 51246
+  diag_offset: -30401
+  segments:
+  - rows:
+    - 51148
+    - 51246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51247
+  - 51347
+  diag_offset: -50790
+  segments:
+  - rows:
+    - 51247
+    - 51347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51348
+  - 51446
+  diag_offset: -30502
+  segments:
+  - rows:
+    - 51348
+    - 51446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51447
+  - 51547
+  diag_offset: -50888
+  segments:
+  - rows:
+    - 51447
+    - 51547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51548
+  - 51646
+  diag_offset: -30603
+  segments:
+  - rows:
+    - 51548
+    - 51646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51647
+  - 51747
+  diag_offset: -50986
+  segments:
+  - rows:
+    - 51647
+    - 51747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51748
+  - 51846
+  diag_offset: -30704
+  segments:
+  - rows:
+    - 51748
+    - 51846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51847
+  - 51947
+  diag_offset: -51084
+  segments:
+  - rows:
+    - 51847
+    - 51947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 51948
+  - 52046
+  diag_offset: -30805
+  segments:
+  - rows:
+    - 51948
+    - 52046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52047
+  - 52147
+  diag_offset: -51182
+  segments:
+  - rows:
+    - 52047
+    - 52147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52148
+  - 52246
+  diag_offset: -30906
+  segments:
+  - rows:
+    - 52148
+    - 52246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52247
+  - 52347
+  diag_offset: -51280
+  segments:
+  - rows:
+    - 52247
+    - 52347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52348
+  - 52446
+  diag_offset: -31007
+  segments:
+  - rows:
+    - 52348
+    - 52446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52447
+  - 52547
+  diag_offset: -51378
+  segments:
+  - rows:
+    - 52447
+    - 52547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52548
+  - 52646
+  diag_offset: -31108
+  segments:
+  - rows:
+    - 52548
+    - 52646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52647
+  - 52747
+  diag_offset: -51476
+  segments:
+  - rows:
+    - 52647
+    - 52747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52748
+  - 52846
+  diag_offset: -31209
+  segments:
+  - rows:
+    - 52748
+    - 52846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52847
+  - 52947
+  diag_offset: -51574
+  segments:
+  - rows:
+    - 52847
+    - 52947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 52948
+  - 53046
+  diag_offset: -31310
+  segments:
+  - rows:
+    - 52948
+    - 53046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53047
+  - 53147
+  diag_offset: -51672
+  segments:
+  - rows:
+    - 53047
+    - 53147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53148
+  - 53246
+  diag_offset: -31411
+  segments:
+  - rows:
+    - 53148
+    - 53246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53247
+  - 53347
+  diag_offset: -51770
+  segments:
+  - rows:
+    - 53247
+    - 53347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53348
+  - 53446
+  diag_offset: -31512
+  segments:
+  - rows:
+    - 53348
+    - 53446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53447
+  - 53547
+  diag_offset: -51868
+  segments:
+  - rows:
+    - 53447
+    - 53547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53548
+  - 53646
+  diag_offset: -31613
+  segments:
+  - rows:
+    - 53548
+    - 53646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53647
+  - 53747
+  diag_offset: -51966
+  segments:
+  - rows:
+    - 53647
+    - 53747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53748
+  - 53846
+  diag_offset: -31714
+  segments:
+  - rows:
+    - 53748
+    - 53846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53847
+  - 53947
+  diag_offset: -52064
+  segments:
+  - rows:
+    - 53847
+    - 53947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 53948
+  - 54046
+  diag_offset: -31815
+  segments:
+  - rows:
+    - 53948
+    - 54046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54047
+  - 54147
+  diag_offset: -52162
+  segments:
+  - rows:
+    - 54047
+    - 54147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54148
+  - 54246
+  diag_offset: -31916
+  segments:
+  - rows:
+    - 54148
+    - 54246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54247
+  - 54347
+  diag_offset: -52260
+  segments:
+  - rows:
+    - 54247
+    - 54347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54348
+  - 54446
+  diag_offset: -32017
+  segments:
+  - rows:
+    - 54348
+    - 54446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54447
+  - 54547
+  diag_offset: -52358
+  segments:
+  - rows:
+    - 54447
+    - 54547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54548
+  - 54646
+  diag_offset: -32118
+  segments:
+  - rows:
+    - 54548
+    - 54646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54647
+  - 54747
+  diag_offset: -52456
+  segments:
+  - rows:
+    - 54647
+    - 54747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54748
+  - 54846
+  diag_offset: -32219
+  segments:
+  - rows:
+    - 54748
+    - 54846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54847
+  - 54947
+  diag_offset: -52554
+  segments:
+  - rows:
+    - 54847
+    - 54947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 54948
+  - 55046
+  diag_offset: -32320
+  segments:
+  - rows:
+    - 54948
+    - 55046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55047
+  - 55147
+  diag_offset: -52652
+  segments:
+  - rows:
+    - 55047
+    - 55147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55148
+  - 55246
+  diag_offset: -32421
+  segments:
+  - rows:
+    - 55148
+    - 55246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55247
+  - 55347
+  diag_offset: -52750
+  segments:
+  - rows:
+    - 55247
+    - 55347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55348
+  - 55446
+  diag_offset: -32522
+  segments:
+  - rows:
+    - 55348
+    - 55446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55447
+  - 55547
+  diag_offset: -52848
+  segments:
+  - rows:
+    - 55447
+    - 55547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55548
+  - 55646
+  diag_offset: -32623
+  segments:
+  - rows:
+    - 55548
+    - 55646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55647
+  - 55747
+  diag_offset: -52946
+  segments:
+  - rows:
+    - 55647
+    - 55747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55748
+  - 55846
+  diag_offset: -32724
+  segments:
+  - rows:
+    - 55748
+    - 55846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55847
+  - 55947
+  diag_offset: -53044
+  segments:
+  - rows:
+    - 55847
+    - 55947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 55948
+  - 56046
+  diag_offset: -32825
+  segments:
+  - rows:
+    - 55948
+    - 56046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56047
+  - 56147
+  diag_offset: -53142
+  segments:
+  - rows:
+    - 56047
+    - 56147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56148
+  - 56246
+  diag_offset: -32926
+  segments:
+  - rows:
+    - 56148
+    - 56246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56247
+  - 56347
+  diag_offset: -53240
+  segments:
+  - rows:
+    - 56247
+    - 56347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56348
+  - 56446
+  diag_offset: -33027
+  segments:
+  - rows:
+    - 56348
+    - 56446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56447
+  - 56547
+  diag_offset: -53338
+  segments:
+  - rows:
+    - 56447
+    - 56547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56548
+  - 56646
+  diag_offset: -33128
+  segments:
+  - rows:
+    - 56548
+    - 56646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56647
+  - 56747
+  diag_offset: -53436
+  segments:
+  - rows:
+    - 56647
+    - 56747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56748
+  - 56846
+  diag_offset: -33229
+  segments:
+  - rows:
+    - 56748
+    - 56846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56847
+  - 56947
+  diag_offset: -53534
+  segments:
+  - rows:
+    - 56847
+    - 56947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 56948
+  - 57046
+  diag_offset: -33330
+  segments:
+  - rows:
+    - 56948
+    - 57046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57047
+  - 57147
+  diag_offset: -53632
+  segments:
+  - rows:
+    - 57047
+    - 57147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57148
+  - 57246
+  diag_offset: -33431
+  segments:
+  - rows:
+    - 57148
+    - 57246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57247
+  - 57347
+  diag_offset: -53730
+  segments:
+  - rows:
+    - 57247
+    - 57347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57348
+  - 57446
+  diag_offset: -33532
+  segments:
+  - rows:
+    - 57348
+    - 57446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57447
+  - 57547
+  diag_offset: -53828
+  segments:
+  - rows:
+    - 57447
+    - 57547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57548
+  - 57646
+  diag_offset: -33633
+  segments:
+  - rows:
+    - 57548
+    - 57646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57647
+  - 57747
+  diag_offset: -53926
+  segments:
+  - rows:
+    - 57647
+    - 57747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57748
+  - 57846
+  diag_offset: -33734
+  segments:
+  - rows:
+    - 57748
+    - 57846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57847
+  - 57947
+  diag_offset: -54024
+  segments:
+  - rows:
+    - 57847
+    - 57947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 57948
+  - 58046
+  diag_offset: -33835
+  segments:
+  - rows:
+    - 57948
+    - 58046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58047
+  - 58147
+  diag_offset: -54122
+  segments:
+  - rows:
+    - 58047
+    - 58147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58148
+  - 58246
+  diag_offset: -33936
+  segments:
+  - rows:
+    - 58148
+    - 58246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58247
+  - 58347
+  diag_offset: -54220
+  segments:
+  - rows:
+    - 58247
+    - 58347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58348
+  - 58446
+  diag_offset: -34037
+  segments:
+  - rows:
+    - 58348
+    - 58446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58447
+  - 58547
+  diag_offset: -54318
+  segments:
+  - rows:
+    - 58447
+    - 58547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58548
+  - 58646
+  diag_offset: -34138
+  segments:
+  - rows:
+    - 58548
+    - 58646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58647
+  - 58747
+  diag_offset: -54416
+  segments:
+  - rows:
+    - 58647
+    - 58747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58748
+  - 58846
+  diag_offset: -34239
+  segments:
+  - rows:
+    - 58748
+    - 58846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58847
+  - 58947
+  diag_offset: -54514
+  segments:
+  - rows:
+    - 58847
+    - 58947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 58948
+  - 59046
+  diag_offset: -34340
+  segments:
+  - rows:
+    - 58948
+    - 59046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59047
+  - 59147
+  diag_offset: -54612
+  segments:
+  - rows:
+    - 59047
+    - 59147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59148
+  - 59246
+  diag_offset: -34441
+  segments:
+  - rows:
+    - 59148
+    - 59246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59247
+  - 59347
+  diag_offset: -54710
+  segments:
+  - rows:
+    - 59247
+    - 59347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59348
+  - 59446
+  diag_offset: -34542
+  segments:
+  - rows:
+    - 59348
+    - 59446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59447
+  - 59547
+  diag_offset: -54808
+  segments:
+  - rows:
+    - 59447
+    - 59547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59548
+  - 59646
+  diag_offset: -34643
+  segments:
+  - rows:
+    - 59548
+    - 59646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59647
+  - 59747
+  diag_offset: -54906
+  segments:
+  - rows:
+    - 59647
+    - 59747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59748
+  - 59846
+  diag_offset: -34744
+  segments:
+  - rows:
+    - 59748
+    - 59846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59847
+  - 59947
+  diag_offset: -55004
+  segments:
+  - rows:
+    - 59847
+    - 59947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 59948
+  - 60046
+  diag_offset: -34845
+  segments:
+  - rows:
+    - 59948
+    - 60046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60047
+  - 60147
+  diag_offset: -55102
+  segments:
+  - rows:
+    - 60047
+    - 60147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60148
+  - 60246
+  diag_offset: -34946
+  segments:
+  - rows:
+    - 60148
+    - 60246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60247
+  - 60347
+  diag_offset: -55200
+  segments:
+  - rows:
+    - 60247
+    - 60347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60348
+  - 60446
+  diag_offset: -35047
+  segments:
+  - rows:
+    - 60348
+    - 60446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60447
+  - 60547
+  diag_offset: -55298
+  segments:
+  - rows:
+    - 60447
+    - 60547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60548
+  - 60646
+  diag_offset: -35148
+  segments:
+  - rows:
+    - 60548
+    - 60646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60647
+  - 60747
+  diag_offset: -55396
+  segments:
+  - rows:
+    - 60647
+    - 60747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60748
+  - 60846
+  diag_offset: -35249
+  segments:
+  - rows:
+    - 60748
+    - 60846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60847
+  - 60947
+  diag_offset: -55494
+  segments:
+  - rows:
+    - 60847
+    - 60947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 60948
+  - 61046
+  diag_offset: -35350
+  segments:
+  - rows:
+    - 60948
+    - 61046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61047
+  - 61147
+  diag_offset: -55592
+  segments:
+  - rows:
+    - 61047
+    - 61147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61148
+  - 61246
+  diag_offset: -35451
+  segments:
+  - rows:
+    - 61148
+    - 61246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61247
+  - 61347
+  diag_offset: -55690
+  segments:
+  - rows:
+    - 61247
+    - 61347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61348
+  - 61446
+  diag_offset: -35552
+  segments:
+  - rows:
+    - 61348
+    - 61446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61447
+  - 61547
+  diag_offset: -55788
+  segments:
+  - rows:
+    - 61447
+    - 61547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61548
+  - 61646
+  diag_offset: -35653
+  segments:
+  - rows:
+    - 61548
+    - 61646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61647
+  - 61747
+  diag_offset: -55886
+  segments:
+  - rows:
+    - 61647
+    - 61747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61748
+  - 61846
+  diag_offset: -35754
+  segments:
+  - rows:
+    - 61748
+    - 61846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61847
+  - 61947
+  diag_offset: -55984
+  segments:
+  - rows:
+    - 61847
+    - 61947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 61948
+  - 62046
+  diag_offset: -35855
+  segments:
+  - rows:
+    - 61948
+    - 62046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62047
+  - 62147
+  diag_offset: -56082
+  segments:
+  - rows:
+    - 62047
+    - 62147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62148
+  - 62246
+  diag_offset: -35956
+  segments:
+  - rows:
+    - 62148
+    - 62246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62247
+  - 62347
+  diag_offset: -56180
+  segments:
+  - rows:
+    - 62247
+    - 62347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62348
+  - 62446
+  diag_offset: -36057
+  segments:
+  - rows:
+    - 62348
+    - 62446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62447
+  - 62547
+  diag_offset: -56278
+  segments:
+  - rows:
+    - 62447
+    - 62547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62548
+  - 62646
+  diag_offset: -36158
+  segments:
+  - rows:
+    - 62548
+    - 62646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62647
+  - 62747
+  diag_offset: -56376
+  segments:
+  - rows:
+    - 62647
+    - 62747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62748
+  - 62846
+  diag_offset: -36259
+  segments:
+  - rows:
+    - 62748
+    - 62846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62847
+  - 62947
+  diag_offset: -56474
+  segments:
+  - rows:
+    - 62847
+    - 62947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 62948
+  - 63046
+  diag_offset: -36360
+  segments:
+  - rows:
+    - 62948
+    - 63046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63047
+  - 63147
+  diag_offset: -56572
+  segments:
+  - rows:
+    - 63047
+    - 63147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63148
+  - 63246
+  diag_offset: -36461
+  segments:
+  - rows:
+    - 63148
+    - 63246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63247
+  - 63347
+  diag_offset: -56670
+  segments:
+  - rows:
+    - 63247
+    - 63347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63348
+  - 63446
+  diag_offset: -36562
+  segments:
+  - rows:
+    - 63348
+    - 63446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63447
+  - 63547
+  diag_offset: -56768
+  segments:
+  - rows:
+    - 63447
+    - 63547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63548
+  - 63646
+  diag_offset: -36663
+  segments:
+  - rows:
+    - 63548
+    - 63646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63647
+  - 63747
+  diag_offset: -56866
+  segments:
+  - rows:
+    - 63647
+    - 63747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63748
+  - 63846
+  diag_offset: -36764
+  segments:
+  - rows:
+    - 63748
+    - 63846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63847
+  - 63947
+  diag_offset: -56964
+  segments:
+  - rows:
+    - 63847
+    - 63947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 63948
+  - 64046
+  diag_offset: -36865
+  segments:
+  - rows:
+    - 63948
+    - 64046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64047
+  - 64147
+  diag_offset: -57062
+  segments:
+  - rows:
+    - 64047
+    - 64147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64148
+  - 64246
+  diag_offset: -36966
+  segments:
+  - rows:
+    - 64148
+    - 64246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64247
+  - 64347
+  diag_offset: -57160
+  segments:
+  - rows:
+    - 64247
+    - 64347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64348
+  - 64446
+  diag_offset: -37067
+  segments:
+  - rows:
+    - 64348
+    - 64446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64447
+  - 64547
+  diag_offset: -57258
+  segments:
+  - rows:
+    - 64447
+    - 64547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64548
+  - 64646
+  diag_offset: -37168
+  segments:
+  - rows:
+    - 64548
+    - 64646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64647
+  - 64747
+  diag_offset: -57356
+  segments:
+  - rows:
+    - 64647
+    - 64747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64748
+  - 64846
+  diag_offset: -37269
+  segments:
+  - rows:
+    - 64748
+    - 64846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64847
+  - 64947
+  diag_offset: -57454
+  segments:
+  - rows:
+    - 64847
+    - 64947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 64948
+  - 65046
+  diag_offset: -37370
+  segments:
+  - rows:
+    - 64948
+    - 65046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65047
+  - 65147
+  diag_offset: -57552
+  segments:
+  - rows:
+    - 65047
+    - 65147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65148
+  - 65246
+  diag_offset: -37471
+  segments:
+  - rows:
+    - 65148
+    - 65246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65247
+  - 65347
+  diag_offset: -57650
+  segments:
+  - rows:
+    - 65247
+    - 65347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65348
+  - 65446
+  diag_offset: -37572
+  segments:
+  - rows:
+    - 65348
+    - 65446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65447
+  - 65547
+  diag_offset: -57748
+  segments:
+  - rows:
+    - 65447
+    - 65547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65548
+  - 65646
+  diag_offset: -37673
+  segments:
+  - rows:
+    - 65548
+    - 65646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65647
+  - 65747
+  diag_offset: -57846
+  segments:
+  - rows:
+    - 65647
+    - 65747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65748
+  - 65846
+  diag_offset: -37774
+  segments:
+  - rows:
+    - 65748
+    - 65846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65847
+  - 65947
+  diag_offset: -57944
+  segments:
+  - rows:
+    - 65847
+    - 65947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 65948
+  - 66046
+  diag_offset: -37875
+  segments:
+  - rows:
+    - 65948
+    - 66046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66047
+  - 66147
+  diag_offset: -58042
+  segments:
+  - rows:
+    - 66047
+    - 66147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66148
+  - 66246
+  diag_offset: -37976
+  segments:
+  - rows:
+    - 66148
+    - 66246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66247
+  - 66347
+  diag_offset: -58140
+  segments:
+  - rows:
+    - 66247
+    - 66347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66348
+  - 66446
+  diag_offset: -38077
+  segments:
+  - rows:
+    - 66348
+    - 66446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66447
+  - 66547
+  diag_offset: -58238
+  segments:
+  - rows:
+    - 66447
+    - 66547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66548
+  - 66646
+  diag_offset: -38178
+  segments:
+  - rows:
+    - 66548
+    - 66646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66647
+  - 66747
+  diag_offset: -58336
+  segments:
+  - rows:
+    - 66647
+    - 66747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66748
+  - 66846
+  diag_offset: -38279
+  segments:
+  - rows:
+    - 66748
+    - 66846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66847
+  - 66947
+  diag_offset: -58434
+  segments:
+  - rows:
+    - 66847
+    - 66947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 66948
+  - 67046
+  diag_offset: -38380
+  segments:
+  - rows:
+    - 66948
+    - 67046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67047
+  - 67147
+  diag_offset: -58532
+  segments:
+  - rows:
+    - 67047
+    - 67147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67148
+  - 67246
+  diag_offset: -38481
+  segments:
+  - rows:
+    - 67148
+    - 67246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67247
+  - 67347
+  diag_offset: -58630
+  segments:
+  - rows:
+    - 67247
+    - 67347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67348
+  - 67446
+  diag_offset: -38582
+  segments:
+  - rows:
+    - 67348
+    - 67446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67447
+  - 67547
+  diag_offset: -58728
+  segments:
+  - rows:
+    - 67447
+    - 67547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67548
+  - 67646
+  diag_offset: -38683
+  segments:
+  - rows:
+    - 67548
+    - 67646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67647
+  - 67747
+  diag_offset: -58826
+  segments:
+  - rows:
+    - 67647
+    - 67747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67748
+  - 67846
+  diag_offset: -38784
+  segments:
+  - rows:
+    - 67748
+    - 67846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67847
+  - 67947
+  diag_offset: -58924
+  segments:
+  - rows:
+    - 67847
+    - 67947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 67948
+  - 68046
+  diag_offset: -38885
+  segments:
+  - rows:
+    - 67948
+    - 68046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68047
+  - 68147
+  diag_offset: -59022
+  segments:
+  - rows:
+    - 68047
+    - 68147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68148
+  - 68246
+  diag_offset: -38986
+  segments:
+  - rows:
+    - 68148
+    - 68246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68247
+  - 68347
+  diag_offset: -59120
+  segments:
+  - rows:
+    - 68247
+    - 68347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68348
+  - 68446
+  diag_offset: -39087
+  segments:
+  - rows:
+    - 68348
+    - 68446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68447
+  - 68547
+  diag_offset: -59218
+  segments:
+  - rows:
+    - 68447
+    - 68547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68548
+  - 68646
+  diag_offset: -39188
+  segments:
+  - rows:
+    - 68548
+    - 68646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68647
+  - 68747
+  diag_offset: -59316
+  segments:
+  - rows:
+    - 68647
+    - 68747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68748
+  - 68846
+  diag_offset: -39289
+  segments:
+  - rows:
+    - 68748
+    - 68846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68847
+  - 68947
+  diag_offset: -59414
+  segments:
+  - rows:
+    - 68847
+    - 68947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 68948
+  - 69046
+  diag_offset: -39390
+  segments:
+  - rows:
+    - 68948
+    - 69046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69047
+  - 69147
+  diag_offset: -59512
+  segments:
+  - rows:
+    - 69047
+    - 69147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69148
+  - 69246
+  diag_offset: -39491
+  segments:
+  - rows:
+    - 69148
+    - 69246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69247
+  - 69347
+  diag_offset: -59610
+  segments:
+  - rows:
+    - 69247
+    - 69347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69348
+  - 69446
+  diag_offset: -39592
+  segments:
+  - rows:
+    - 69348
+    - 69446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69447
+  - 69547
+  diag_offset: -59708
+  segments:
+  - rows:
+    - 69447
+    - 69547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69548
+  - 69646
+  diag_offset: -39693
+  segments:
+  - rows:
+    - 69548
+    - 69646
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69647
+  - 69747
+  diag_offset: -59806
+  segments:
+  - rows:
+    - 69647
+    - 69747
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69748
+  - 69846
+  diag_offset: -39794
+  segments:
+  - rows:
+    - 69748
+    - 69846
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69847
+  - 69947
+  diag_offset: -59904
+  segments:
+  - rows:
+    - 69847
+    - 69947
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 69948
+  - 70046
+  diag_offset: -39895
+  segments:
+  - rows:
+    - 69948
+    - 70046
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 70047
+  - 70147
+  diag_offset: -60002
+  segments:
+  - rows:
+    - 70047
+    - 70147
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 70148
+  - 70246
+  diag_offset: -39996
+  segments:
+  - rows:
+    - 70148
+    - 70246
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 70247
+  - 70347
+  diag_offset: -60100
+  segments:
+  - rows:
+    - 70247
+    - 70347
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 70348
+  - 70446
+  diag_offset: -40097
+  segments:
+  - rows:
+    - 70348
+    - 70446
+    bandwidth:
+    - 1
+    - 1
+    nnz: 291
+    area: 294
+  total_nnz: 291
+  vdia_area: 294
+  dia_ribbon_area: 294
+  dia_covered_area: 294
+  density: 0.989796
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 70447
+  - 70547
+  diag_offset: -60198
+  segments:
+  - rows:
+    - 70447
+    - 70547
+    bandwidth:
+    - 0
+    - 2
+    nnz: 299
+    area: 300
+  total_nnz: 299
+  vdia_area: 300
+  dia_ribbon_area: 300
+  dia_covered_area: 300
+  density: 0.996667
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 70548
+  - 80396
+  diag_offset: -40198
+  segments:
+  - rows:
+    - 70548
+    - 80396
+    bandwidth:
+    - 1
+    - 1
+    nnz: 29445
+    area: 29544
+  total_nnz: 29445
+  vdia_area: 29544
+  dia_ribbon_area: 29544
+  dia_covered_area: 29544
+  density: 0.996649
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks: []

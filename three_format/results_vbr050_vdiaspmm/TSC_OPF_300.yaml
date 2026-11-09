@@ -1,0 +1,72 @@
+order:
+- vbr
+- vdia
+block_source: find-submatrices/results/TSC_OPF_300.yaml
+band_extractor: spmm
+band_selection:
+  segments: 2
+  coverage: 0.8165
+  density: 0.7565
+  min_coverage: 0.6
+  seconds: 0.0
+  choice: bands
+bands:
+- rows:
+  - 690
+  - 4890
+  diag_offset: 4842
+  segments:
+  - rows:
+    - 690
+    - 4890
+    bandwidth:
+    - 20
+    - 62
+    nnz: 263277
+    area: 348600
+  total_nnz: 263277
+  vdia_area: 348600
+  dia_ribbon_area: 348600
+  dia_covered_area: 348600
+  density: 0.755241
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5553
+  - 9732
+  diag_offset: -4842
+  segments:
+  - rows:
+    - 5553
+    - 9732
+    bandwidth:
+    - 62
+    - 20
+    nnz: 262836
+    area: 346857
+  total_nnz: 262836
+  vdia_area: 346857
+  dia_ribbon_area: 346857
+  dia_covered_area: 346857
+  density: 0.757765
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks:
+- rows:
+  - 5532
+  - 9732
+  cols:
+  - 4911
+  - 4932
+- rows:
+  - 4911
+  - 4932
+  cols:
+  - 5532
+  - 9732

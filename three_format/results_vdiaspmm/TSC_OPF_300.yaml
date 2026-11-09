@@ -1,0 +1,150 @@
+order:
+- vdia
+band_extractor: spmm
+band_selection:
+  segments: 6
+  coverage: 0.7492
+  density: 0.7835
+  min_coverage: 0.6
+  seconds: 0.0
+  choice: bands
+bands:
+- rows:
+  - 690
+  - 4890
+  diag_offset: 4842
+  segments:
+  - rows:
+    - 690
+    - 4890
+    bandwidth:
+    - 20
+    - 62
+    nnz: 263277
+    area: 348600
+  total_nnz: 263277
+  vdia_area: 348600
+  dia_ribbon_area: 348600
+  dia_covered_area: 348600
+  density: 0.755241
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4890
+  - 4911
+  diag_offset: 642
+  segments:
+  - rows:
+    - 4890
+    - 4911
+    bandwidth:
+    - 20
+    - 41
+    nnz: 882
+    area: 1302
+  total_nnz: 882
+  vdia_area: 1302
+  dia_ribbon_area: 1302
+  dia_covered_area: 1302
+  density: 0.677419
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 4911
+  - 4932
+  diag_offset: 4542
+  segments:
+  - rows:
+    - 4911
+    - 4932
+    bandwidth:
+    - 3941
+    - 300
+    nnz: 88242
+    area: 89082
+  total_nnz: 88242
+  vdia_area: 89082
+  dia_ribbon_area: 89082
+  dia_covered_area: 89082
+  density: 0.99057
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5533
+  - 5553
+  diag_offset: -643
+  segments:
+  - rows:
+    - 5533
+    - 5553
+    bandwidth:
+    - 19
+    - 41
+    nnz: 840
+    area: 1220
+  total_nnz: 840
+  vdia_area: 1220
+  dia_ribbon_area: 1220
+  dia_covered_area: 1220
+  density: 0.688525
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 5574
+  - 9711
+  diag_offset: -4842
+  segments:
+  - rows:
+    - 5574
+    - 9711
+    bandwidth:
+    - 62
+    - 20
+    nnz: 260631
+    area: 343371
+  total_nnz: 260631
+  vdia_area: 343371
+  dia_ribbon_area: 343371
+  dia_covered_area: 343371
+  density: 0.759036
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+- rows:
+  - 9711
+  - 9731
+  diag_offset: -4841
+  segments:
+  - rows:
+    - 9711
+    - 9731
+    bandwidth:
+    - 41
+    - 19
+    nnz: 1030
+    area: 1220
+  total_nnz: 1030
+  vdia_area: 1220
+  dia_ribbon_area: 1220
+  dia_covered_area: 1220
+  density: 0.844262
+  fill_ribbon: 1.0
+  fill_covered: 1.0
+  savings_vs_dia_ribbon: 0.0
+  savings_vs_dia_covered: 0.0
+  found_at_seconds: 0.0
+blocks: []

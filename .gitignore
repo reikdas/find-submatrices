@@ -1,2 +1,2 @@
 build/
-Suitesparse/
+Suitesparse/__pycache__/
