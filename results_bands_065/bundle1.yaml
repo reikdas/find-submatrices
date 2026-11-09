@@ -1,5 +1,0 @@
-timeout: false
-matrix_shape: [10581, 10581]
-matrix_nnz: 770901
-elapsed_seconds: 77.55
-bands: []
